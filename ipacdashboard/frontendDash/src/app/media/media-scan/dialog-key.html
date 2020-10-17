@@ -1,0 +1,18 @@
+<div class="container container d-flex flex-column justify-content-between" style="height:100%">
+    <div class="row">
+        <div class="col-12">
+            <mat-chip-list>
+                <mat-chip *ngFor="let el of key" [ngStyle]="{'background-color': el.sentiment < -0.5 ? '#EF3333' : el.sentiment > -0.5 && el.sentiment <= -0.1 ? '#FE6763' : el.sentiment > -0.1 && el.sentiment <= 0.1 ? '#e0ce47' : el.sentiment >= 0.1 && el.sentiment < 0.5 ? '#88AC76' : el.sentiment >= 0.5 ? '#308446' : ''}">{{el.name}}</mat-chip>
+            </mat-chip-list>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 d-flex flex-column align-items-end justify-content-start">
+            <mat-chip-list>
+                <mat-chip *ngFor="let chip of availableColors" selected [ngStyle]="{'background-color': chip.color}">
+                    {{chip.name}}
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+    </div>
+</div>

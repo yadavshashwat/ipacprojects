@@ -1,0 +1,806 @@
+1,Pema Khandu
+2,Sarbananda Sonowal
+3,Raman Singh
+4,Manohar Parrikar
+5,Vijaybhai R Rupani
+6,Manohar Lal
+7,Jai Ram Thakur
+8,Raghubar Das
+9,H D Kumaraswamy
+10,Pinarayi Vijayan
+11,Devendra Fadnavis
+12,Nongthombam Biren Singh
+13,Conrad Sangma
+14,Lal Thanhawla
+15,Neiphiu Rio
+16,V Narayanasamy
+17,Captain Amarinder Singh
+19,Edappadi K Palaniswami
+20,Biplab Kumar Deb
+21,Yogi Adityanath
+22,Trivendra Singh Rawat
+23,N Kiran Kumar Reddy
+24,Nabam Tuki
+25,Tarun Gogoi
+26,Jitan Ram Manjhi
+27,Ajit Jogi
+28,Sheila Dikshit
+29,Laxmikant Parsekar
+30,Vijay Rupani
+31,Manohar Lal Khattar
+32,Hemant Soren Dumka
+33,Siddaramaiah
+34,Oommen Chandy
+35,Shivraj Singh Chauhan
+36,Prithviraj Chavan
+37,Okram Ibobi Singh
+38,Mukul Sangma
+39,Pu Lalthanhawla
+40,T R Zeliang
+41,Naveen Patnaik
+42,N Rangaswamy
+43,Parkash Singh Badal[4]
+44,Ashok Gehlot
+45,Sanchaman Limboo
+46,O Panneerselvam
+47,Manik Sarkar
+48,Akhilesh Yadav
+49,Harish Rawat
+50,Mamata Banerjee
+51,K Rosaiah
+52,Kalikho Pul
+53,Prafulla Kumar Mahanta
+54,Nitish Kumar
+55,Sushma Swaraj
+56,Bhupinder Singh Hooda
+57,Virbhadra Singh
+58,Omar Abdullah
+59,Arjun Munda Kharsawan
+60,Jagadish Shettar
+61,V S Achuthanandan
+62,Ashok Chavan
+63,Pu Zoramthanga
+64,Shurhozelie Liezietsu
+65,V Vaithilingam
+66,Amarinder Singh
+67,Nar Bahadur Bhandari
+68,J Jayalalithaa
+69,Dasarath Deb
+70,Mayawati
+71,Buddhadeb Bhattacharya
+72,Bhumidhar Barman
+73,Rabri Devi
+74,Sahib Singh Verma
+75,Digambar Kamat
+76,Anandiben Patel Ghatlodiya
+77,Om Prakash Chautala
+78,Prem Kumar Dhumal
+79,Ghulam Nabi Azad
+80,Shibu Soren
+81,D V Sadananda Gowda
+82,Babulal Gaur
+83,D D Lapang
+84,B B Gurung
+85,Samir Ranjan Barman
+86,Mulayam Singh Yadav
+87,Jyoti Basu
+88,Hiteswar Saikia
+89,Madan Lal Khurana
+90,Pratapsing Rane
+91,Narendra Modi
+92,Bansi Lal
+93,B S Yeddyurappa
+94,A K Antony
+95,Uma Bharti
+96,Vilasrao Deshmukh
+97,Radhabinod Koijam
+98,Donkupar Roy
+99,Pu Laldenga
+100,Hemananda Biswal
+101,Rajinder Kaur Bhattal
+102,Bhairon Singh Shekhawat
+103,Sudhir Ranjan Majumdar
+104,Vijay Bahuguna
+105,Siddhartha Shankar Ray
+106,Amit Shah
+107,Suravaram Sudhakar Reddy
+108,Rahul Gandhi
+109,Sharad Pawar
+110,Sitaram Yechury
+111,Arvind Kejriwal
+112,Debabrata Biswas
+113,Asaduddin Owaisi
+114,Badruddin Ajmal
+115,Sudesh Mahto
+116,Atul Bora
+117,V Siva Kumar
+118,Hagrama Mohilary
+119,G K Mani
+120,M Karunanidhi
+121,Vijai Sardesai
+122,H S Lyngdoh
+123,Panakkad Sayed Hyderali Shihab Thangal
+124,Bhim Singh
+125,Mehbooba Mufti
+126,H D DeveGowda
+127,Babu Lal Marandi
+128,Padmanabha Prasanna Kumar
+129,C F Thomas
+130,Ram Vilas Paswan
+131,Raj Thackeray
+132,Deepak Dhavalikar
+133,Pu Lalhmingthanga
+134,Agatha Sangma
+135,Vijayakanth
+136,Bd Behring Anal
+137,Tomo Riba
+138,Lalu Prasad Yadav
+139,Ajit Singh
+140,Upendra Kushwaha
+141,T J Chandrachoodan
+142,Sukhbir Singh Badal
+143,Uddhav Thackeray
+144,Pawan Kumar Chamling
+145,Prem Singh Tamang
+146,Kalvakuntla Chandrashekar Rao
+147,N Chandra Babu Naidu
+148,Y S Jaganmohan Reddy
+149,Pratim Chatterjee
+150,Vishal Jolly
+151,Kanna Lakshminarayana
+152,Tapir Gao
+153,Ranjeet Kumar Das
+154,Nityanand Rai
+155,Sanjay Tandon
+156,Dharamlal Kaushik
+157,Hasmukhbhai B Bhandari
+158,Gopalbhai Kalyanbhai Tandel
+159,Manoj Tiwari
+160,Vinay Dinu Tendulkar
+161,Jitendrabhai Vaghani
+162,Subhash Barala
+163,Satpal Singh Satti
+164,Ravinder Raina
+165,Laxman Giluwa
+166,B S Yeddyurappa
+167,Kummanam Rajasekharan
+168,Abdul Khader Haji
+169,Rakesh Singh
+170,Raosaheb Patil Danve
+171,K Bhabananda Singh
+172,Shibun Lyngdoh
+173,J V Hluna
+174,Ashish Shelar
+175,Temjen Imna
+176,Basanta Kumar Panda
+177,V Saminathan
+178,Shwait Malik
+179,Dal Bahadur Chauhan
+180,Tamilisai Soundararajan
+181,K Laxman
+182,Ajay Bhatt
+183,Mahendra Nath Pandey
+184,Dilip Ghosh
+185,Kuldeep Sharma
+186,N Raghuveera Reddy
+187,Takam Sanjoy
+188,Ripun Bora
+189,Qaukab Kadri
+190,Sunil Jakhar
+191,Bhupesh Baghel
+192,Mohan Delkar
+193,Ketan Patel Congress
+194,Ajay Maken
+195,Girish Chodankar
+196,Amit Chavda
+197,Ashok Tanwar
+198,Sukhvinder Singh Sukhu
+199,Ghulam Ahmed Mir
+200,Ajoy Kumar
+201,G Parameshwara
+202,M M Hasan
+203,M Hamdullahsayeed
+204,Kamal Nath
+205,Ashok Shankarrao Chavan
+206,T N Haokip
+207,Celestine Lyngdoh
+208,Sanjay Nirupam
+209,Kewekhape Therie
+210,Niranjan Patanaik
+211,A Namachivayam
+212,Bharat Basnett
+213,Su Thirunavukkarasar
+214,N Uttam Reddy
+215,Pritam Singh
+216,Raj Babbar
+217,Adhir Ranjan Choudhary
+218,Farooq Abdullah
+219,Shivaji Adhalrao Patil
+220,Deepak (Dev) Adhikari
+221,Dibyendu Adhikari
+222,Sisir Kumar Adhikari
+223,Anandrao Adsul
+224,Lal Krishna Advani
+225,Rajendra Agrawal
+226,Hansraj Gangaram Ahir
+227,Santosh Ahlawat
+228,S S Ahluwalia
+229,Sajda Ahmed
+230,Sirajuddin Ajmal
+231,Sarfaraz Alam
+232,Idris Ali
+233,Ananth Kumar
+234,Suresh Chanabasappa Angadi
+235,Anil Gulabrao Shirole
+236,Anto Antony
+237,Tariq Anwar
+238,A Arunmozhithevan
+239,K Ashokkumar
+240,Ashwini Kumar
+241,Gurjeet Singh Aujla
+242,Kirti Azad
+243,Babul Supriyo
+244,Harsimrat Kaur Badal
+245,Subhash Chandra Baheria
+246,Muzaffar Hussain Baig
+247,Ramesh Bais
+248,Thangso Baite
+249,George Baker
+250,Subrata Bakshi
+251,Anju Bala
+253,Sudip Bandyopadhyay
+254,Abhishek Banerjee
+255,Kalyan Banerjee
+256,Prasun Banerjee
+257,Sharadkumar Maruti Bansode
+258,Bijoy Chandra Barman
+259,Shrirang Appa Barne
+260,Pradan Baruah
+261,E T Mohammed Basheer
+262,Jaswantsinh Sumanbhai Bhabhor
+263,Bodhsingh Bhagat
+264,Sudarshan Bhagat
+265,Subhash Ramrao Bhamre
+266,R K Bharathimohan
+267,Ranjanben Dhananjay Bhatt
+268,Bhawana Gawali
+269,Udayanraje Pratapsingh Bhonsle
+270,Kantilal Bhuria
+271,Ramesh Bidhuri
+272,Parayamparambil Kuttappan Biju
+273,Om Birla
+274,Radheshyam Biswas
+275,Ramcharan Bohra
+276,Vinod Kumar Boianapalli
+277,Sugata Bose
+278,Ranjit Singh Brahmpura
+279,Renuka Butta
+280,Bijoya Chakravarty
+281,Kunwar Pushpendra Singh Chandel
+282,M Chandrakasi
+283,B N Chandrappa
+284,Prem Singh Chandumajra
+285,Babulal Chaudhary
+286,Birendra Kumar Chaudhary
+287,C R Chaudhary
+288,Haribhai Parthibhai Chaudhary
+289,P P Chaudhary
+290,Santokh Singh Chaudhary
+291,Jitendra Chaudhury
+292,Devusinh Jesingbhai Chauhan
+293,Nand Kumar Singh Chauhan
+294,Nihal Chand Chauhan
+295,Prabhatsinh Pratapsinh Chauhan
+296,Dushyant Chautala
+297,Harishchandra Deoram Chavan
+298,Vinod Chavda
+299,Thupstan Chhewang
+300,Chhotelal
+301,Gopalakrishnan Chinnaraj
+302,Ashwini Kumar Choubey
+303,Ram Tahal Choudhary
+304,Abu Hasem Khan Choudhury
+305,Pankaj Chowdhary
+306,Rajeshbhai Naranbhai Chudasama
+307,Sona Ram Choudhary
+308,Kakoli Ghosh Dastidar
+309,Sankar Prasad Datta
+310,Bandaru Dattatreya
+311,Ratna De
+312,Ramen Deka
+313,Arka Keshari Deo
+314,Sushmita Dev
+315,Rama Devi
+316,Veena Devi
+317,Dharambir Singh
+318,Sanjay Shamrao Dhotre
+319,R Dhruvanarayana
+320,Jyoti Dhurve
+321,Rajesh Kumar Diwakar
+322,Ashok Kumar Dohrey
+323,Kirit Somaiya
+324,Nishikant Dubey
+325,Satish Chandra Dubey
+326,Harish Dwivedi
+327,Biren Singh Engti
+328,Ninong Ering
+329,Devajibhai Govindbhai Fatepara
+330,Parvatagouda Chandanagouda Gaddigoudar
+331,Nitin Jairam Gadkari
+332,Ravindra Vishwanath Gaikwad
+333,Sunil Baliram Gaikwad
+334,Jayadev Galla
+335,Dharam Vira Gandhi
+336,Dilip Kumar Mansukhlal Gandhi
+337,Feroze Varun Gandhi
+338,Maneka Sanjay Gandhi
+339,Sonia Gandhi
+340,Santosh Kumar Gangwar
+341,Satish Kumar Gautam
+342,Heena Vijaykumar Gavit
+343,Rajendra Dhedya Gavit
+344,Anant Gangaram Geete
+345,Vijay Kumar Singh
+346,Joice George
+347,Arpita Ghosh
+348,Sher Singh Ghubaya
+349,Maheish Girri
+350,Nagesh Godam
+351,Hemant Tukaram Godse
+352,Gaurav Gogoi
+353,Rajen Gohain
+354,K Gopal
+355,R Gopalakrishnan
+356,Boora Narsaiah Goud
+357,D V Sadananda Gowda
+358,Shyama Charan Gupta
+359,Sudheer Gupta
+360,Krishan Pal Gurjar
+361,Sukender Reddy Gutha
+362,Rama Chandra Hansdah
+363,Vijay Kumar Hansdak
+364,G Hari
+365,Harsh Vardhan
+366,Begum Tabassum Hasan
+367,Richard Hay
+368,Anupam Hazra
+369,Anantkumar Hegde
+370,Hema Malini
+371,Jhina Hikaka
+372,Deepender Singh Hooda
+373,Prakash Babanna Hukkeri
+374,Prataprao Jadhav
+375,Sanjay Haribhau Jadhav
+376,Sanjay Jaiswal
+377,Sunil Kumar Jakhar
+378,Darshana Vikram Jardosh
+379,Choudhury Mohan Jatua
+380,Sukhbir Singh Jaunapuria
+381,C N Jayadevan
+382,Jayakumar Jayavardhan
+383,Rabindra Kumar Jena
+384,Ramesh Chandappa Jigajinagi
+385,C P Joshi
+386,Murli Manohar Joshi
+387,Pralhad Venkatesh Joshi
+388,Sadhvi Niranjan Jyoti
+389,K Shri Parasuraman
+390,Naranbhai Bhikhabhai Kachhadiya
+391,Choudhary Mehboob Ali Kaiser
+392,Kavitha Kalvakuntla
+393,K Kamaraj
+394,Hari Babu Kambhampati
+395,Sanganna Amarappa Karadi
+396,Shobha Karandlaje
+397,P Karunakaran
+398,Dinesh Kashyap
+399,Virender Kashyap
+400,Rahul Kaswan
+401,Rattan Lal Kataria
+402,Nalin Kumar Kateel
+403,Ramesh Chander Kaushik
+404,Srinivas Kesineni
+405,Raksha Nikhil Khadse
+406,Chandrakant Bhaurao Khaire
+407,Harinder Singh Khalsa
+408,Md Badaruddoza Khan
+409,Mallikarjun Kharge
+410,Kirron Anupam Kher
+411,Bhagwanth Khuba
+412,Gajanan Chandrakant Kirtikar
+413,Kaushal Kishore
+414,Suresh Kodikunnil
+415,Bahadur Singh Koli
+416,Bhagat Singh Koshyari
+417,Geetha Kothapalli
+418,Madhukrao Yashwantrao Kukade
+419,Faggan Singh Kulaste
+420,Arun Kumar
+421,Dharmendra Kumar
+422,Kaushalendra Kumar
+423,Kunwar Sarvesh Kumar
+424,P Kumar
+425,Santosh Kumar
+426,Shailesh Kumar
+427,Shanta Kumar
+428,Virendra Kumar
+429,Mohanbhai Kalyanji Kundariya
+430,Ravindra Kushawaha
+431,Sakuntala Laguri
+432,Raghav Lakhanpal
+433,Meenakashi Lekhi
+434,Sadashiv Kisan Lokhande
+435,M Vasanthi
+436,Poonamben Hematbhai Maadam
+437,Murali Mohan Maganti
+438,Venkateswara Rao Magantti
+439,Dhananjay Bhimrao Mahadik
+440,Poonam Mahajan
+441,Bidyut Baran Mahato
+442,Mriganka Mahato
+443,C Mahendran
+444,Bhartruhari Mahtab
+445,Banshilalmahto
+446,Balabhadra Majhi
+447,Chintamani Malviya
+448,Sriram Malyadri
+449,Tapas Mandal
+450,Jose K Mani
+451,Harimanjhi
+452,Bhagwant Mann
+453,Kamalbhan Singh Marabi
+454,K Maragatham
+455,R P Marutharajaa
+456,Arjunlal Meena
+457,Harish Chandra Meena
+458,Arjun Ram Meghwal
+459,Thokchom Meinya
+460,Anoop Mishra
+461,Bhairon Prasad Mishra
+462,Daddan Mishra
+463,Janardan Mishra
+464,Kalraj Mishra
+465,Ajay Misra
+466,Pinaki Misra
+467,Asrarul Haque Mohammad
+468,Mohammed Faizal P P
+469,P C Mohan
+470,Sidhant Mohapatra
+471,M Veerappa Moily
+472,Pratima Mondal
+473,Sunil Kumar Mondal
+474,S P Muddahanumegowda
+475,Abhijit Mukherjee
+476,Ramachandran Mullappally
+477,Kariya Munda
+478,Pritam Gopinath Munde
+479,K H Muniyappa
+480,Rodmal Nagar
+481,Azmeera Seetaram Naik
+483,Shripad Yesso Naik
+484,Jayasingh Thiyagaraj Natterjee
+485,Ashok Mahadeorao Nete
+486,Kristappa Nimmala
+487,Manshankar Ninama
+488,Ajay Nishad
+489,Praveen Kumar Nishad
+490,Ramesh Pokhriyal Nishank
+491,Mausam
+492,Jual Oram
+493,P Nagarajan
+494,P K Kunhalikutty
+495,Jagdambika Pal
+496,Vincent H Pala
+497,Baijayant Panda
+498,Hari Om Pandey
+499,Rajesh Pandey
+500,Ravindra Kumar Pandey
+501,Ravindra Babu Pandula
+502,R Parthipan
+503,Dayakar Pasunoori
+504,Chhedi Paswan
+505,Chirag Paswan
+506,Kamlesh Paswan
+507,Ramchandra Paswan
+508,Prasanna Kumar Patasani
+509,Anupriya Patel
+510,Devji Mansingram Patel
+511,Dilip M Patel
+512,Jayshreeben Patel
+513,K C Patel
+514,Lalubhai Babubhai Patel
+515,Nagendra Pratap Singh Patel
+516,Natubhai Gomanbhai Patel
+517,Prahlad Singh Patel
+518,Subhash Patel
+519,Riti Pathak
+520,A T Patil
+521,Bheemrao Baswanthrao Patil
+522,C R Patil
+523,Kapil Moreshwar Patil
+524,Sanjay Ramchandra Patil
+525,Vijaysinh Mohite Patil
+526,Kamla Devi Patle
+527,Tapas Paul
+528,Sushree Sadhvi Savitri Bai Phoole
+529,Aparupa Poddar
+530,K R P Prabakaran
+531,Nagendra Kumar Pradhan
+532,Bhagirath Prasad
+533,N K Premachandran
+534,Ashok Gajapathi Raju Pusapati
+535,A Anwhar Raajhaa
+536,Vitthalbhai Hansrajbhai Radadiya
+537,Pon Radhakrishnan
+538,R Radhakrishnan
+539,T Radhakrishnan
+540,M K Raghavan
+541,Prem Das Rai
+542,Krishna Raj
+543,Udit Raj
+544,Hari Narayan Rajbhar
+545,S Rajendran
+546,M B Rajesh
+547,Manoj Rajoria
+548,Mukesh Rajput
+549,Gokaraju Ganga Raju
+550,Janak Ram
+551,Vishnu Dayal Ram
+552,Ram Charitra Nishad
+553,Kinjarapu Ram Mohan Naidu
+554,Ram Shankar
+555,Krishnan Narayanasamy Ramachandran
+556,Anbumani Ramadoss
+557,Ranjeet Ranjan
+558,Rajesh Ranjan (Pappu Yadav)
+559,Konakalla Narayana Rao
+560,Rayapati Sambasiva Rao
+561,Muthamsetti Srinivasa Rao
+562,Rao Inderjit Singh
+563,Dipsinh Shankarsinh Rathod
+564,Hariom Singh Rathore
+565,Rajyavardhan Singh Rathore
+566,Ramsinh Pataliyabhai Rathwa
+567,Vinayak Bhaurao Raut
+568,Paresh Rawal
+569,Priyanka Singh Rawat
+570,Bishnu Pada Ray
+571,Partha Pratimc Ray
+572,Ravindra Kumar Ray
+573,A P Jithender Reddy
+574,Ch Malla Reddy
+575,J C Divakar Reddy
+576,Konda Vishweshwar Reddy
+577,Kotha Prabhakar Reddy
+578,Ponguleti Srinivasa Reddy
+579,S P Y Reddy
+580,Kiren Rijiju
+581,Charanjeet Singh Rori
+582,Sandhya Roy
+583,Saugata Roy
+584,Satabdi Roy
+585,C L Ruala
+586,Rajiv Pratap Rudy
+587,S R Vijayakumar
+588,Chandu Lal Sahu
+589,Lakhan Lal Sahu
+590,Tamradhwaj Sahu
+591,Vishnu Deo Sai
+592,Raj Kumar Saini
+593,Mohammad Salim
+594,Kulamani Samal
+595,Anirudhan Sampath
+596,Vijay Sampla
+597,Mamtaz Sanghamita
+598,Alok Sanjar
+599,Naba Hira Kumar Sarania
+600,Sumedhanand Saraswati
+601,Uma Saren
+602,Ram Prasad Sarmah
+603,Rajeev Shankarrao Satav
+604,V Sathyabama
+605,Tathagata Satpathy
+606,Khan Saumitra
+607,Narendra Keshav Sawaikar
+608,Arvind Ganpat Sawant
+609,Jyotiraditya Madhavrao Scindia
+610,S Selvakumarachinnayan
+611,V Panneer Selvam
+612,B Senguttuvan
+613,P R Senthilnathan
+614,Arjun Charan Sethi
+615,Mala Rajya Laxmi Shah
+616,M I Shanavas
+617,Jugal Kishore Sharma
+618,Mahesh Sharma
+619,Raghu Sharma
+620,Ram Kumar Sharma
+621,Ram Swaroop Sharma
+622,Gajendra Singh Shekhawat
+623,Gopal Chinayya Shetty
+624,Rahul Ramesh Shewale
+625,Shrikant Eknath Shinde
+626,Bharati Dhirubhai Shyal
+627,Gowdar Mallikarjunappa Siddeshwara
+628,Janardan Singh Sigriwal
+629,Prathap Simha
+630,Abhishek Singh
+631,Bharat Singh
+632,Kunwar Bharatendra Singh
+633,Bhola Singh
+634,Brijbhushan Sharan Singh
+635,Devendra Bhole Singh
+636,Dushyant Singh
+637,Ganesh Singh
+638,Giriraj Singh
+639,Gyan Singh
+640,Jitendra Singh
+641,Kirti Vardhan Singh
+642,Krishna Pratap Singh
+643,Kunwar Haribansh Singh
+644,Lallu Singh
+646,Nepal Singh
+647,Parvesh Sahib Singh
+648,Pashupati Nath Singh
+649,Prabhas Kumar Singh
+650,Pratyusha Rajeshwari Singh
+651,Radha Mohan Singh
+652,Raj Kumar Singh
+653,Rajnath Singh
+654,Rajveer Singh
+655,Rama Kishore Singh
+656,Ravneet Singh
+657,Sadhu Singh
+658,Satya Pal Singh
+659,Sunil Kumar Singh
+660,Sushil Kumar Singh
+661,Uday Pratap Singh
+662,Virendra Singh
+663,Yashwant Singh
+664,Kalikesh Narayan Singh Deo
+665,Jayant Sinha
+666,Manoj Kumar Sinha
+667,Shatrughan Prasad Sinha
+668,Naramalli Sivaprasad
+669,Kirit Premjibhai Solanki
+670,Vinod Kumar Sonkar
+671,Neelam Sonker
+672,Supriya Sadanand Sule
+673,Balka Suman
+674,Sumitra Mahajan
+675,P R Sundaram
+676,Doddaalahalli Kempegowda Suresh
+677,Uma Bharati Sushree
+678,Ladu Kishore Swain
+679,Sakshi Swami Maharaj
+680,Ramdas Chandrabhanji Tadas
+681,Ajay Tamta
+682,Kanwar Singh Tanwar
+683,Rita Tarai
+684,Kamakhya Prasad Tasa
+685,P K Sreemathi Teacher
+686,Rameswar Teli
+687,Anurag Singh Thakur
+688,Mamata Thakur
+689,Savitri Thakur
+690,M Thambi Durai
+691,Shashi Tharoor
+692,Kuruppassery Varkey Thomas
+693,Narasimham Thota
+694,Dasrath Tirkey
+695,Tokheho
+696,Narendra Singh Tomar
+697,Sharad Tripathi
+698,Dinesh Trivedi
+699,Krupal Balaji Tumane
+700,Shivkumar Chanabasappa Udasi
+701,M Udhayakumar
+702,Vikram Usendi
+703,Manohar Utawal
+704,V Elumalai
+705,Liladharbhai Khodaji Vaghela
+706,R Vanaroja
+707,Moon Moon Sen
+708,Mansukhbhai Dhanjibhai Vasava
+709,Prabhubhai Nagarbhai Vasava
+710,T G Venkatesh Babu
+711,K C Venugopal
+712,Ponnusamy Venugopal
+713,Anshul Verma
+714,Bhanu Pratap Singh Verma
+715,Rajesh Verma
+716,Rekha Arun Verma
+717,Rajan Baburao Vichare
+718,Akshay Yadav
+719,Dharmendra Yadav
+720,Dimple Yadav
+721,Hukmdev Narayan Yadav
+722,Jay Prakash Narayan Yadav
+723,Karan Singh Yadav
+724,Laxmi Narayan Yadav
+725,Om Prakash Yadav
+726,Ram Kripal Yadav
+727,Tejpratap Singh Yadav
+728,Nandi Yellaiah
+729,L K Advani
+730,Chandra Prakash Joshi
+731,Y S Avinash Reddy
+732,Kadiyam Srihari
+733,Sanjeev Kumar Balyan
+734,Krishan Pal
+735,Adhalrao Shivaji Dattatrey
+737,Raju Shetty
+740,Sambasiva Rao Rayapati
+741,Maganti Venkateswara Rao (Babu)
+742,Sanjaykaka Patil
+743,Nanabhau Falgunrao Patole
+744,P V Midhun Reddy
+745,Ayodhya Ramireddy Alla
+749,Keshav Prasad
+750,Surendrajeet Singh Ahluwalia
+751,Udasi Shivakumar Channabasappa
+752,C S Puttaraju
+753,Kuwar Harivansh Singh
+754,Patil Ashok Tapiram
+755,Bhanu Pratap Singh
+757,Sri Baijayant Panda
+759,Wanaga Chintaman Navasha
+760,Chaudhry Haribhai Parthibhai
+761,B Sreeramulu
+762,Radadiya Vithalbhai Hansrajbhai
+763,Patil Chandrakant Raghunath
+764,Ramtahal Choudhary
+765,Shrimant Chh Udayanraje Pratapsinha Bhonsale
+766,Ashok Kumar K
+767,B B Patil
+768,Patel Dilipbhai Manibhai
+771,Bhabhor Jasvantsinh Sumanbhai
+772,Barne Shrirang Chandu
+773,Radhakrishnan P
+774,Suvendu Adhikari
+775,Ajay Kumar
+777,Gawali Bhavana Pundlikrao
+778,Mahesh Giri
+779,Dhotre Sanjay Shyamrao
+780,Jadhav Prataprao Ganpatrao
+781,Bhuwan Chandra Khanduri
+782,D K Suresh
+784,Rajkumar Saini
+786,G M Siddeshwara
+787,Mekapati Rajamohan Reddy
+788,Thambidurai M
+789,Shah Tariq Anwar
+790,Ramesh Kaushik
+791,Sanganna A Karadi
+792,Rajesh Kumar Singh
+793,Radhakrishnan
+795,Swami Sachchidanand Hari Sakshi
+796,Muttamsetti Srinivasa Rao
+798,Ramshankar Katheria
+800,Jardosh Darshnaben Vikrambhai
+801,Arun Jaitley
+802,Mohan Bhagwat
+803,Tejashwi Prasad
+804,Nirmala Sitharaman
+805,Mk Stalin
+806,V K Sasikala
+807,Pranab Mukherjee
+809,Piyush Goyal
+810,Smriti Irani
+811,Vasundhara Raje
+812,M Venkaiah Naidu
+813,Suresh Prabhu
+814,Himanta Biswa Sarma
+815,Sachin Pilot
+816,Yashwant Sinha
+817,Priyanka Gandhi
+818,Pawan Kalyan
+819,Rajinikanth
+820,Kamal Hasan
+821,Manish Sisodiya
+822,Kumar Vishwas
+823,Yogendra Yadav
+824,Bhagwant Mann
+825,Aditya Thackeray
+826,Sharad Yadav
+827,NA

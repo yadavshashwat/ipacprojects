@@ -1,0 +1,181 @@
+<div *ngIf="checkMediaPrivilege; then thenAddNewsBlock else elseAddNewsBlock"></div>
+<ng-template #thenAddNewsBlock>
+  <a mat-list-item routerLink="/dashboards/media/add-news" routerLinkActive="active-link" class="lato">
+    Add news
+  </a>
+</ng-template>
+<ng-template #elseAddNewsBlock>
+  <a  class="lato" mat-list-item routerLink="/dashboards/media/add-news" routerLinkActive="active-link" *ngIf="checkMediaWrite; then thenNextAddNewsBlock else elseNextAddNewsBlock">
+    Add news
+  </a>
+  <ng-template #thenNextAddNewsBlock>
+    <a  class="lato" mat-list-item routerLink="/dashboards/media/add-news" routerLinkActive="active-link">
+      Add news
+    </a>
+  </ng-template>
+  <ng-template #elseNextAddNewsBlock></ng-template>
+</ng-template>
+<div *ngIf="checkMediaPrivilege; then thenMediaScanBlock else elseMediaScanBlock"></div>
+<ng-template #thenMediaScanBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/media-scan" routerLinkActive="active-link">
+    Media scan
+  </a>
+</ng-template>
+<ng-template #elseMediaScanBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/media-scan" routerLinkActive="active-link" *ngIf="checkMediaWrite; then thenNextMediaScanBlock else elseNextMediaScanBlock">
+    Media scan
+  </a>
+  <ng-template #thenNextMediaScanBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/media-scan" routerLinkActive="active-link">
+      Media scan
+    </a>
+  </ng-template>
+  <ng-template #elseNextMediaScanBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/media-scan" routerLinkActive="active-link" *ngIf="checkMedia">
+      Media scan
+    </a>
+  </ng-template>
+</ng-template>
+<div *ngIf="checkMediaPrivilege; then thenKeywordsBlock else elseKeywordsBlock"></div>
+<ng-template #thenKeywordsBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/keywords" routerLinkActive="active-link">
+    Keyword Mangement
+  </a>
+</ng-template>
+<ng-template #elseKeywordsBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/keywords" routerLinkActive="active-link" *ngIf="checkMediaWrite; then thenNextKeywordsBlock else elseNextKeywordsBlock">
+    Keyword Mangement
+  </a>
+  <ng-template #thenNextKeywordsBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/keywords" routerLinkActive="active-link">
+      Keyword Mangement
+    </a>
+  </ng-template>
+  <ng-template #elseNextKeywordsBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/keywords" routerLinkActive="active-link" *ngIf="!checkMedia">
+      Keyword Mangement
+    </a>
+  </ng-template>
+</ng-template>
+<div *ngIf="checkMediaPrivilege; then thenScrapedNewsBlock else elseScrapedNewsBlock"></div>
+<ng-template #thenScrapedNewsBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/scraped-news" routerLinkActive="active-link">
+    Scraped news
+  </a>
+</ng-template>
+<ng-template #elseScrapedNewsBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/scraped-news" routerLinkActive="active-link" *ngIf="checkMediaWrite; then thenNextScrapedNewsBlock else elseNetScrapedNewsBlock">
+    Scraped news
+  </a>
+  <ng-template #thenNextScrapedNewsBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/scraped-news" routerLinkActive="active-link">
+      Scraped news
+    </a>
+  </ng-template>
+  <ng-template #elseNetScrapedNewsBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/scraped-news" routerLinkActive="active-link" *ngIf="!checkMedia">
+      Scraped news
+    </a>
+  </ng-template>
+</ng-template>
+
+<div *ngIf="checkMediaPrivilege; then thenAnalysisBlock else elseAnalysisBlock"></div>
+<ng-template #thenAnalysisBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/analysis" routerLinkActive="active-link">
+    Analysis
+  </a>
+</ng-template>
+<ng-template #elseAnalysisBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/analysis" routerLinkActive="active-link" *ngIf="checkMediaWrite; then thenNextAnalysisBlock else elseNextAnalysisBlock">
+    Analysis
+  </a>
+  <ng-template #thenNextAnalysisBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/analysis" routerLinkActive="active-link">
+      Analysis
+    </a>
+  </ng-template>
+  <ng-template #elseNextAnalysisBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/analysis" routerLinkActive="active-link" *ngIf="checkMedia">
+      Analysis
+    </a>
+  </ng-template>
+</ng-template>
+<div *ngIf="checkMediaPrivilege; then thenPubBlock else elsePubBlock"></div>
+<ng-template #thenPubBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/publication-add" routerLinkActive="active-link">
+    Publication management
+  </a>
+</ng-template>
+<ng-template #elsePubBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/publication-add" routerLinkActive="active-link" *ngIf="checkMediaWrite; then thenNextPubBlock else elseNextPubBlock">
+    Publication management
+  </a>
+  <ng-template #thenNextPubBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/publication-add" routerLinkActive="active-link">
+      Publication management
+    </a>
+  </ng-template>
+  <ng-template #elseNextPubBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/publication-add" routerLinkActive="active-link" *ngIf="!checkMedia">
+      Publication management
+    </a>
+  </ng-template>
+</ng-template>
+
+<div *ngIf="checkMediaPrivilege; then thenAuthBlock else elseAuthBlock"></div>
+<ng-template #thenAuthBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/author-add" routerLinkActive="active-link">
+    Author management
+  </a>
+</ng-template>
+<ng-template #elseAuthBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/author-add" routerLinkActive="active-link" *ngIf="checkMediaWrite; then thenNextAuthBlock else elseNextAuthBlock">
+    Author management
+  </a>
+  <ng-template #thenNextAuthBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/author-add" routerLinkActive="active-link">
+      Author management
+    </a>
+  </ng-template>
+  <ng-template #elseNextAuthBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/author-add" routerLinkActive="active-link" *ngIf="!checkMedia">
+      Author management
+    </a>
+  </ng-template>
+</ng-template>
+
+<div *ngIf="checkMediaPrivilege; then thenCatBlock else elseCatBlock"></div>
+<ng-template #thenCatBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/category" routerLinkActive="active-link">
+    Category Management
+  </a>
+</ng-template>
+<ng-template #elseCatBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/category" routerLinkActive="active-link" *ngIf="checkMediaWrite; then thenNextCatBlock else elseNextCatBlock">
+    Category Management
+  </a>
+  <ng-template #thenNextCatBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/category" routerLinkActive="active-link">
+      Category Management
+    </a>
+  </ng-template>
+  <ng-template #elseNextCatBlock>
+    <a class="lato" mat-list-item routerLink="/dashboards/media/category" routerLinkActive="active-link" *ngIf="!checkMedia">
+      Category Management
+    </a>
+  </ng-template>
+</ng-template>
+
+<div *ngIf="checkMediaPrivilege; then thenUserBlock else elseUserBlock"></div>
+<ng-template #thenUserBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/manage-user" routerLinkActive="active-link">
+    User management
+  </a>
+</ng-template>
+<ng-template #elseUserBlock>
+  <a class="lato" mat-list-item routerLink="/dashboards/media/manage-user" routerLinkActive="active-link" *ngIf="checkMediaWrite; then thenNextUserBlock else elseNextUserBlock">
+    User management
+  </a>
+  <ng-template #thenNextUserBlock></ng-template>
+  <ng-template #elseNextUserBlock></ng-template>
+</ng-template>

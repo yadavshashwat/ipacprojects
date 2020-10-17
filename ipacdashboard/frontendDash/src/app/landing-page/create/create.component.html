@@ -1,0 +1,17 @@
+<div class="container">
+    <h2 class="text-center mt-5">Please enter your new password</h2>
+    <div class="row mt-5">
+      <div class="col-xl-12 d-flex flex-column align-items-center justify-content-center">
+        <form class="example-form d-flex flex-column align-items-center justify-content-center" [formGroup]="passwordForm">
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" formControlName="password">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Confirm your password" [type]="hide ? 'password' : 'text'" formControlName="confirm">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </mat-form-field>
+        </form>
+        <button mat-fab [disabled]="!passwordForm.valid" class="ml-2" (click)="changePassword()"><mat-icon>send</mat-icon></button>
+      </div>
+    </div>

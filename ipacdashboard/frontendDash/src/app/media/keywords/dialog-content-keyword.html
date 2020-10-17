@@ -1,0 +1,87 @@
+<mat-dialog-content class="mat-typography">
+    <div *ngIf="!apiCall">
+        <h2 mat-dialog-title class="font-weight-light padding-1-em">Add Keyword</h2>
+        <form [formGroup]="addKeywordForm" (ngSubmit)="onAddKeyWordSubmit()">
+            <!-- ADD Keyword-->
+            <div class="row padding-1-em">
+                <div class="col-xl-12">
+                    <mat-form-field class="example-full-width">
+                        <input matInput type="text" placeholder="Keyword" formControlName="keyword" required>
+                        <mat-error *ngIf="addKeyWordFormErrors.keyword">
+                            {{ addKeyWordFormErrors.keyword }}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <!--ADD SYNONYMS-->
+            <div class="row padding-1-em">
+                <div class="col-xl-12">
+                    
+                    <!-- The repeated party template -->
+                    <!-- Columns are always 50% wide, on mobile and desktop -->
+                    <mat-form-field class="example-chip-list example-full-width">
+                        <mat-chip-list #chipList>
+                            <mat-chip *ngFor="let synonym of synonyms" [selectable]="selectable" [removable]="removable"
+                                (removed)="remove(synonym)">
+                                {{synonym}}
+                                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                            </mat-chip>
+                            <input placeholder="Synonyms" #synonymInput formControlName="synonyms"
+                                [matAutocomplete]="auto" [matChipInputFor]="chipList"
+                                [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur"
+                                (matChipInputTokenEnd)="add($event)">
+                        </mat-chip-list>
+                        <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                            <mat-option *ngFor="let synonym of filteredSynonyms | async" [value]="synonym">
+                                {{synonym}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                    
+                </div>
+            </div>
+            <!-- ADD IS ACTIVE-->
+            <div class="row padding-1-em">
+                <div class="col-xl-12">
+                    <mat-slide-toggle formControlName="is_active">Active Status</mat-slide-toggle>
+                    <mat-error *ngIf="addKeyWordFormErrors.is_active">
+                        {{ addKeyWordFormErrors.is_active }}
+                    </mat-error>
+                </div>
+            </div>
+            <!-- ADD KEYWORD TYPE-->
+            <div class="row padding-1-em">
+                <div class="col-xl-12">
+                    <mat-form-field class="example-full-width">
+                        <mat-select placeholder="Keyword type" formControlName="keyword_type" required>
+                            <mat-option *ngFor="let keywordType of keyWordTypes" [value]="keywordType.viewValue">
+                                {{keywordType.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                        <mat-error *ngIf="addKeyWordFormErrors.keyword_type">
+                            {{ addKeyWordFormErrors.keyword_type }}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- SUBMIT BUTTON-->
+            <div class="row padding-1-em">
+                <div class="col-xl-12">
+                    <button mat-raised-button color="accent" type="submit" [disabled]="!addKeywordForm.valid">Add</button>
+                </div>
+            </div>
+        </form>
+        <!-- <p>Value: {{addKeywordForm.value | json}}</p>
+            <p>Form status: {{addKeywordForm.status | json}}</p>
+            <p>Synonyms: {{synonyms | json}}</p> -->
+    </div>
+    <div *ngIf="apiCall" class="d-flex flex-column align-items-center justify-content-center" style="height:380px;width:100%">
+        <small class="mb-5">Adding keyword ...</small>
+        <mat-spinner></mat-spinner>
+    </div>
+</mat-dialog-content>
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

@@ -1,0 +1,37 @@
+media	state	1	1	Andaman and Nicobar Islands
+media	state	2	1	Andhra Pradesh
+media	state	3	1	Arunachal Pradesh
+media	state	4	1	Assam
+media	state	5	1	Bihar
+media	state	6	1	Chandigarh
+media	state	7	1	Chhattisgarh
+media	state	8	1	Dadra and Nagar Haveli
+media	state	9	1	Daman and Diu
+media	state	10	1	Goa
+media	state	11	1	Gujarat
+media	state	12	1	Haryana
+media	state	13	1	Himachal Pradesh
+media	state	14	1	Jammu and Kashmir
+media	state	15	1	Jharkhand
+media	state	16	1	Karnataka
+media	state	17	1	Kerala
+media	state	18	1	Lakshadweep
+media	state	19	1	Madhya Pradesh
+media	state	20	1	Maharashtra
+media	state	21	1	Manipur
+media	state	22	1	Meghalaya
+media	state	23	1	Mizoram
+media	state	24	1	Nagaland
+media	state	25	1	Delhi
+media	state	26	1	Odisha
+media	state	27	1	Puducherry
+media	state	28	1	Punjab
+media	state	29	1	Rajasthan
+media	state	30	1	Sikkim
+media	state	31	1	Tamil Nadu
+media	state	32	1	Telangana
+media	state	33	1	Tripura
+media	state	34	1	Uttar Pradesh
+media	state	35	1	Uttarakhand
+media	state	36	1	West Bengal
+media	state	37	1	National

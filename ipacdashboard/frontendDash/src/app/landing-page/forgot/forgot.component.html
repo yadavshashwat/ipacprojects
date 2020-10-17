@@ -1,0 +1,20 @@
+<div class="container">
+  <h2 class="text-center mt-5">Please provide email</h2>
+  <p class="text-center">A verification email will be sent along with reset password link</p>
+  <div class="row mt-5">
+    <div class="col-xl-12 d-flex flex-row align-content-center justify-content-center">
+      <form class="example-form">
+        <mat-form-field class="example-full-width" style="width:20em">
+          <input matInput placeholder="Email" [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+          <mat-error *ngIf="emailFormControl.hasError('pattern') && !emailFormControl.hasError('required')">
+            Please use @indianpac email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </form>
+      <button mat-fab [disabled]="!emailFormControl.valid" class="ml-2" (click)="sendEmail()"><mat-icon>send</mat-icon></button>
+    </div>
+  </div>
+</div>

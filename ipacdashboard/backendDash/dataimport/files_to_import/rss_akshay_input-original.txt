@@ -1,0 +1,377 @@
+															
+ABP	Media	Home	https://abpnews.abplive.in/home/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	India News	https://abpnews.abplive.in/india-news/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	World News	https://abpnews.abplive.in/world-news/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Sports	https://abpnews.abplive.in/sports/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Bollywood	https://abpnews.abplive.in/bollywood/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Television	https://abpnews.abplive.in/television/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Crime	https://abpnews.abplive.in/crime/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Business	https://abpnews.abplive.in/business/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Gadgets	https://abpnews.abplive.in/gadgets/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Life Style	https://abpnews.abplive.in/lifestyle/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Viral Sach	https://abpnews.abplive.in/viral-sach/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Health	https://abpnews.abplive.in/health-news/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Uttar Pradesh	https://abpnews.abplive.in/uttar-pradesh/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Auto	https://abpnews.abplive.in/auto-news/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Food	https://abpnews.abplive.in/food/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Ajab Gazab	https://abpnews.abplive.in/ajab-gazab/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Graphics	https://abpnews.abplive.in/graphics/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Vyakti Vishesh	https://abpnews.abplive.in/vyakti-vishesh/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Aap ki baat	https://abpnews.abplive.in/aap-ki-baat/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+ABP	Media	Jobs	https://abpnews.abplive.in/jobs/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+BBC	Media	Top Stories	http://feeds.bbci.co.uk/news/rss.xml	title	author	summary	link	published_parsed	default	strategy2	English	0	0	0	0
+BBC	Media	World	http://feeds.bbci.co.uk/news/world/rss.xml	title	author	summary	link	published_parsed	default	strategy2	English	0	0	0	0
+BBC	Media	UK	http://feeds.bbci.co.uk/news/uk/rss.xml	title	author	summary	link	published_parsed	default	strategy2	English	0	0	0	0
+BBC	Media	Business	http://feeds.bbci.co.uk/news/business/rss.xml	title	author	summary	link	published_parsed	default	strategy2	English	0	0	0	0
+BBC	Media	Politics	http://feeds.bbci.co.uk/news/politics/rss.xml	title	author	summary	link	published_parsed	default	strategy2	English	0	0	0	0
+BBC	Media	Health	http://feeds.bbci.co.uk/news/health/rss.xml	title	author	summary	link	published_parsed	default	strategy2	English	0	0	0	0
+BBC	Media	Education & Family	http://feeds.bbci.co.uk/news/education/rss.xml	title	author	summary	link	published_parsed	default	strategy2	English	0	0	0	0
+BBC	Media	Science & Environment	http://feeds.bbci.co.uk/news/science_and_environment/rss.xml	title	author	summary	link	published_parsed	default	strategy2	English	0	0	0	0
+BBC	Media	Technology	http://feeds.bbci.co.uk/news/technology/rss.xml	title	author	summary	link	published_parsed	default	strategy2	English	0	0	0	0
+BBC	Media	Entertainment & Arts	http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml	title	author	summary	link	published_parsed	default	strategy2	English	0	0	0	0
+BSS	Media	BSS Top Stories	https://www.business-standard.com/rss/home_page_top_stories.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Latest News	https://www.business-standard.com/rss/latest.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	General News	https://www.business-standard.com/rss/general-news.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Today's Paper	https://www.business-standard.com/rss/todays-paper.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Market News	https://www.business-standard.com/rss/markets-106.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Most Popular	https://www.business-standard.com/rss/most-viewed.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Editor's Pick	https://www.business-standard.com/rss/bsrss.xml	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Companies	https://www.business-standard.com/rss/companies-101.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Economy and Policy	https://www.business-standard.com/rss/economy-policy-102.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Finance	https://www.business-standard.com/rss/finance-103.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Management	https://www.business-standard.com/rss/management-107.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Technology	https://www.business-standard.com/rss/technology-108.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Budget	https://www.business-standard.com/rss/budget2018-110.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Current Affairs	https://www.business-standard.com/rss/current-affairs-115.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	International	https://www.business-standard.com/rss/international-116.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Elections	https://www.business-standard.com/rss/elections-117.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Politics	https://www.business-standard.com/rss/politics-155.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Punditry	https://www.business-standard.com/rss/punditry-174.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Education	https://www.business-standard.com/rss/education-179.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Sports	https://www.business-standard.com/rss/sports-192.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Railway	https://www.business-standard.com/rss/indian-railways-196.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Defence	https://www.business-standard.com/rss/defence-197.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	health 	https://www.business-standard.com/rss/health-185.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Jobs	https://www.business-standard.com/rss/jobs-183.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Income Tax	https://www.business-standard.com/rss/income-tax-182.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	People	https://www.business-standard.com/rss/people-180.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+BSS	Media	Automobiles	https://www.business-standard.com/rss/automobile-198.rss	title	author	summary	link	published_parsed	strategy3	strategy3	English	0	0	0	0
+Caravan	Media	Feed58	http://www.caravanmagazine.in/feed	title	author	summary	link	published_parsed	default	strategy4	English	0	0	0	0
+Cricbuzz	Media	Feed59	http://live-feeds.cricbuzz.com/CricbuzzFeed	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+ET	Media	Feed60	https://economictimes.indiatimes.com/rssfeedsdefault.cms	title	author	summary	link	published_parsed	strategy6	strategy6	English	0	0	0	0
+ET	Media	Feed61	https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms	title	author	summary	link	published_parsed	strategy6	strategy6	English	0	0	0	0
+ET	Media	Feed62	https://economictimes.indiatimes.com/news/rssfeeds/1715249553.cms	title	author	summary	link	published_parsed	strategy6	strategy6	English	0	0	0	0
+ET	Media	Feed63	https://economictimes.indiatimes.com/industry/rssfeeds/13352306.cms	title	author	summary	link	published_parsed	strategy6	strategy6	English	0	0	0	0
+ET	Media	Feed64	https://economictimes.indiatimes.com/tech/rssfeeds/13357270.cms	title	author	summary	link	published_parsed	strategy6	strategy6	English	0	0	0	0
+ET	Media	Feed65	https://economictimes.indiatimes.com/jobs/rssfeeds/107115.cms	title	author	summary	link	published_parsed	strategy6	strategy6	English	0	0	0	0
+ET	Media	Feed66	https://economictimes.indiatimes.com/opinion/rssfeeds/897228639.cms	title	author	summary	link	published_parsed	strategy6	strategy6	English	0	0	0	0
+ET	Media	Feed67	http://economictimes.indiatimes.com/News/rssfeeds/1715249553.cms	title	author	summary	link	published_parsed	strategy6	strategy6	English	0	0	0	0
+ET	Media	Feed68	https://economictimes.indiatimes.com/magazines/rssfeeds/1466318837.cms	title	author	summary	link	published_parsed	strategy6	strategy6	English	0	0	0	0
+ET	Media	Feed69	https://economictimes.indiatimes.com/mf/rssfeeds/359241701.cms	title	author	summary	link	published_parsed	strategy6	strategy6	English	0	0	0	0
+Femina	Media	Feed70	http://www.femina.in/feeds/feeds-fitness.xml	title	author	summary	link	published_parsed	default	strategy7	English	0	0	0	0
+Filmi Beat	Media	Feed71	http://www.filmibeat.com/rss/filmibeat-fb.xml	title	author	summary	link	published_parsed	strategy8	default	English	0	0	0	0
+Firstpost	Media	Feed72	https://www.firstpost.com/feed	title	author	summary	link	published_parsed	default	strategy9	English	0	0	0	0
+Frontline	Media	Feed73	https://www.frontline.in/cover-story/feeder/default.rss	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Frontline	Media	Feed74	https://www.frontline.in/the-nation/feeder/default.rss	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Frontline	Media	Feed75	https://www.frontline.in/social-issues/feeder/default.rss	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Frontline	Media	Feed76	https://www.frontline.in/arts-and-culture/feeder/default.rss	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Frontline	Media	Feed77	https://www.frontline.in/economy/feeder/default.rss	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Frontline	Media	Feed78	https://www.frontline.in/world-affairs/feeder/default.rss	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Frontline	Media	Feed79	https://www.frontline.in/environment/feeder/default.rss	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Frontline	Media	Feed80	https://www.frontline.in/science-and-technology/feeder/default.rss	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Frontline	Media	Feed81	https://www.frontline.in/other/feeder/default.rss	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Gizmodo	Media	Feed82	https://gizmodo.com/rss	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Huffington Post	Media	Feed83	https://www.huffingtonpost.in/feeds/index.xml	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+IndiaToday	Media	Feed84	https://www.indiatoday.in/rss/home	title	author	summary	link	published_parsed	default	strategy11	English	0	0	0	0
+Indian Express	Media	Feed85	http://indianexpress.com/section/india/feed/	title	author	summary	link	published_parsed	strategy12	strategy12	English	0	0	0	0
+Indian Express	Media	Feed86	http://indianexpress.com/section/india/politics/feed/	title	author	summary	link	published_parsed	strategy12	strategy12	English	0	0	0	0
+Indian Express	Media	Feed87	http://indianexpress.com/technology/feed/	title	author	summary	link	published_parsed	strategy12	strategy12	English	0	0	0	0
+Indian Express	Media	Feed88	http://syndication.indianexpress.com/rss/785/latest-news.xml	title	author	summary	link	published_parsed	strategy12	strategy12	English	0	0	0	0
+Indian Express	Media	Feed89	http://indianexpress.com/section/technology/feed/	title	author	summary	link	published_parsed	strategy12	strategy12	English	0	0	0	0
+Indian Express	Media	Feed90	http://indianexpress.com/entertainment/feed/	title	author	summary	link	published_parsed	strategy12	strategy12	English	0	0	0	0
+Indo Daily	Media	Feed91	http://www.indodaily.com/indodaily.xml	title	author	summary	link	published_parsed	strategy13	default	English	0	0	0	0
+Livemint	Media	Feed92	http://www.livemint.com/rss/homepage	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Livemint	Media	Feed93	http://www.livemint.com/rss/economy_politics	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Livemint	Media	Feed94	http://www.livemint.com/rss/companies	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Livemint	Media	Feed95	http://www.livemint.com/rss/consumer	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Livemint	Media	Feed96	http://www.livemint.com/rss/money	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Livemint	Media	Feed97	http://www.livemint.com/rss/industry	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Livemint	Media	Feed98	http://www.livemint.com/rss/lounge	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Mid-day	Media	Feed99	http://www.mid-day.com/Resources/midday/rss/news-national.xml	title	author	summary	link	published_parsed	strategy14	strategy14	English	0	0	0	0
+NDTV	Media	Feed100	http://feeds.feedburner.com/ndtvnews-top-stories	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed101	http://feeds.feedburner.com/ndtvnews-world-news	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed102	http://feeds.feedburner.com/ndtvsports-cricket	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed103	http://feeds.feedburner.com/ndtvnews-south	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed104	http://feeds.feedburner.com/ndtvnews-people	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed105	http://feeds.feedburner.com/ndtvnews-latest	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed106	http://feeds.feedburner.com/ndtvprofit-latest	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed107	http://feeds.feedburner.com/gadgets360-latest	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed108	http://feeds.feedburner.com/ndtvnews-indians-abroad	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed109	http://feeds.feedburner.com/ndtvkhabar-latest	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed110	http://feeds.feedburner.com/ndtvnews-trending-news	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed111	http://feeds.feedburner.com/ndtvmovies-latest	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed112	http://feeds.feedburner.com/carandbike-latest	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed113	http://feeds.feedburner.com/ndtvcooks-latest	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed114	http://feeds.feedburner.com/ndtv/latest-videos	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed115	http://feeds.feedburner.com/ndtvnews-india-news	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed116	http://feeds.feedburner.com/ndtvsports-latest	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed117	http://feeds.feedburner.com/ndtvnews-cities-news	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NDTV	Media	Feed118	http://feeds.feedburner.com/ndtvnews-offbeat-news	title	author	summary	link	published_parsed	strategy15	strategy15	English	0	0	0	0
+NY Times	Media	Feed119	http://www.nytimes.com/services/xml/rss/nyt/InternationalBusiness.xml	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+OneIndia	Media	Feed120	http://www.oneindia.com/rss/feature-fb.xml	title	author	summary	link	published_parsed	strategy16	default	English	0	0	0	0
+OneIndia	Media	Feed121	http://www.oneindia.com/rss/infographics-fb.xml	title	author	summary	link	published_parsed	strategy16	default	English	0	0	0	0
+OneIndia	Media	Feed122	http://www.oneindia.com/rss/news-business-fb.xml	title	author	summary	link	published_parsed	strategy16	default	English	0	0	0	0
+OneIndia	Media	Feed123	http://www.oneindia.com/rss/news-fb.xml	title	author	summary	link	published_parsed	strategy16	default	English	0	0	0	0
+OneIndia	Media	Feed124	http://www.oneindia.com/rss/news-india-fb.xml	title	author	summary	link	published_parsed	strategy16	default	English	0	0	0	0
+OneIndia	Media	Feed125	http://www.oneindia.com/rss/news-international-fb.xml	title	author	summary	link	published_parsed	strategy16	default	English	0	0	0	0
+Outlook	Media	Feed126	http://www.outlookindia.com/rss/main/website	title	author	summary	link	published_parsed	strategy17	default	English	0	0	0	0
+Outlook	Media	Feed127	http://www.outlookindia.com/rss/main/newswire	title	author	summary	link	published_parsed	strategy17	default	English	0	0	0	0
+Outlook	Media	Feed128	http://www.outlookindia.com/rss/section/19	title	author	summary	link	published_parsed	strategy17	default	English	0	0	0	0
+Outlook	Media	Feed129	http://www.outlookindia.com/rss/section/18	title	author	summary	link	published_parsed	strategy17	default	English	0	0	0	0
+Outlook	Media	Feed130	http://www.outlookindia.com/rss/section/22	title	author	summary	link	published_parsed	strategy17	default	English	0	0	0	0
+Outlook	Media	Feed131	http://www.outlookindia.com/rss/section/23	title	author	summary	link	published_parsed	strategy17	default	English	0	0	0	0
+Reuters	Media	Feed132	http://feeds.reuters.com/reuters/INbusinessNews	title	author	summary	link	published_parsed	strategy18	strategy18	English	0	0	0	0
+Reuters	Media	Feed133	http://feeds.reuters.com/reuters/worldOfSport	title	author	summary	link	published_parsed	strategy18	strategy18	English	0	0	0	0
+Reuters	Media	Feed134	http://feeds.reuters.com/reuters/INentertainmentNews	title	author	summary	link	published_parsed	strategy18	strategy18	English	0	0	0	0
+Rolling Stone	Media	Feed135	http://rollingstoneindia.com/feed/	title	author	summary	link	published_parsed	default	strategy19	English	0	0	0	0
+Sify	Media	Feed136	http://www.sify.com/rss2/sports/article/category/motor-sports	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed137	http://www.sify.com/rss2/sports/article/category/others	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed138	http://www.sify.com/rss2/sports/article/category/football	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed139	http://www.sify.com/rss2/sports/article/category/tennis	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed140	http://www.sify.com/rss2/sports/article/category/cricket	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed141	http://www.sify.com/rss2/news/article/category/science	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed142	http://www.sify.com/rss2/news/article/category/politics	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed143	http://www.sify.com/rss2/news/article/category/international	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed144	http://www.sify.com/rss2/news/article/category/national	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed145	http://www.sify.com/rss2/business/article/category/equity/	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed146	http://www.sify.com/rss2/business/article/category/rupee	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed147	http://www.sify.com/rss2/business/article/category/real-estate	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed148	http://www.sify.com/rss2/business/article/category/tax	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed149	http://www.sify.com/rss2/business/article/category/share	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed150	http://www.sify.com/rss2/business/article/category/mutual-fund	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed151	http://www.sify.com/rss2/business/article/category/insurance	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed152	http://www.sify.com/rss2/business/article/category/technology	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed153	http://www.sify.com/rss2/business/article/category/sensex	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed154	http://www.sify.com/rss2/business/article/category/loan	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed155	http://www.sify.com/rss2/business/article/category/bank	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sify	Media	Feed156	http://www.sify.com/rss2/business/article/category/auto	title	author	summary	link	published_parsed	strategy20	strategy20	English	0	0	0	0
+Sikh Siyasat	Media	Feed157	http://www.sikhsiyasat.com/feed/	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Telly Chakkar	Media	Feed158	http://www.tellychakkar.com/rss.xml	title	author	summary	link	published_parsed	default	strategy21	English	0	0	0	0
+The Health Site	Media	Feed159	http://www.thehealthsite.com/comments/feed/	title	author	summary	link	published_parsed	default	strategy22	English	0	0	0	0
+Telegraph India	Media	Feed160	https://www.telegraphindia.com/feeds/rss.jsp?id=20	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed161	https://www.telegraphindia.com/feeds/rss.jsp?id=7	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed162	https://www.telegraphindia.com/feeds/rss.jsp?id=4	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed163	https://www.telegraphindia.com/feeds/rss.jsp?id=3	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed164	https://www.dailytelegraph.com.au/newslocal/rss	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed165	https://www.dailytelegraph.com.au/lifestyle/rss	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed166	https://www.dailytelegraph.com.au/entertainment/music/rss	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed167	https://www.dailytelegraph.com.au/entertainment/celebrity/rss	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed168	https://www.dailytelegraph.com.au/entertainment/sydney-confidential/rss	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed169	https://www.dailytelegraph.com.au/business/breaking-news/rss	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed170	https://www.dailytelegraph.com.au/business/rss	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed171	https://www.dailytelegraph.com.au/news/world/rss	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed172	https://www.dailytelegraph.com.au/news/national/rss	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+Telegraph India	Media	Feed173	https://www.dailytelegraph.com.au/news/breaking-news/rss	title	author	summary	link	published_parsed	strategy23	strategy23	English	0	0	0	0
+TOI	Media	Feed174	https://timesofindia.indiatimes.com/rssfeeds/2886704.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed175	https://timesofindia.indiatimes.com/rssfeeds/1081479906.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed176	https://timesofindia.indiatimes.com/rssfeeds/784865811.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed177	https://timesofindia.indiatimes.com/rssfeeds/1945062111.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed178	https://timesofindia.indiatimes.com/rssfeeds/913168846.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed179	https://timesofindia.indiatimes.com/rssfeeds/5880659.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed180	https://timesofindia.indiatimes.com/rssfeeds/-2128672765.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed181	https://timesofindia.indiatimes.com/rssfeeds/3908999.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed182	https://timesofindia.indiatimes.com/rssfeeds/4719148.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed183	https://timesofindia.indiatimes.com/rssfeeds/4719161.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed184	https://timesofindia.indiatimes.com/rssfeeds/1898055.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed185	https://timesofindia.indiatimes.com/rssfeeds/7098551.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed186	https://timesofindia.indiatimes.com/rssfeeds/296589292.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed187	https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed188	https://timesofindia.indiatimes.com/rssfeeds/1221656.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+TOI	Media	Feed189	https://timesofindia.indiatimes.com/rssfeedstopstories.cms	title	author	summary	link	published_parsed	strategy24	strategy24	English	0	0	0	0
+Yahoo	Media	Feed190	https://in.news.yahoo.com/rss/national	title	author	summary	link	published_parsed	strategy25	strategy25	English	0	0	0	0
+Yahoo	Media	Feed191	https://in.news.yahoo.com/rss/sports	title	author	summary	link	published_parsed	strategy25	strategy25	English	0	0	0	0
+Zee	Media	Feed192	http://zeenews.india.com/rss/world-news.xml	title	author	summary	link	published_parsed	strategy26	strategy26	English	0	0	0	0
+Zee	Media	Feed193	http://zeenews.india.com/rss/business.xml	title	author	summary	link	published_parsed	strategy26	strategy26	English	0	0	0	0
+Zee	Media	Feed194	http://zeenews.india.com/rss/science-technology-news.xml	title	author	summary	link	published_parsed	strategy26	strategy26	English	0	0	0	0
+Zee	Media	Feed195	http://zeenews.india.com/rss/sports-news.xml	title	author	summary	link	published_parsed	strategy26	strategy26	English	0	0	0	0
+Zee	Media	Feed196	http://zeenews.india.com/rss/india-national-news.xml	title	author	summary	link	published_parsed	strategy26	strategy26	English	0	0	0	0
+NewIndianExpress	Media	Feed197	http://www.newindianexpress.com/Specials/rssfeed/?id=339&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed198	http://www.newindianexpress.com/Lifestyle/Spirituality/Astrology/rssfeed/?id=218&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed199	http://www.newindianexpress.com/Lifestyle/Spirituality/rssfeed/?id=217&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed200	http://www.newindianexpress.com/Lifestyle/Books/rssfeed/?id=216&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed201	http://www.newindianexpress.com/Lifestyle/Food/rssfeed/?id=215&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed202	http://www.newindianexpress.com/Lifestyle/Travel/rssfeed/?id=214&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed203	http://www.newindianexpress.com/Lifestyle/Health/rssfeed/?id=213&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed204	http://www.newindianexpress.com/Lifestyle/Tech/rssfeed/?id=212&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed205	http://www.newindianexpress.com/Videos/Sport/rssfeed/?id=208&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed206	http://www.newindianexpress.com/Videos/Other/rssfeed/?id=209&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed207	http://www.newindianexpress.com/Videos/World/rssfeed/?id=207&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed208	http://www.newindianexpress.com/Videos/Nation/rssfeed/?id=206&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed209	http://www.newindianexpress.com/Galleries/Other/rssfeed/?id=204&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed210	http://www.newindianexpress.com/Galleries/Sport/rssfeed/?id=203&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed211	http://www.newindianexpress.com/Galleries/World/rssfeed/?id=202&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed212	http://www.newindianexpress.com/Galleries/Nation/rssfeed/?id=201&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed213	http://www.newindianexpress.com/Sport/IPL/rssfeed/?id=284&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed214	http://www.newindianexpress.com/Sport/Commonwealth-Games-2018/rssfeed/?id=377&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed215	http://www.newindianexpress.com/Sport/Other/rssfeed/?id=191&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed216	http://www.newindianexpress.com/Sport/Asian-Games/rssfeed/?id=388&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed217	http://www.newindianexpress.com/Sport/Football/Fifa-U-17-World-Cup-2017/rssfeed/?id=367&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed218	http://www.newindianexpress.com/Sport/Football/rssfeed/?id=190&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed219	http://www.newindianexpress.com/Sport/Cricket/Scorecard/rssfeed/?id=288&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed220	http://www.newindianexpress.com/Sport/Cricket/rssfeed/?id=188&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed221	http://www.newindianexpress.com/World/rssfeed/?id=171&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed222	http://www.newindianexpress.com/Nation/rssfeed/?id=170&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed223	http://www.newindianexpress.com/Opinions/Editorials/rssfeed/?id=219&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed224	http://www.newindianexpress.com/Search/rssfeed/?id=331&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed225	http://www.newindianexpress.com/Audios/New-Articles/rssfeed/?id=324&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed226	http://www.newindianexpress.com/Prabhu-Chawla/Ask-Prabhu/rssfeed/?id=220&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed227	http://www.newindianexpress.com/Elections/rssfeed/?id=244&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed228	http://www.newindianexpress.com/Prabhu-Chawla/Columns/rssfeed/?id=306&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed229	http://www.newindianexpress.com/Resources/rssfeed/?id=238&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed230	http://www.newindianexpress.com/E-Paper/rssfeed/?id=233&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed231	http://www.newindianexpress.com/The-Sunday-Standard/rssfeed/?id=232&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed232	http://www.newindianexpress.com/Magazine/Voices/rssfeed/?id=318&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed233	http://www.newindianexpress.com/Indulge/rssfeed/?id=230&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed234	http://www.newindianexpress.com/Auto/rssfeed/?id=210&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed235	http://www.newindianexpress.com/Education/Edex/rssfeed/?id=229&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed236	http://www.newindianexpress.com/Opinions/Debate/rssfeed/?id=344&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed237	http://www.newindianexpress.com/Opinions/Columns/Karamathullah-K-Ghori/rssfeed/?id=228&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed238	http://www.newindianexpress.com/Opinions/Columns/Soli-J-Sorabjee/rssfeed/?id=322&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed239	http://www.newindianexpress.com/Opinions/Columns/V-Sudarshan/rssfeed/?id=321&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed240	http://www.newindianexpress.com/Opinions/Columns/Shampa-Dhar-Kamath/rssfeed/?id=227&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed241	http://www.newindianexpress.com/Opinions/Columns/Shankkar-Aiyar/rssfeed/?id=226&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed242	http://www.newindianexpress.com/Opinions/Columns/Ravi-Shankar/rssfeed/?id=225&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed243	http://www.newindianexpress.com/Opinions/Columns/S-Gurumurthy/rssfeed/?id=224&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed244	http://www.newindianexpress.com/Opinions/Columns/T-J-S-George/rssfeed/?id=223&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+NewIndianExpress	Media	Feed245	http://www.newindianexpress.com/Opinions/Columns/rssfeed/?id=221&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+TheNewsMinute	Media	Feed246	https://www.thenewsminute.com/delve.xml	title	author	summary	link	published_parsed	default	strategy28	English	0	0	0	0
+TheNewsMinute	Media	Feed247	https://www.thenewsminute.com/reportage.xml	title	author	summary	link	published_parsed	default	strategy28	English	0	0	0	0
+TheNewsMinute	Media	Feed248	https://www.thenewsminute.com/atom.xml	title	author	summary	link	published_parsed	default	strategy28	English	0	0	0	0
+TheNewsMinute	Media	Feed249	https://www.thenewsminute.com/social.xml	title	author	summary	link	published_parsed	default	strategy28	English	0	0	0	0
+TheNewsMinute	Media	Feed250	https://www.thenewsminute.com/voices.xml	title	author	summary	link	published_parsed	default	strategy28	English	0	0	0	0
+TheNewsMinute	Media	Feed251	https://www.thenewsminute.com/flix.xml	title	author	summary	link	published_parsed	default	strategy28	English	0	0	0	0
+TheNewsMinute	Media	Feed252	https://www.thenewsminute.com/features.xml	title	author	summary	link	published_parsed	default	strategy28	English	0	0	0	0
+TheNewsMinute	Media	Feed253	https://www.thenewsminute.com/telangana.xml	title	author	summary	link	published_parsed	default	strategy28	English	0	0	0	0
+TheNewsMinute	Media	Feed254	https://www.thenewsminute.com/kerala.xml	title	author	summary	link	published_parsed	default	strategy28	English	0	0	0	0
+TheNewsMinute	Media	Feed255	https://www.thenewsminute.com/karnataka.xml	title	author	summary	link	published_parsed	default	strategy28	English	0	0	0	0
+TheNewsMinute	Media	Feed256	https://www.thenewsminute.com/andhra.xml	title	author	summary	link	published_parsed	default	strategy28	English	0	0	0	0
+TheNewsMinute	Media	Feed257	https://www.thenewsminute.com/news.xml	title	author	summary	link	published_parsed	default	strategy28	English	0	0	0	0
+Eenaduindia	Media	Feed258	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=35&Main=8	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed259	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=34&Main=8	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed260	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=33&Main=8	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed261	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=32&Main=7	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed262	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=30&Main=6	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed263	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=29&Main=6	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed264	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=27&Main=6	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed265	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=26&Main=6	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed266	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=25&Main=6	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed267	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=24&Main=6	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed268	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=23&Main=6	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed269	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=22&Main=5	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed270	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=21&Main=5	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed271	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=19&Main=4	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed272	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=18&Main=4	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed273	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=17&Main=3	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed274	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=15&Main=2	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed275	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=14&Main=2	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed276	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=13&Main=2	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Eenaduindia	Media	Feed277	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=16&Main=2	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed278	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=50&SubId=196	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed279	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=33&SubId=194	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed280	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=31&SubId=120	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed281	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=31&SubId=119	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed282	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=33&SubId=116	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed283	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=33&SubId=99	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed284	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=33&SubId=60	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed285	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=33&SubId=59	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed286	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=51&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed287	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=32&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed288	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=23&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed289	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=66&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed290	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=52&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed291	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=33&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed292	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=60&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed293	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=36&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed294	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=25&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed295	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=67&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed296	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=59&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed297	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=22&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed298	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=64&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed299	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=62&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed300	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=29&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed301	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=24&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed302	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=30&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed303	http://rss.andhrajyothy.com/RssFeed.aspx?SupId=19&SubId=0	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Praja Shakti	Media	Feed304	http://www.prajasakti.com/rss_feed/Doctor-Specialist/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed305	http://www.prajasakti.com/rss_feed/Sangamam/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed306	http://www.prajasakti.com/rss_feed/Journey/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed307	http://www.prajasakti.com/rss_feed/Sietech/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed308	http://www.prajasakti.com/rss_feed/Roopai/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed309	http://www.prajasakti.com/rss_feed/Josh/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed310	http://www.prajasakti.com/rss_feed/Neti_Vyasam/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed311	http://www.prajasakti.com/rss_feed/Sampaadkeyam/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed312	http://www.prajasakti.com/rss_feed/World/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed313	http://www.prajasakti.com/rss_feed/Sports/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed314	http://www.prajasakti.com/rss_feed/Movies/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed315	http://www.prajasakti.com/rss_feed/National/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed316	http://www.prajasakti.com/rss_feed/Telangana/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed317	http://www.prajasakti.com/rss_feed/AndhraPradesh/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Praja Shakti	Media	Feed318	http://www.prajasakti.com/rss_feed/BreakingNews/feed.php	title	author	summary	link	published_parsed	default	strategy31	Telugu	0	0	0	0
+Telugu Samayam	Media	Feed319	https://telugu.samayam.com/education/rssfeedsection/48238599.cms	title	author	summary	link	published_parsed	default	strategy32	Telugu	0	0	0	0
+Telugu Samayam	Media	Feed320	https://telugu.samayam.com/jokes/rssfeedsection/48238590.cms	title	author	summary	link	published_parsed	default	strategy32	Telugu	0	0	0	0
+Telugu Samayam	Media	Feed321	https://telugu.samayam.com/spirituality/rssfeedsection/47120420.cms	title	author	summary	link	published_parsed	default	strategy32	Telugu	0	0	0	0
+Telugu Samayam	Media	Feed322	https://telugu.samayam.com/sports/rssfeedsection/51238766.cms	title	author	summary	link	published_parsed	default	strategy32	Telugu	0	0	0	0
+Telugu Samayam	Media	Feed323	https://telugu.samayam.com/lifestyle/rssfeedsection/47120424.cms	title	author	summary	link	published_parsed	default	strategy32	Telugu	0	0	0	0
+Telugu Samayam	Media	Feed324	https://telugu.samayam.com/news/rssfeedsection/48239026.cms	title	author	summary	link	published_parsed	default	strategy32	Telugu	0	0	0	0
+Telugu Samayam	Media	Feed325	https://telugu.samayam.com/social/rssfeedsection/47120416.cms	title	author	summary	link	published_parsed	default	strategy32	Telugu	0	0	0	0
+Telugu Samayam	Media	Feed326	https://telugu.samayam.com/cinema/rssfeedsection/48238931.cms	title	author	summary	link	published_parsed	default	strategy32	Telugu	0	0	0	0
+Telugu Samayam	Media	Feed327	https://telugu.samayam.com/rssfeedsdefault.cms	title	author	summary	link	published_parsed	default	strategy32	Telugu	0	0	0	0
+Dainik Bhaskar	Media	Feed328	https://www.bhaskar.com/rss-feed/2322/	title	author	summary	link	published_parsed	default	strategy33	Hindi	0	0	0	0
+Amar Ujala	Media	Feed329	https://www.amarujala.com/rss/editors-pick.xml	title	author	summary	link	published_parsed	default	strategy34	Hindi	0	0	0	0
+Dainik Jagran	Media	Feed330	http://rss.jagran.com/rss/news/national.xml	title	author	summary	link	published_parsed	default	strategy35	Hindi	0	0	0	0
+Prabhat Khabar	Media	Feed331	https://www.prabhatkhabar.com/feed.aspx?cat_id=637	title	author	summary	link	published_parsed	default	strategy36	Hindi	0	0	0	0
+Patrika	Media	Feed332	http://api.patrika.com/rss/asia-news	title	author	summary	link	published_parsed	default	strategy37	Hindi	0	0	0	0
+Navbharat Times	Media	Feed333	https://navbharattimes.indiatimes.com/rssfeedsdefault.cms	title	author	summary	link	published_parsed	default	strategy38	Hindi	0	0	0	0
+Scroll	Media	Feed334	http://feeds.feedburner.com/ScrollinArticles.rss	title	author	summary	link	published_parsed	default	strategy39	Hindi	0	0	0	0
+The Quint	Media	Feed335	https://prod-qt-images.s3.amazonaws.com/production/thequint/feed.xml	title	author	summary	link	published_parsed	default	strategy40	Hindi	0	0	0	0
+The News Minute	Media	Feed336	https://www.thenewsminute.com/news.xml	title	author	summary	link	published_parsed	default	strategy28	Hindi	0	0	0	0
+First Post	Media	Feed337	http://www.firstpost.com/feed/rss	title	author	summary	link	published_parsed	default	strategy9	Hindi	0	0	0	0
+Huffington Post India	Media	Feed338	https://www.huffingtonpost.com/section/politics/feed	title	author	summary	link	published_parsed	default	default	Hindi	0	0	0	0
+One India	Media	Feed339	https://www.oneindia.com/rss/news-india-fb.xml	title	author	summary	link	published_parsed	default	default	Hindi	0	0	0	0
+Zee News	Media	Feed340	http://zeenews.india.com/rss/india-national-news.xml	title	author	summary	link	published_parsed	default	strategy26	Hindi	0	0	0	0
+News24	Media	Feed341	http://feeds.news24.com/articles/news24/TopStories/rss	title	author	summary	link	published_parsed	default	strategy41	Hindi	0	0	0	0
+NDTV	Media	Feed342	http://feeds.feedburner.com/NDTV-LatestNews	title	author	summary	link	published_parsed	default	strategy15	Hindi	0	0	0	0
+ABP News	Media	Feed343	http://abplive.in/india-news/feed	title	author	summary	link	published_parsed	default	strategy1	Hindi	0	0	0	0
+India TV	Media	Feed344	https://www.indiatvnews.com/rssnews/topstory.xml	title	author	summary	link	published_parsed	default	strategy42	Hindi	0	0	0	0
+CNN News18	Media	Feed345	https://www.news18.com/rss/politics.xml	title	author	summary	link	published_parsed	default	strategy43	Hindi	0	0	0	0
+India Today	Media	Feed346	https://www.indiatoday.in/rss/home	title	author	summary	link	published_parsed	default	strategy11	Hindi	0	0	0	0
+The Times of India	Media	Feed347	https://timesofindia.indiatimes.com/rssfeedstopstories.cms	title	author	summary	link	published_parsed	default	strategy24	English	0	0	0	0
+Hindustan Times	Media	Feed348	https://www.hindustantimes.com/rss/topnews/rssfeed.xml	title	author	summary	link	published_parsed	default	strategy44	English	0	0	0	0
+The Hindu	Media	Feed349	https://www.thehindu.com/news/feeder/default.rss	title	author	summary	link	published_parsed	default	strategy45	English	0	0	0	0
+The Economic Times	Media	Feed350	https://economictimes.indiatimes.com/rssfeedsdefault.cms	title	author	summary	link	published_parsed	default	strategy6	English	0	0	0	0
+The Indian Express	Media	Feed351	http://syndication.indianexpress.com/rss/latest-news.xml	title	author	summary	link	published_parsed	default	strategy12	English	0	0	0	0
+The New Indian Express	Media	Feed352	http://www.newindianexpress.com/Nation/rssfeed/?id=170&getXmlFeed=true	title	author	summary	link	published_parsed	default	strategy27	English	0	0	0	0
+The Tribune	Media	Feed353	https://www.dailytelegraph.com.au/newslocal/rss	title	author	summary	link	published_parsed	default	strategy23	English	0	0	0	0
+Deccan Chronicle	Media	Feed354	https://www.deccanchronicle.com/rss_feed/	title	author	summary	link	published_parsed	default	strategy46	English	0	0	0	0
+The Statesman	Media	Feed355	https://www.newstatesman.com/feeds/site_feed.rss	title	author	summary	link	published_parsed	default	strategy47	English	0	0	0	0
+Live Mint	Media	Feed356	https://www.livemint.com/rss/homepage	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+Business Standard	Media	Feed357	http://www.business-standard.com/rss/latest.rss	title	author	summary	link	published_parsed	default	strategy3	English	0	0	0	0
+The Financial Express	Media	Feed358	https://www.financialexpress.com/feed/	title	author	summary	link	published_parsed	default	strategy48	English	0	0	0	0
+Outlook	Media	Feed359	https://www.outlookindia.com/rss/home	title	author	summary	link	published_parsed	default	default	English	0	0	0	0
+The Asian Age	Media	Feed360	www.asianage.com/rss_feed/	title	author	summary	link	published_parsed	default	strategy49	English	0	0	0	0
+Eenadu	Media	Feed361	http://www.eenaduindia.com/RSS/SectionRssFeed.aspx?Id=16&Main=2	title	author	summary	link	published_parsed	default	strategy29	Telugu	0	0	0	0
+Andhra Jyothi	Media	Feed362	http://rss.andhrajyothy.com	title	author	summary	link	published_parsed	default	strategy30	Telugu	0	0	0	0
+Telangana Today	Media	Feed363	https://telanganatoday.com/feed	title	author	summary	link	published_parsed	default	strategy50	Telugu	0	0	0	0
+Dinakaran	Media	Feed364	http://www.dinakaran.com/rss_news.asp?id=9	title	author	summary	link	published_parsed	default	strategy51	Tamil	0	0	0	0
+Dinamalar	Media	Feed365	http://rss.dinamalar.com/?cat=ara1	title	author	summary	link	published_parsed	default	strategy52	Tamil	0	0	0	0
+Maalai Malar	Media	Feed366	https://www.maalaimalar.com/SectionRSS/News/National	title	author	summary	link	published_parsed	default	strategy53	Tamil	0	0	0	0
+Ei Samay	Media	Feed367	http://eisamay.indiatimes.com/rssfeedstopstories.cms	title	author	summary	link	published_parsed	default	strategy54	Bengali	0	0	0	0
+Daily Sakal	Media	Feed368	https://www.esakal.com/c03-feeds.xml	title	author	summary	link	published_parsed	default	strategy55	Marathi	0	0	0	0
+Pudhari	Media	Feed369	https://www.pudhari.news/rss.php?rss_value=latest	title	author	summary	link	published_parsed	default	strategy56	Marathi	0	0	0	0
+Divya Bhaskar	Media	Feed370	https://www.divyabhaskar.co.in/rss-feed/top-news/	title	author	summary	link	published_parsed	default	strategy57	Gujrati	0	0	0	0
+Vijay Karnataka	Media	Feed371	https://vijaykarnataka.indiatimes.com/rssfeedstopstories.cms	title	author	summary	link	published_parsed	default	strategy58	Kannada	0	0	0	0
+Malayala Manorama	Media	Feed372	https://www.manoramaonline.com/news/just-in.feed	title	author	summary	link	published_parsed	default	strategy59	Malayalam	0	0	0	0
+Mathrubhumi	Media	Feed373	http://feeds.feedburner.com/mathrubhumi?format=xml	title	author	summary	link	published_parsed	default	strategy60	Malayalam	0	0	0	0
+Madhyamam	Media	Feed374	http://feeds.feedburner.com/madhyamam/en	title	author	summary	link	published_parsed	default	strategy61	Malayalam	0	0	0	0
+Punjabi Jagaran	Media	Feed375	http://rss.jagran.com/punjabi/rss.xml	title	author	summary	link	published_parsed	default	strategy62	Punjabi	0	0	0	0
+Sach Kahoon	Media	Feed376	http://sachkahoon.com/feed/	title	author	summary	link	published_parsed	default	strategy63	Punjabi	0	0	0	0

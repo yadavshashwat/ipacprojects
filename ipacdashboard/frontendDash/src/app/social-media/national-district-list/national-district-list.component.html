@@ -1,0 +1,272 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <mat-toolbar-row>
+      <span class="d-flex pointer">
+        <i class="material-icons md-48" (click)="drawer.toggle()">menu</i>
+      </span>
+      <span style="font-family: 'Lato', sans-serif;padding-left:10px;" class="text-capitalize">digital media dashboard</span>
+      <span class="example-spacer"></span>
+      <i class="material-icons pointer" (click)="logout()">power_settings_new</i>
+    </mat-toolbar-row>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-drawer-container class="example-container bg-white full-page" autosize>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side" [opened]="true">
+    <mat-nav-list>
+      <app-social-media-links></app-social-media-links>
+    </mat-nav-list>
+  </mat-drawer>
+
+
+  <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
+    <div class="row padding-top-em example-full-width">
+      <div class="col-9 d-flex flex-row align-items-center justify-content-start">
+        <h3 class="text-capitalize" style="padding-left:10px">national district pages</h3>
+      </div>
+      <div class="col-2 d-flex flex-row align-items-start justify-content-start">
+        <mat-form-field class="example-full-width">
+          <mat-select [(value)]="selected" (selectionChange)="invokePaginator($event)">
+            <mat-option value="thisyear">This Year</mat-option>
+            <mat-option value="yesterday">Yesterday</mat-option>
+            <mat-option value="week">Week</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <!-- <div class="col-2 d-flex flex-row align-items-start justify-content-start">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Select State" (selectionChange)="mapDistricts($event)" [(value)]="selectedState">
+              <mat-option *ngFor="let state of states" value="{{state.state}}">{{state.state}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-2 d-flex flex-row align-items-start justify-content-start">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Select District" (selectionChange)="filterData($event)" [(value)]="selectedDistrict">
+              <mat-option *ngFor="let district of districts" value="{{district}}">{{district}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div> -->
+      <div class="col-1 d-flex flex-row align-items-center justify-content-end">
+        <button mat-raised-button color="accent" (click)="clearFilters()">Clear</button>
+      </div>
+    </div>
+    <div class="row padding-top-em example-full-width">
+      <div class="col-12 d-flex flex-row align-items-start justify-content-start" style="padding-left: 25px;">
+        <div [ngSwitch]="overviewSwitch" class="example-full-width">
+          <div *ngSwitchCase="'loading'" class="d-flex flex-column align-items-center justify-content-center" style="height: 20em;">
+            <p>Fetching overview ...</p>
+            <mat-progress-bar mode="query" style="width:18em"></mat-progress-bar>
+          </div>
+          <div *ngSwitchCase="'active'" style="padding-bottom:50px">
+            <!-- <mat-card>{{states | json}}</mat-card> -->
+            <div class="mat-elevation-z8" *ngIf="selected === 'thisyear'">
+              <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8 example-full-width">
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="page_name">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Page Name</th>
+                  <td mat-cell *matCellDef="let element"> {{element.page_name}} </td>
+                </ng-container>
+
+                <!-- Likes Column -->
+                <ng-container matColumnDef="page_fans">
+                  <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Total Likes
+                  </th>
+                  <td mat-cell *matCellDef="let element">
+                    {{element.page_fans.toLocaleString('en-IN')}} </td>
+                </ng-container>
+
+                <!-- Impressions Column -->
+                <ng-container matColumnDef="page_posts_impressions_days_28">
+                  <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Total
+                    Impressions
+                  </th>
+                  <td mat-cell *matCellDef="let element">
+                    {{element.page_impressions_days_28.toLocaleString('en-IN')}} </td>
+                </ng-container>
+
+                <!-- Views Column -->
+                <ng-container matColumnDef="page_views_total_days_28">
+                  <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Total Page
+                    Views
+                  </th>
+                  <td mat-cell *matCellDef="let element">
+                    {{element.page_views_total_days_28.toLocaleString('en-IN')}} </td>
+                </ng-container>
+
+                <!-- Negative actions Column -->
+                <ng-container matColumnDef="page_negative_feedback_days_28">
+                  <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Negative
+                    Actions
+                  </th>
+                  <td mat-cell *matCellDef="let element">
+                    {{element.page_negative_feedback_days_28.toLocaleString('en-IN')}} </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns" class="pointer"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="navigate(row)" class="pointer"></tr>
+              </table>
+
+              <mat-paginator #paginator [pageSizeOptions]="[10, 20, 30]" showFirstLastButtons></mat-paginator>
+              <div class="row d-flex mb-5 flex-row align-items-center justify-content-end p-3 mr-3">
+                <!-- <span class="font-weight-bold"></span> -->
+                <button mat-raised-button color="accent" (click)="exportAsXLSXYear()" [disabled]="dataSourceReal.length < 1">
+                  <mat-icon>save_alt</mat-icon> Download
+                </button>
+              </div>
+            </div>
+
+
+
+            <div class="mat-elevation-z8" *ngIf="selected === 'yesterday'">
+              <table mat-table [dataSource]="dataSourceDaily" matSort class="mat-elevation-z8 example-full-width">
+
+                <!--- Note that these columns can be defined in any order.
+                                      The actual rendered columns are set as a property on the row definition" -->
+
+                <!-- Position Column -->
+                <ng-container matColumnDef="page_name">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Page Name</th>
+                  <td mat-cell *matCellDef="let element"> {{element.page_name}} </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="page_fans">
+                  <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Total Likes
+                  </th>
+                  <td mat-cell *matCellDef="let element">
+                    {{element.page_fans.toLocaleString('en-IN')}} </td>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="page_fan_adds">
+                  <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> New Likes </th>
+                  <td mat-cell *matCellDef="let element">
+                    {{element.page_fan_adds.toLocaleString('en-IN')}} </td>
+                </ng-container>
+
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="page_posts_impressions_day">
+                  <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Total
+                    Impressions
+                  </th>
+                  <td mat-cell *matCellDef="let element">
+                    {{element.page_impressions_day.toLocaleString('en-IN')}} </td>
+                </ng-container>
+
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="page_views_total_day">
+                  <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Total Page
+                    Views
+                  </th>
+                  <td mat-cell *matCellDef="let element">
+                    {{element.page_views_total_day.toLocaleString('en-IN')}} </td>
+                </ng-container>
+
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="page_negative_feedback_day">
+                  <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Negative
+                    Actions
+                  </th>
+                  <td mat-cell *matCellDef="let element">
+                    {{element.page_negative_feedback_day.toLocaleString('en-IN')}} </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedDaily"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedDaily;" (click)="navigate(row)"></tr>
+              </table>
+
+              <mat-paginator #otherPaginator [pageSizeOptions]="[10, 20]" showFirstLastButtons></mat-paginator>
+              <div class="row d-flex mb-5 flex-row align-items-center justify-content-end p-3 mr-3">
+                <!-- <span class="font-weight-bold"></span> -->
+                <button mat-raised-button color="accent" (click)="exportAsXLSXYes()" [disabled]="dataSourceDailyReal.length < 1">
+                  <mat-icon>save_alt</mat-icon> Download
+                </button>
+              </div>
+            </div>
+
+            <div class="mat-elevation-z8" *ngIf="selected === 'week'">
+                <table mat-table [dataSource]="dataSourceWeekly" matSort class="mat-elevation-z8 example-full-width">
+  
+                  <!--- Note that these columns can be defined in any order.
+                                        The actual rendered columns are set as a property on the row definition" -->
+  
+                  <!-- Position Column -->
+                  <ng-container matColumnDef="page_name">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Page Name</th>
+                    <td mat-cell *matCellDef="let element"> {{element.page_name}} </td>
+                  </ng-container>
+  
+                  <!-- Name Column -->
+                  <ng-container matColumnDef="page_fans">
+                    <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Total Likes
+                    </th>
+                    <td mat-cell *matCellDef="let element">
+                      {{element.page_fans.toLocaleString('en-IN')}} </td>
+                  </ng-container>
+  
+                  <!-- Weight Column -->
+                  <ng-container matColumnDef="page_fan_adds">
+                    <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> New Likes </th>
+                    <td mat-cell *matCellDef="let element">
+                      {{element.page_fan_adds.toLocaleString('en-IN')}} </td>
+                  </ng-container>
+  
+                  <!-- Symbol Column -->
+                  <ng-container matColumnDef="page_posts_impressions_day">
+                    <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Total
+                      Impressions
+                    </th>
+                    <td mat-cell *matCellDef="let element">
+                      {{element.page_impressions_week.toLocaleString('en-IN')}} </td>
+                  </ng-container>
+  
+                  <!-- Symbol Column -->
+                  <ng-container matColumnDef="page_views_total_day">
+                    <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Total Page
+                      Views
+                    </th>
+                    <td mat-cell *matCellDef="let element">
+                      {{element.page_views_total_week.toLocaleString('en-IN')}} </td>
+                  </ng-container>
+  
+                  <!-- Symbol Column -->
+                  <ng-container matColumnDef="page_negative_feedback_day">
+                    <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Negative
+                      Actions
+                    </th>
+                    <td mat-cell *matCellDef="let element">
+                      {{element.page_negative_feedback_week.toLocaleString('en-IN')}} </td>
+                  </ng-container>
+  
+                  <tr mat-header-row *matHeaderRowDef="displayedDaily"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedDaily;" (click)="navigate(row)"></tr>
+                </table>
+  
+                <mat-paginator #anotherPaginator [pageSizeOptions]="[10, 20]" showFirstLastButtons></mat-paginator>
+                <div class="row d-flex mb-5 flex-row align-items-center justify-content-end p-3 mr-3">
+                  <!-- <span class="font-weight-bold"></span> -->
+                  <button mat-raised-button color="accent" (click)="exportAsXLSXWeek()" [disabled]="dataSourceWeeklyReal.length < 1">
+                    <mat-icon>save_alt</mat-icon> Download
+                  </button>
+                </div>
+            </div>
+
+          </div>
+          <div *ngSwitchCase="'message'" class="d-flex flex-column align-items-center justify-content-center">
+            <span>API failed</span>
+            <img src="https://cdn.dribbble.com/users/1121009/screenshots/5270889/dribbble_23.jpg" />
+          </div>
+          <div *ngSwitchCase="'filter'" class="d-flex flex-column align-items-center justify-content-center">
+            <p>Filtering the data</p>
+            <mat-progress-bar mode="query" style="width:18em"></mat-progress-bar>
+          </div>
+          <div *ngSwitchCase="'nodata'" class="d-flex flex-column align-items-center justify-content-center">
+            <p>No Data Found</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-drawer-container>

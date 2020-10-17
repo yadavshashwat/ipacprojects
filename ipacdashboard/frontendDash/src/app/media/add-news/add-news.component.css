@@ -1,0 +1,74 @@
+.example-sidenav {
+    padding: 0px;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+.example-full-width {
+    width: 100%;
+}
+.full-length{
+    width:100%;
+}
+.padding-1-em{
+    padding: 1em;
+}
+
+.padding-top-em{
+    padding-top:1em;
+}
+
+button:focus{
+    outline: none;
+}
+
+.material-icons.md-48 { font-size: 48px; }
+
+.padding-left-point-5{
+    padding-left:0.5em;
+}
+
+.margin-top-em{
+    margin-top: 1em;
+}
+
+.message-switch{
+    width: 20em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.pointer{
+    cursor: pointer;
+}
+mat-toolbar.mat-toolbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+}
+.mat-drawer-container{
+    top:64px;
+}
+
+.lato-chip{
+    color: white !important;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.lato{
+    font-family: 'Lato', sans-serif !important;
+}

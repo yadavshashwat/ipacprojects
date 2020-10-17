@@ -1,0 +1,14 @@
+<div class="jumbotron bg-transparent d-flex flex-column align-items-center justify-content-center background-custom">
+  <div class="row">
+    <div class="col-xl-12">
+      <h1 class="display-4">Welcome to <b class="text-dark">{{title}}</b> Dashboard</h1>
+      <mat-card class="text-center" style="width:25em;margin:0 auto">
+          <app-profile-form
+            [error]="error$ | async"
+            [disabled]="pending$ | async"
+            (submitted)="onLogin($event)"
+          ></app-profile-form>
+      </mat-card>
+    </div>
+  </div>
+</div>

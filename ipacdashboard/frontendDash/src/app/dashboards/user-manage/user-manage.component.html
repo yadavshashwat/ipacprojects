@@ -1,0 +1,90 @@
+<!-- tera bhai kiya h ;) -->
+<!-- baaki pages mei replace karna h ye code -->
+<app-toolbar (toggle)="drawer.toggle()"></app-toolbar>
+<!--end of tool bar-->
+<mat-drawer-container class="example-container full-page bg-white" autosize>
+  <mat-drawer #drawer class="example-sidenav side-bar" mode="side" [opened]="false">
+    <mat-nav-list>
+      <mat-nav-list>
+        <mat-list-item [routerLink]="[ '/dashboards/list' ]" routerLinkActive="active-link" class="lato">
+          Dashboards
+        </mat-list-item>
+        <mat-list-item [routerLink]="[ '/dashboards/privilege' ]" routerLinkActive="active-link" class="lato">
+          User Management
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 d-flex flex-row align-items-center justify-content-end">
+        <button mat-raised-button color="accent" (click)="createUser()" class="lato">Add User</button>
+      </div>
+    </div>
+    <div class="row" [ngSwitch]="userSwitch">
+      <div *ngSwitchCase="'loading'" class="d-flex flex-column align-items-center justify-content-center full-page full-width p-5">
+        <p class="mb-5">Fetching users ...</p>
+        <mat-progress-bar mode="query"></mat-progress-bar>
+      </div>
+      <div *ngSwitchCase="'delete'" class="d-flex flex-column align-items-center justify-content-center full-page full-width p-5">
+        <p class="mb-5">Deleting users ...</p>
+        <mat-progress-bar mode="query"></mat-progress-bar>
+      </div>
+      <div *ngSwitchCase="'nodata'" class="d-flex flex-column align-items-center justify-content-center full-page full-width p-5">
+        <p class="mb-5">No data found</p>
+      </div>
+      <div *ngSwitchCase="'active'" class="mt-5 example-full-width full-width">
+        <div class="mat-elevation-z8 full-width">
+          <table mat-table [dataSource]="dataSource" class="full-width">
+
+            <!-- Position Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef>Name</th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="email">
+              <th mat-header-cell *matHeaderCellDef> Email </th>
+              <td mat-cell *matCellDef="let element"> {{element.user_email}} </td>
+            </ng-container>
+
+            <!-- Weight Column -->
+            <ng-container matColumnDef="ipac_admin">
+              <th mat-header-cell *matHeaderCellDef> IPAC Admin </th>
+              <td mat-cell *matCellDef="let element">
+                <mat-checkbox [checked]="element.is_admin" (change)="updateAccessAdmin($event, element)"></mat-checkbox>
+              </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="media_admin">
+              <th mat-header-cell *matHeaderCellDef> Media Admin </th>
+              <td mat-cell *matCellDef="let element">
+                <mat-checkbox [checked]="element.is_media_admin" (change)="updateAccessMedia($event, element)"></mat-checkbox>
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="digital_admin">
+              <th mat-header-cell *matHeaderCellDef> Digital Media Admin </th>
+              <td mat-cell *matCellDef="let element">
+                <mat-checkbox [checked]="element.is_digital_admin" (change)="updateAccessDigital($event, element)"></mat-checkbox>
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="delete">
+                <th mat-header-cell *matHeaderCellDef> Delete </th>
+                <td mat-cell *matCellDef="let element">
+                  <button mat-icon-button (click)="deleteUser(element)"><mat-icon>delete</mat-icon></button>
+                </td>
+              </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+
+          <mat-paginator #paginator [pageSizeOptions]="[20]" showFirstLastButtons></mat-paginator>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-drawer-container>

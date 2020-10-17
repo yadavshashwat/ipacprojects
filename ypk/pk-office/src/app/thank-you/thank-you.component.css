@@ -1,0 +1,100 @@
+.lato{
+  font-family: 'Lato', sans-serif;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.example-radio-group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+.checkbox{margin-bottom:15px;}
+.example-selected-value {
+  margin: 15px 0;
+}
+.bg-color{
+  background-color: #f3f3f3;
+  background-image: url('../../assets/images/teampkheaderbanner.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right top;
+  padding:16rem 3rem 3rem 3rem;
+}
+.thank_you_bg{
+  background-image: url('../../assets/images/teampkheaderbannerthankyou.jpg');
+}
+.popup-link{margin-left: 10px;text-decoration: underline;}
+.mat-select-placeholder {
+white-space:pre-line;
+    overflow-wrap: break-word;
+}
+.mat-form-field-appearance-legacy .mat-form-field-label {
+white-space:pre-line !important;
+    overflow-wrap: break-word !important;
+}
+.mat-form-field-label::-webkit-input-placeholder{white-space:pre-line;    overflow-wrap: break-word;}
+.mat-form-field-label::-moz-placeholder{white-space:pre-line;    overflow-wrap: break-word;}
+.mat-form-field-label:-ms-input-placeholder{white-space:pre-line;    overflow-wrap: break-word;}
+.mat-form-field-label:-moz-placeholder{white-space:pre-line;    overflow-wrap: break-word;}
+.logo img{
+    max-width: 100%;
+}
+.about_team_pk{
+   text-align: justify;
+}
+.surveyform{padding:20px;}
+.matclass{
+  max-width:60%;
+  padding: 3rem 2rem 2rem 2rem;
+  border-top: 4px solid #2c7547;
+}
+.example-radio-group{display: flow-root;}
+.custom_bg{
+background-color: #f6f6f6;
+  padding: 1rem;
+  border: 1px dashed #898989;
+}
+.img-responsive{width:320px;}
+.h5, h5 {
+  font-weight: 600;
+  line-height: 30px;
+}
+.text-center{margin-bottom: 30px;}
+/*input.mat-input-element, .mat-select{height:30px;}*/
+.custom_fields{border-radius: 0px;}
+@media screen and (min-width: 1100px) {
+  .bg-color{padding: 20rem 3rem 3rem 3rem;}
+}
+@media screen and (min-width: 1300px) {
+  .bg-color{padding: 25rem 3rem 3rem 3rem;}
+}
+@media screen and (min-width: 1600px) {
+  .bg-color{padding: 30rem 3rem 3rem 3rem;}
+}
+@media screen and (min-width: 1900px) {
+  .bg-color{padding: 35rem 3rem 3rem 3rem;}
+}
+@media screen and (max-width: 568px) {
+.custom-padding{padding:0px;}
+.matclass{max-width:100%;margin-top: 92px;}
+.chkbx-label{white-space: pre-wrap !important;}
+.custom-flex{display:block!important;}
+.bg-color{font-size: 14px;padding: 2rem 3rem 3rem 3rem;}
+.surveyform{padding: 10px;}
+.h5, h5 {
+  font-size: 1rem;
+}
+.img-responsive{width:100%;}
+}
+@media screen and (max-width: 375px) {
+  .matclass{max-width:100%;margin-top: 70px;}
+}
+@media screen and (max-width: 340px) {
+  .matclass{max-width:100%;margin-top: 60px;}
+}

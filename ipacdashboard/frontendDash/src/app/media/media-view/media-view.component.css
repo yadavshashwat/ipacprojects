@@ -1,0 +1,74 @@
+.full-page{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:0;
+    padding:0;
+}
+.example-sidenav-content {
+    display: flex;
+    height: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:1.7em;
+}
+.example-sidenav {
+    padding: 0px;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+.social-live{
+    background: #06beb6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.grade-gray{
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.piggy-pink{
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+button:focus{
+    outline: none;
+}
+
+.material-icons.md-48 { font-size: 48px; }
+.active-link{
+    background: #0000001a !important;
+}
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.pointer{
+    cursor: pointer;
+}
+mat-toolbar.mat-toolbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+}
+.mat-drawer-container{
+    top:64px;
+}
+
+.side-bar{
+    background: #eaeaea;
+    box-shadow: 1px 1px 5px #eaeaea;
+}

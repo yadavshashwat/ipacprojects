@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body{
+    font-family: 'Lato', sans-serif !important;
+	background:rgb(103, 58, 183);
+}
+
+button:focus, html [type=button]:focus{
+    outline: none;
+}/* You can add global styles to this file, and also import other style files */
+.mat-form-field-appearance-legacy .mat-form-field-label {
+	white-space:pre-line !important;
+	    overflow-wrap: break-word !important;
+  }

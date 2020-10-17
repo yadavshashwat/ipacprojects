@@ -1,0 +1,42 @@
+<h1 mat-dialog-title class="lato font-weight-bold">Dis/Likes by source</h1>
+<div mat-dialog-content>
+    <div class="row">
+        <div class="col-6">
+            <h5 class="lato">Likes</h5>
+            <table class="table lato mt-5">
+                <thead>
+                    <tr>
+                    <th scope="col">Source</th>
+                    <th scope="col">Likes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let meta of data.like   | keyvalue">
+                    <th scope="row">{{meta.key}}</th>
+                    <td>{{meta.value}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-6">
+            <h5 class="lato">Dislikes</h5>
+            <table class="table lato mt-5">
+                <thead>
+                    <tr>
+                    <th scope="col">Source</th>
+                    <th scope="col">Dislikes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let meta of data.dislike   | keyvalue">
+                    <th scope="row">{{meta.key}}</th>
+                    <td>{{meta.value}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="'close'" cdkFocusInitial>Ok</button>
+</div>

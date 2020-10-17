@@ -1,0 +1,122 @@
+<div class="container">
+  <h6 class="text-capitalize font-weight-bold mt-5 text-right">Filters</h6>
+  <div class="row pl-3 pr-3 pt-0 d-flex flex-row flex-wrap align-items-center justify-content-end">
+    <div class="ml-5">
+      <mat-form-field>
+        <mat-select placeholder="Team" [formControl]="teamCtrl">
+          <mat-option *ngFor="let team of teams" [value]="team">{{team}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="ml-5">
+      <mat-form-field>
+        <input matInput [matDatepicker]="st" placeholder="Start Date" [formControl]="sdCtrl">
+        <mat-datepicker-toggle matSuffix [for]="st"></mat-datepicker-toggle>
+        <mat-datepicker #st disabled="false"></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="ml-5">
+      <mat-form-field>
+        <input matInput [matDatepicker]="ed" placeholder="End Date" [formControl]="edCtrl">
+        <mat-datepicker-toggle matSuffix [for]="ed"></mat-datepicker-toggle>
+        <mat-datepicker #ed disabled="false"></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="ml-5">
+      <button mat-raised-button color="accent" (click)="resetData()">Clear</button>
+    </div>
+  </div>
+  <div [ngSwitch]="overviewSwitch">
+    <div *ngSwitchCase="'loading'" class="d-flex flex-wrap flex-column p-5">
+      <mat-progress-bar mode="query"></mat-progress-bar>
+    </div>
+    <div *ngSwitchCase="'nointernet'">
+      Please connect to internet
+    </div>
+    <div *ngSwitchCase="'active'">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <mat-card class="d-flex flex-column lato">
+            <h6 class="text-capitalize font-weight-bold">Total Registrations</h6>
+            <span class="display-4">{{masterData?.summary_data?.total_registrations?.toLocaleString('en-IN')}}</span>
+          </mat-card>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <mat-card class="d-flex flex-column lato">
+            <h6 class="text-capitalize font-weight-bold">Web Registrations</h6>
+            <span class="display-4">{{masterData?.summary_data?.total_web_registrations?.toLocaleString('en-IN')}}</span>
+          </mat-card>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <mat-card class="d-flex flex-column lato">
+            <h6 class="text-capitalize font-weight-bold">Inbound registrations</h6>
+            <span class="display-4">{{masterData?.summary_data?.total_inbound_registrations?.toLocaleString('en-IN')}}</span>
+          </mat-card>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+          <mat-card class="d-flex flex-column lato">
+            <h6 class="text-capitalize font-weight-bold">FAQ</h6>
+            <span class="display-4">{{masterData?.summary_data?.total_faq_registrations?.toLocaleString('en-IN')}}</span>
+          </mat-card>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="mt-5 mb-5 p-5">
+            <canvas baseChart [datasets]="lineChartRegData" [labels]="lineChartRegLabels" [options]="chartLineOptions"
+                    [chartType]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mt-5 mb-5 p-5">
+            <canvas baseChart [datasets]="lineChartFaqData" [labels]="lineChartFaqLabels" [options]="chartLineOptions"
+                    [chartType]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap">
+          <div class="mat-elevation-z8 full-width mb-5">
+          <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8 full-width">
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="state">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> State</th>
+          <td mat-cell *matCellDef="let element"> {{element.state}} </td>
+          </ng-container>
+
+          <!-- Likes Column -->
+          <ng-container matColumnDef="total_registrations">
+          <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Total Registrations
+          </th>
+          <td mat-cell *matCellDef="let element">
+          {{element.total_registrations.toLocaleString('en-IN')}} </td>
+          </ng-container>
+
+          <!-- Impressions Column -->
+          <ng-container matColumnDef="web_form">
+          <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Web Registrations
+          </th>
+          <td mat-cell *matCellDef="let element">
+          {{element.web_form.toLocaleString('en-IN')}} </td>
+          </ng-container>
+
+          <!-- Views Column -->
+          <ng-container matColumnDef="callcenter">
+          <th mat-header-cell *matHeaderCellDef class="" mat-sort-header> Inbound Registrations
+          </th>
+          <td mat-cell *matCellDef="let element">
+          {{element.callcenter.toLocaleString('en-IN')}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns" class="pointer"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="navigate(row)" class="pointer"></tr>
+          </table>
+
+          <mat-paginator #paginator [pageSizeOptions]="[10, 20, 30]" showFirstLastButtons></mat-paginator>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

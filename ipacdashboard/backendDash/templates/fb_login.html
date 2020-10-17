@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Facebook Login JavaScript Example</title>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+  .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+  .tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+</head>
+
+<body>
+  <script>
+    function statusChangeCallback(response) {
+      if (response.status === "connected") {
+        var user_id = response.authResponse.userID;
+        console.log(user_id)
+        // post user token to server
+        $.post('/api/social/post_user_token/', {
+          app_id: '1212148135583601',
+          expiry: response.authResponse.expiresIn,
+          user_id: user_id,
+          sl_token: response.authResponse.accessToken
+          }, (resp) => {
+          console.log(resp);
+          // fetch accounts from api only if user login ok
+          FB.api('/me/accounts', 'GET', {
+            limit: 100,
+          }, function (response) {
+            response.data.forEach((page, index) => {
+              page.user_id = user_id;
+              // post page data to server
+              $.post('/api/social/post_page_data/', page, (resp) => {
+                console.log(resp);
+              });
+              // add page row to table
+              var row = $(".tg").append("<tr></tr>").find("tr:last");
+              row.append("<td class=\"tg-0lax\">" + index + "</td>");
+              row.append("<td class=\"tg-0lax\">" + page.name + "</td>");
+            });
+          });
+        });
+
+      }
+      else {
+        // hide Pages table
+        $("#page_table").hide()
+      }
+    }
+
+    // login button handler
+    function checkLoginState() {
+      FB.getLoginStatus(function (response) {
+        statusChangeCallback(response);
+      });
+    }
+
+    // submit button handler
+    function saveUserToken() {
+      $.post('/api/social/post_user_token/',{
+        sl_token: response.authResponse.accessToken,
+        user_id: response.authResponse.userID
+        }, (data)=>{
+        console.log(data);
+      });
+    }
+
+    // window async
+    // checking whether cookies already existed
+    if (document.cookie.indexOf("fb_token") > 0) //user has already logged in with facebook - process should be automatic
+        var fb_status = true;
+    else
+        var fb_status = false;
+    window.fbAsyncInit = function () {
+      // inits sdk
+      FB.init({
+        appId: '1212148135583601',
+        cookie: true,
+        status: fb_status,
+        xfbml: true,
+        version: 'v3.1',
+      });
+      // check login status (page load)
+      FB.getLoginStatus(function (response) {
+        statusChangeCallback(response);
+      });
+    };
+    // loads sdk async
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- <fb:login-button scope="email,public_profile,manage_pages,read_insights" onlogin="checkLoginState();" auto-logout-link="true">
+  </fb:login-button> -->
+
+  <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false"
+    data-auto-logout-link="false" data-use-continue-as="true" data-scope="manage_pages,read_insights,publish_pages,pages_show_list"></div>
+
+  <div id="page_table">
+    <table class="tg">
+      <tr>
+        <th class="tg-0lax">Sl No.</th>
+        <th class="tg-0lax">Page Name</th>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

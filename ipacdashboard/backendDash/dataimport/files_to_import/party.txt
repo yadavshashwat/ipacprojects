@@ -1,0 +1,109 @@
+1,All India Trinamool Congress,AITC,Mamata Banerjee,National
+2,Bahujan Samaj Party,BSP,Mayawati,National
+3,Bharatiya Janata Party,BJP,Amit Shah,National
+4,Communist Party of India,CPI,Suravaram Sudhakar Reddy,National
+5,Communist Party of India (Marxist),CPI(M),Sitaram Yechury,National
+6,Indian National Congress,INC,Rahul Gandhi,National
+7,Nationalist Congress Party,NCP,Sharad Pawar,National
+8,Aam Aadmi Party,AAP,Arvind Kejriwal,Regional
+9,All India Anna Dravida Munnetra Kazhagam,AIADMK,Edappadi K. Palaniswami and O. Paneerselvam,Regional
+10,All India Forward Bloc,AIFB,Debabrata Biswas,Regional
+11,All India Majlis-e-Ittehadul Muslimeen,AIMIM,Asaduddin Owaisi,Regional
+12,All India N.R. Congress,AINRC,N. Rangasamy,Regional
+13,All India United Democratic Front,AIUDF,Badruddin Ajmal,Regional
+14,All Jharkhand Students Union,AJSU,Sudesh Mahto,Regional
+15,Asom Gana Parishad,AGP,Atul Bora,Regional
+16,Biju Janata Dal,BJD,Naveen Patnaik,Regional
+17,Bodoland People's Front,BPF,Hagrama Mohilary,Regional
+18,Desiya Murpokku Dravida Kazhagam,DMDK,Vijayakanth,Regional
+19,Dravida Munnetra Kazhagam,DMK,M. K. Stalin,Regional
+20,Goa Forward Party,GFP,Vijai Sardesai,Regional
+21,Hill State People's Democratic Party,HSPDP,H.S. Lyngdoh,Regional
+22,Indian National Lok Dal,INLD,Om Prakash Chautala,Regional
+23,Indian Union Muslim League,IUML,Panakkad Sayed Hyderali Shihab Thangal,Regional
+24,Indigenous People's Front of Tripura,IPFT,Mevar Kumar Jamatia,Regional
+25,Jammu & Kashmir National Conference,JKNC,Omar Abdullah,Regional
+26,Jammu & Kashmir National Panthers Party,JKNPP,Bhim Singh,Regional
+27,Jammu and Kashmir People's Democratic Party,JKPDP,Mehbooba Mufti,Regional
+28,Janata Dal (Secular),JD(S),H.D. Deve Gowda,Regional
+29,Janata Dal (United),JD(U),Nitish Kumar,Regional
+30,Jharkhand Mukti Morcha,JMM,Shibu Soren,Regional
+31,Jharkhand Vikas Morcha (Prajatantrik),JVM(P),Babu Lal Marandi,Regional
+32,Kerala Congress (M),KC(M),C.F. Thomas,Regional
+33,Lok Janshakti Party,LJP,Ram Vilas Paswan,Regional
+34,Maharashtra Navnirman Sena,MNS,Raj Thackeray,Regional
+35,Maharashtrawadi Gomantak Party,MGP,Deepak Dhavalikar,Regional
+36,Mizo National Front,MNF,Pu Zoramthanga,Regional
+37,Mizoram People's Conference,MPC,Pu Lalhmingthanga,Regional
+38,Naga People's Front,NPF,T.R. Zeliang,Regional
+39,National People's Party,NPP,Agatha Sangma,Regional
+40,Nationalist Democratic Progressive Party,NDPP,Neiphiu Rio,Regional
+41,Pattali Makkal Katchi,PMK,G. K. Mani,Regional
+42,People's Democratic Alliance,PDA,Bd. Behring Anal,Regional
+43,People's Democratic Front,PDF,P. N. Syiem,Regional
+44,People's Party of Arunachal,PPA,Tomo Riba,Regional
+45,Rashtriya Janata Dal,RJD,Lalu Prasad Yadav,Regional
+46,Rashtriya Lok Dal,RLD,Ajit Singh,Regional
+47,Rashtriya Lok Samta Party,RLSP,Upendra Kushwaha,Regional
+48,Revolutionary Socialist Party,RSP,T. J. Chandrachoodan,Regional
+49,Samajwadi Party,SP,Akhilesh Yadav,Regional
+50,Shiromani Akali Dal,SAD,Sukhbir Singh Badal,Regional
+51,Shiv Sena,SS,Uddhav Thackeray,Regional
+52,Sikkim Democratic Front,SDF,Pawan Kumar Chamling,Regional
+53,Sikkim Krantikari Morcha,SKM,Prem Singh Tamang,Regional
+54,Telangana Rashtra Samithi,TRS,Kalvakuntla Chandrashekar Rao,Regional
+55,Telugu Desam Party,TDP,N. Chandra Babu Naidu,Regional
+56,United Democratic Party,UDP,Donkupar Roy,Regional
+57,YSR Congress,YSRC,Y. S. Jaganmohan Reddy,Regional
+58,Zoram Nationalist Party,ZNP,Lalduhawma,Regional
+59,Amra Bangali,AMB,Prabhat Ranjan Sarkar,Unrecognized
+60,Bharatiya Minorities Suraksha Mahasangh,BMSM,Haji Mastan Mirza,Unrecognized
+61,Bharipa Bahujan Mahasangh,BBM,Prakash Ambedkar,Unrecognized
+62,Hindustani Awam Morcha [10],HAM,Jitan Ram Manjhi,Unrecognized
+63,Indhiya Jananayaga Katchi,IJK,T.R. Pachamuthu,Unrecognized
+64,People's Democratic Front,PDF,Ajoy Biswas,Unrecognized
+65,Jai Samaikyandhra Party,JSP,Nallari Kiran Kumar Reddy,Unrecognized
+66,Jan Adhikar Party Loktantrik [11],JAP,Pappu Yadav,Unrecognized
+67,Suheldev Bhartiya Samaj Party,SBSP,Om Prakash Rajbhar,Unrecognized
+68,Jana Sena Party,JSP,Pawan Kalyan,Unrecognized
+69,Jan Shakti Party of India [12],JSPI,Gurjeet Singh Azad,Unrecognized
+70,Karnataka Janata Paksha,KJP,Padmanabha Prasanna Kumar,Unrecognized
+71,Kerala Congress (Jacob),KC(J),Anoop Jacob,Unrecognized
+72,Kerala Congress (B),KC(B),R. Balakrishna Pillai,Unrecognized
+73,Kongunadu Makkal Desia Katchi,KMDK,E. R. Eswaran,Unrecognized
+74,Kongunadu Makkal Katchi,KMK,A.M. Raja,Unrecognized
+75,Lok Satta Party,LSP,Jayaprakash Narayan,Unrecognized
+76,Manipur Peoples Party,MPP,Sovakiran N.,Unrecognized
+77,Makkal Needhi Maiam,MNM,Kamal Haasan,Unrecognized
+78,Manithaneya Makkal Katchi,MMK,M. H. Jawahirullah,Unrecognized
+79,Marumalarchi Dravida Munnetra Kazhagam,MDMK,Vaiko,Unrecognized
+80,Odisha Janmorcha,OJM,Pyarimohan Mohapatra,Unrecognized
+81,Param Digvijay Dal,PDD,Adhyatmik Neta Krishna Mohan Shankar Yogi,Unrecognized
+82,Peace Party of India,PPI,Mohamed Ayub,Unrecognized
+83,Puthiya Tamilagam,PTK,K. Krishnasamy,Unrecognized
+84,Rashtriya Samaj Paksha,RSP,Mahadev Jankar,Unrecognized
+85,Rashtriya Ulama Council,RUC,Aamir Rashadi Madni,Unrecognized
+86,Rayalaseema Parirakshana Samithi,RPS,Byreddy Rajasekhar Reddy,Unrecognized
+87,Social Democratic Party of India,SDPI,A.Saeed,Unrecognized
+88,Tamil Nadu Kongu Ilaingar Peravai,KIP,U. Thaniyarasu,Unrecognized
+89,Tamil Maanila Congress,TMC,G. K. Vasan,Unrecognized
+90,Uttarakhand Kranti Dal,UKD,Kashi Singh Airy,Unrecognized
+91,Viduthalai Chiruthaigal Katchi,VCK,Thol. Thirumavalavan,Unrecognized
+92,Vishva Shakti Party,VSP,Dr.Tarun Kothari,Unrecognized
+93,Welfare Party of India,WPI,S. Q. R. Ilyas,Unrecognized
+94,Jan Adhikar Party,JAP,Babu Singh Kushwaha,Unrecognized
+95,Hindu Sena,,Vishnu Gupta,Unrecognized
+96,Gorkha National Liberation Front,GNLF,Subhash Ghisingh,Unrecognized
+97,Gorkha Janmukti Morcha,GJM,Roshan Giri,Unrecognized
+98,Revolutionary Communist Party of India,RCPI,Saumyendranath Tagore,Unrecognized
+99,Akhil Bharatiya Gorkha League,ABGL,Bharati Tamang,Unrecognized
+100,Praja Socialist Party,PSP,NA,Unrecognized
+101,Rashtravadi Loktantrik Party,RLP,Manoj Kumar Singh,Unrecognized
+102,Swaraj India,SI,Yogendra Yadav,Unrecognized
+103,All India Mahila Empowerment Party,MEP,Dr. Nowhera Shaik,Unrecognized
+104,Rani Channamma Party,RCP,M B Desai,Unrecognized
+105,Bahujan Azad Party,BAP,50 IIT Alumni [13],Unrecognized
+106,All Indian Public Freedom Party,AIPFP,V. Siva Kumar,Unrecognized
+107,Naam Tamilar Katchi,NTK,Senthamizhan Seeman,Unrecognized
+108,Peoples Party United,PPU,Ghulam Rasool Doolwal,Unrecognized
+109,NA,NA,NA,NA

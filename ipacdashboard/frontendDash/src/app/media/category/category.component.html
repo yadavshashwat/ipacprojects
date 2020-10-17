@@ -1,0 +1,81 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <mat-toolbar-row>
+      <span class="d-flex pointer">
+        <i class="material-icons md-48" (click)="drawer.toggle()">menu</i>
+      </span>
+      <span style="font-family: 'Lato', sans-serif;padding-left:10px;" class="text-uppercase">Media</span>
+      <span class="example-spacer"></span>
+      <i class="material-icons pointer" (click)="logout()">power_settings_new</i>
+    </mat-toolbar-row>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-drawer-container class="example-container full-page bg-white" autosize>
+  <mat-drawer #drawer class="example-sidenav side-bar" mode="side" [opened]="false">
+    <mat-nav-list>
+      <app-media-links class="text-capitalize"></app-media-links>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <div class="container d-flex flex-column align-items-center justify-content-center">
+    <h4 class="text-capitalize font-weight-bold text-center pt-3">Category management</h4>
+    <div class="mt-5 d-flex flex-row justify-content-center example-full-width">
+      <button mat-raised-button color="accent" (click)="addCategory()">Add Category</button>
+    </div>
+    <div [ngSwitch]="catSwitch" class="mt-5">
+      <div *ngSwitchCase="'loading'">
+        <p>Fetching categories ...</p>
+        <mat-progress-bar mode="query"></mat-progress-bar>
+      </div>
+      <div *ngSwitchCase="'delete'">
+        <p>Deleting category ...</p>
+        <mat-progress-bar mode="query"></mat-progress-bar>
+      </div>
+      <div *ngSwitchCase="'nodata'">
+        No data found
+      </div>
+      <div *ngSwitchCase="'active'">
+        <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8 example-full-width">
+
+          <!-- Position Column -->
+          <ng-container matColumnDef="category">
+            <th mat-header-cell *matHeaderCellDef style="font-family: 'Lato', sans-serif;"> Category Name </th>
+            <td mat-cell *matCellDef="let element" style="font-family: 'Lato', sans-serif;"> {{element.category}}
+            </td>
+          </ng-container>
+
+          <!-- Weight Column -->
+          <ng-container matColumnDef="cat_description">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="font-family: 'Lato', sans-serif;"> Description
+            </th>
+            <td mat-cell *matCellDef="let element" style="font-family: 'Lato', sans-serif;">
+              {{element.cat_description}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="edit_cat">
+            <th mat-header-cell *matHeaderCellDef> Edit </th>
+            <td mat-cell *matCellDef="let row; element">
+              <button mat-icon-button (click)="editCategory(row)">
+                <mat-icon aria-label="Example icon-button with a heart icon">edit</mat-icon>
+              </button>
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="delete_cat">
+            <th mat-header-cell *matHeaderCellDef> Delete </th>
+            <td mat-cell *matCellDef="let row; element">
+              <button mat-icon-button (click)="deleteCat(row)">
+                <mat-icon aria-label="Example icon-button with a heart icon">delete</mat-icon>
+              </button>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns;sticky: true"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <mat-paginator #paginator [pageSizeOptions]="[10, 20, 30]" showFirstLastButtons></mat-paginator>
+      </div>
+    </div>
+  </div>
+
+</mat-drawer-container>

@@ -1,0 +1,334 @@
+<h4 class="text-capitalize font-weight-bold text-center pt-3">Add news</h4>
+<div [ngSwitch]="addNewsSwitch" style="padding-bottom:30px;">
+  <div *ngSwitchCase="'active'">
+    <!-- <h3 class="text-center text-capitalize">Add News</h3> -->
+    <form [formGroup]="addNewsForm" (ngSubmit)="onAddNewsFormSubmit()">
+      <!-- HEADLINE AND SUMMARY-->
+      <mat-card class="full-length mb-5">
+        <h5 class="text-capitalize font-weight-bold text-left pt-3 pl-3 lato">Article Details</h5>
+        <div class="row padding-1-em">
+          <div class="col-xl-12">
+            <mat-form-field class="full-length lato">
+              <input class="lato" matInput placeholder="Head Line" type="text" formControlName="headline" required>
+              <mat-error *ngIf="addNewsFormErrors.headline">
+                {{ addNewsFormErrors.headline }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-xl-12">
+            <mat-form-field class="full-length lato">
+              <input class="lato" matInput placeholder="Web Link" type="text" formControlName="webLink" required>
+              <mat-error *ngIf="addNewsFormErrors.webLink">
+                {{ addNewsFormErrors.webLink }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-xl-12">
+            <mat-form-field class="example-full-width full-length lato">
+              <textarea class="lato" matInput placeholder="Summary" formControlName="summary" required></textarea>
+              <mat-error *ngIf="addNewsFormErrors.summary">
+                {{ addNewsFormErrors.summary }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-xl-12">
+            <mat-form-field class="full-length lato">
+              <textarea class="lato" matInput placeholder="Content" formControlName="content" required></textarea>
+              <mat-error *ngIf="addNewsFormErrors.content">
+                {{ addNewsFormErrors.content }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-xl-12">
+            <mat-form-field class="example-full-width lato">
+              <mat-select class="lato" placeholder="Language" formControlName="lang" required #singleSelectLang>
+                <ngx-mat-select-search [formControl]="langFilterControl" [placeholderLabel]="'Search Language...'"
+                  [noEntriesFoundLabel]="'no matching language found'"></ngx-mat-select-search>
+                <mat-option *ngFor="let lang of filteredLanguages | async" [value]="lang">
+                  {{lang}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="addNewsFormErrors.lang">
+                {{ addNewsFormErrors.lang }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <!-- SEGMENTATION WITH STATES-->
+        <div class="row padding-1-em">
+          <div class="col-xl-12">
+            <mat-form-field class="full-length lato">
+              <mat-select class="lato" placeholder="States" formControlName="states" [compareWith]="compareFn" multiple
+                #multiSelectState>
+                <mat-select-trigger>
+                  {{addNewsForm.value?.states ? addNewsForm.value?.states[0].segment_name : ''}}
+                  <span *ngIf="addNewsForm.value?.states.length > 1" class="example-additional-selection">
+                    (+{{addNewsForm.value?.states.length - 1}} {{addNewsForm.value?.states.length === 2 ? 'other' :
+                    'others'}})
+                  </span>
+                </mat-select-trigger>
+                <ngx-mat-select-search [formControl]="stateMultiFilterCtrl" [placeholderLabel]="'Search State...'"
+                  [noEntriesFoundLabel]="'no matching state found'"></ngx-mat-select-search>
+                <mat-option *ngFor="let state of filteredStates | async" [value]="state">{{state.segment_name}}</mat-option>
+              </mat-select>
+              <mat-error *ngIf="addNewsFormErrors.states">
+                {{ addNewsFormErrors.states }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-xl-12">
+            <!-- Selected Options: -->
+            <!-- {{addNewsForm.value?.states | json}} -->
+            <mat-chip-list *ngIf="addNewsForm.value?.states.length > 0">
+              <mat-chip class="lato" *ngFor="let item of addNewsForm.value?.states" color="primary" selected>{{item.segment_name}}</mat-chip>
+            </mat-chip-list>
+          </div>
+        </div>
+        <!-- DISTRICTS -->
+        <div class="row padding-1-em">
+          <div class="col-xl-12">
+            <mat-form-field class="full-length lato">
+              <mat-select class="lato" placeholder="Districts" formControlName="districts" [compareWith]="compareFn" multiple
+                #multiSelectDistrict>
+                <mat-select-trigger>
+                  {{addNewsForm.value?.districts ? addNewsForm.value?.districts[0].district_name : ''}}
+                  <span *ngIf="addNewsForm.value?.districts.length > 1" class="example-additional-selection">
+                    (+{{addNewsForm.value?.districts.length - 1}} {{addNewsForm.value?.districts.length === 2 ? 'other' :
+                    'others'}})
+                  </span>
+                </mat-select-trigger>
+                <ngx-mat-select-search [formControl]="districtMultiFilterCtrl" [placeholderLabel]="'Search District...'"
+                  [noEntriesFoundLabel]="'no matching district found'"></ngx-mat-select-search>
+                <mat-option *ngFor="let district of filteredDistricts | async" [value]="district">{{district.district_name}}</mat-option>
+              </mat-select>
+              <mat-error *ngIf="addNewsFormErrors.districts">
+                {{ addNewsFormErrors.districts }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-xl-12">
+            <!-- Selected Options: -->
+            <!-- {{addNewsForm.value?.states | json}} -->
+            <mat-chip-list *ngIf="addNewsForm.value?.districts.length > 0">
+              <mat-chip class="lato" *ngFor="let item of addNewsForm.value?.districts" color="primary" selected>{{item.district_name}}</mat-chip>
+            </mat-chip-list>
+          </div>
+        </div>
+        <!-- PUBLICATION-->
+        <div class="row padding-1-em">
+          <div class="col-xl-12">
+            <mat-form-field class="full-length lato">
+              <mat-select class="lato" placeholder="Select Publication" formControlName="publications" [compareWith]="compareFn"
+                required #singleSelectPubli>
+                <ngx-mat-select-search [formControl]="publiFilterCtrl" [placeholderLabel]="'Search Publication...'"
+                  [noEntriesFoundLabel]="'no matching publication found'"></ngx-mat-select-search>
+                <mat-option *ngFor="let publication of filteredPubli | async" [value]="publication">{{publication.media_name}}</mat-option>
+              </mat-select>
+              <mat-error *ngIf="addNewsFormErrors.publications">
+                {{ addNewsFormErrors.publications }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-xl-12" *ngIf="addNewsForm.value?.publications !== ''">
+            <div class="row">
+              <div class="col-12 mb-3">
+                <mat-chip-list>
+                    <mat-chip class="lato-chip" *ngFor="let inclination of addNewsForm.value?.publications?.inclination_leader"
+                      selected [ngStyle]="{'background-color': inclination.sentiment === '-1' ? '#EF3333' : inclination.sentiment === '-0.5' ? '#FE6763' : inclination.sentiment === '0' ? '	#FFD238' : inclination.sentiment === '0.5' ? '#88AC76' : inclination.sentiment === '1' ? '#308446' : ''}">
+                      {{inclination.leader}}
+                    </mat-chip>
+                    <mat-chip class="lato-chip" *ngFor="let inclination of addNewsForm.value?.publications?.inclination_party"
+                      selected [ngStyle]="{'background-color': inclination.sentiment === '-1' ? '#EF3333' : inclination.sentiment === '-0.5' ? '#FE6763' : inclination.sentiment === '0' ? '	#FFD238' : inclination.sentiment === '0.5' ? '#88AC76' : inclination.sentiment === '1' ? '#308446' : ''}">
+                      {{inclination.party}}
+                    </mat-chip>
+                </mat-chip-list>
+              </div>
+              <div class="col-12 d-flex flex-row align-items-center justify-content-end">
+                <div *ngFor="let chip of availableColors" class="d-flex flex-row align-items-center">
+                  <div style="height:20px;width:20px" [ngStyle]="{'background-color': chip.color}" class="mr-1"></div>
+                  <div class="lato mr-3 text-capitalize">{{chip.name}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- AUTHOR-->
+        <div class="row padding-1-em">
+          <div class="col-xl-12 d-flex flex-row align-items-center justify-content-between">
+            <mat-form-field class="lato example-full-width pr-3">
+              <mat-select class="lato" placeholder="Select Author" formControlName="authors" [compareWith]="compareFn"
+                required #singleSelectAuthor>
+                <ngx-mat-select-search [formControl]="authorFilterCtrl" [placeholderLabel]="'Search Author...'"
+                  [noEntriesFoundLabel]="'no matching author found'"></ngx-mat-select-search>
+                <mat-option *ngFor="let author of filteredAuthor | async" [value]="author">{{author.author_name}}</mat-option>
+              </mat-select>
+              <!-- <input matInput placeholder="Select Author" type="text" formControlName="authors" required> -->
+              <mat-error *ngIf="addNewsFormErrors.authors">
+                {{ addNewsFormErrors.authors }}
+              </mat-error>
+            </mat-form-field>
+            <a mat-button color="accent" (click)="openAuthorDialog()" appClickStopPropagation style="text-decoration: none">New Author</a>
+          </div>
+          <div class="col-xl-12" *ngIf="addNewsForm.value?.authors !== ''">
+            <div class="row">
+              <div class="col-12 mb-3">
+                <mat-chip-list>
+                    <mat-chip class="lato-chip" *ngFor="let inclination of addNewsForm.value?.authors?.inclination_leader"
+                      selected [ngStyle]="{'background-color': inclination.sentiment === '-1' ? '#EF3333' : inclination.sentiment === '-0.5' ? '#FE6763' : inclination.sentiment === '0' ? '#FFD238' : inclination.sentiment === '0.5' ? '#88AC76' : inclination.sentiment === '1' ? '#308446' : ''}">
+                      {{inclination.leader}}
+                    </mat-chip>
+                    <mat-chip class="lato-chip" *ngFor="let inclination of addNewsForm.value?.authors?.inclination_party"
+                      selected [ngStyle]="{'background-color': inclination.sentiment === '-1' ? '#EF3333' : inclination.sentiment === '-0.5' ? '#FE6763' : inclination.sentiment === '0' ? '	#FFD238' : inclination.sentiment === '0.5' ? '#88AC76' : inclination.sentiment === '1' ? '#308446' : ''}">
+                      {{inclination.party}}
+                    </mat-chip>
+                </mat-chip-list>
+              </div>
+              <div class="col-12 d-flex flex-row align-items-center justify-content-end">
+                <div *ngFor="let chip of availableColors" class="d-flex flex-row align-items-center">
+                  <div style="height:20px;width:20px" [ngStyle]="{'background-color': chip.color}" class="mr-1"></div>
+                  <div class="lato mr-3 text-capitalize">{{chip.name}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TOPIC PART-->
+        <div class="row padding-1-em">
+          <div class="col-xl-12">
+            <mat-form-field class="lato example-full-width pr-3">
+              <mat-select class="lato" placeholder="Select Topic" formControlName="topicCtrl" [compareWith]="compareFn"
+                multiple required #singleSelectTopic>
+                <ngx-mat-select-search [formControl]="topicFilterCtrl" [placeholderLabel]="'Search Topic...'"
+                  [noEntriesFoundLabel]="'no matching topic found'"></ngx-mat-select-search>
+                <mat-option *ngFor="let topic of filteredTopics | async" [value]="topic">
+                  {{topic.category}}
+                </mat-option>
+              </mat-select>
+              <!-- <input matInput placeholder="Select Author" type="text" formControlName="authors" required> -->
+              <mat-error *ngIf="addNewsFormErrors.topicCtrl">
+                {{ addNewsFormErrors.topicCtrl }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <!-- <p>{{addNewsForm.value?.topicCtrl | json}}</p> -->
+          <!-- <p>{{topics | json}}</p> -->
+        </div>
+      </mat-card>
+      <!-- API SENTIMENT OUT-->
+      <div class="row padding-1-em" *ngIf="scrapedNews && scanData && scanData?.api_sentiment_out.length > 0">
+        <p>Predicted Sentiment :
+          <mat-chip-list>
+            <mat-chip class="lato-chip" *ngFor="let item of scanData?.api_sentiment_out" [ngStyle]="{'background-color': item.sentiment < -0.5 ? '#EF3333' : item.sentiment > -0.5 && item.sentiment <= -0.1 ? '#FE6763' : item.sentiment > -0.1 && item.sentiment <= 0.1 ? '#e0ce47' : item.sentiment >= 0.1 && item.sentiment < 0.5 ? '#88AC76' : item.sentiment >= 0.5 ? '#308446' : ''}">
+              {{item.name}}
+            </mat-chip>
+          </mat-chip-list>
+        </p>
+      </div>
+      <!-- ADD PARTY-->
+      <mat-card class="full-length mb-5">
+        <h5 class="text-capitalize font-weight-bold text-left pt-3 pl-3 lato">Article Sentiment</h5>
+        <div class="row padding-1-em">
+          <div class="full-length pl-3" formArrayName="parties">
+            <!-- The repeated party template -->
+            <!-- Columns are always 50% wide, on mobile and desktop -->
+            <div *ngFor="let party of parties.controls; let i=index">
+              <div class="row padding-top-em" [formGroupName]="i">
+                <div class="col-5">
+                  <mat-form-field class="full-length lato">
+                    <mat-select class="lato" placeholder="Party" formControlName="party" #singleSelectParty [compareWith]="compareFn">
+                      <ngx-mat-select-search [formControl]="partyFilterCtrl" [placeholderLabel]="'Search Party...'"
+                      [noEntriesFoundLabel]="'No matching party found'"></ngx-mat-select-search>
+                      <mat-option *ngFor="let party of filteredParties | async" [value]="party">
+                        {{party.party}} ({{party.party_abbr}})
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-5">
+                  <mat-form-field class="full-length lato">
+                    <mat-select class="lato" placeholder="Sentiment" formControlName="sentiment">
+                      <mat-option *ngFor="let sentiment of sentimentScale" [value]="sentiment.value">
+                        {{sentiment.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <a mat-mini-fab color="accent">
+                    <mat-icon aria-label="Example icon-button with a close icon" (click)="removePartyGroup(i)">close</mat-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a mat-mini-fab (click)="addParty()" color="accent"><i class="material-icons">add</i></a>
+            <span class="font-weight-light padding-left-point-5 lato">Add Party</span>
+          </div>
+        </div>
+        <!-- ADD Leader-->
+        <div class="row padding-1-em">
+          <div class="full-length pl-3" formArrayName="leaders">
+            <!-- The repeated leader template -->
+            <!-- Columns are always 50% wide, on mobile and desktop -->
+            <div *ngFor="let leader of leaders.controls; let i=index">
+              <div class="row padding-top-em" [formGroupName]="i">
+                <div class="col-5">
+                  <mat-form-field class="full-length lato">
+                    <mat-select class="lato" placeholder="Leader" formControlName="leader" #singleSelectLeader [compareWith]="compareFn">
+                        <ngx-mat-select-search [formControl]="leaderFilterCtrl" [placeholderLabel]="'Search Leader...'"
+                        [noEntriesFoundLabel]="'No matching leader found'"></ngx-mat-select-search>
+                      <mat-option *ngFor="let leader of filteredLeaders | async" [value]="leader">
+                        {{leader.leader_name}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-5">
+                  <mat-form-field class="full-length lato">
+                    <mat-select class="lato" placeholder="Sentiment" formControlName="sentiment">
+                      <mat-option *ngFor="let sentiment of sentimentScale" [value]="sentiment.value">
+                        {{sentiment.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+                <div class="col-2">
+                  <a mat-mini-fab color="accent">
+                    <mat-icon aria-label="Example icon-button with a close icon" (click)="removeLeaderGroup(i)">close</mat-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a mat-mini-fab (click)="addLeader()" color="accent"><i class="material-icons">add</i></a>
+            <span class="font-weight-light padding-left-point-5">Add Leader</span>
+          </div>
+        </div>
+      </mat-card>
+
+      <!-- <p>Form Value:{{ addNewsForm.value | json }}</p>
+      <p>Topics{{ topics | json }}</p>
+      <p>Form Status{{ addNewsForm.status | json }}</p> -->
+
+      <!-- SUBMIT BUTTON-->
+      <div class="row">
+        <div class="col-xl-12 text-center">
+          <button mat-fab color="accent" type="submit" [disabled]="!addNewsForm.valid">
+            <i class="material-icons">
+              send
+            </i>
+          </button>
+          <!-- <button mat-raised-button color="accent" type="submit" [disabled]="!addNewsForm.valid">SUBMIT</button> -->
+        </div>
+      </div>
+    </form>
+  </div>
+  <div *ngSwitchCase="'message'" class="message-switch">
+    <div *ngIf="mediaScanValue" class="lato">
+      Editing news ...
+      <mat-progress-bar mode="query"></mat-progress-bar>
+    </div>
+    <div *ngIf="!mediaScanValue" class="lato">
+      Adding news to media scan ...
+      <mat-progress-bar mode="query"></mat-progress-bar>
+    </div>
+  </div>
+</div>

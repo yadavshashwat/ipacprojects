@@ -1,0 +1,100 @@
+Hritwik Purwar	3	1998-04-16	7405618245	7405618245	hritwick.purwar@gmail.com	34	665	1	11		143	5158	"Institute Of Law, Nirma University"	1729372198	157.48.107.114			11531225308
+Parag Tiwari	3	1996-04-10	9039931219	9039931219	barristerparagtiwari@gmail.com	19	323	1	11		143	5158	"Institute Of Law, Nirma University"	1381238190	47.247.59.166			21531225308
+N. Pavithra	3	1993-02-17	9789887572	9789887572	nandakumarpavithra@gmail.com	31	540	1	7		119	42075	"Indian Institute Of Management, Raipur"	1381238190	27.56.197.183			31531225308
+Rahul Kumar Raj	3	1998-09-02	7000035658	8109309899	rahulraj0298rr@gmail.com	19	321	1	19		322	51434	Devi Ahilya Vishwavidyalaya Indore	1381238190	110.224.199.231			41531225308
+Hemant Raj	3	1993-12-04	7415585444	7415585445	rajhemant142@gmail.con	19	321	1	19		322	11643	"Vidya Bharati Foundations Institute Of Business Management And Research, Mba, Vidya Nagar, Hubli"	1381238190	110.224.199.231			51531225308
+Megha Kanapala	3	1995-06-21	9505239228	9505239228	17pgp076@iimraipur.ac.in	2	16	1	7		133	42075	"Indian Institute Of Management, Raipur"	1381238190	106.66.187.107			61531225308
+Akshay Bamdale	3	1994-11-01	9584199740	9584199740	akshaybhai369@gmail.com	19	322	1	19		301	15157	"Veena Vadini, Ayurvedic College, Kanha Kunj Akbarpur Choona Bhatti, Kolar Road, Bhopal"	1381238190	223.184.137.239			71531225308
+Rajiv Mankani	3	1996-04-05	9131962894	7089894462	mankanirajiv123@gmail.com	19	309	1	19		309	15071	"Sadhu Waswani College, Bairagarh, Bhopal"	1381238190	47.247.46.67			81531225308
+Sridhar	3	1995-05-23	9677539100	9677539100	sridhararumugam023@gmail.com	31	552	0	31		541	27948	Psg College Of Technology	1381238190	223.228.162.90			91531225308
+Lakki Sai Sharath	3	1999-01-23	9154370709	9154370709	lakkisharath999@gmail.com	2	7	1	2		7	970	"Vignan'S Lara Institute Of Technology & Science, Vadlamudi, Chebrolu Mandal"	1381238190	157.48.117.118			1.01531E+11
+Pratibha Kewalramani	3	1995-12-26	9993762212	9993762212	kewalramani27@gmail.com	19	309	1	19		309	0		1381238190	47.247.44.238			1.11531E+11
+Vishwas Dubey	3	1991-03-03	9340800722	7767884658	vishwasdubey03@gmail.com	19	323	0	20		377	20914	Symbiosis Institute Of International Business	1381238190	49.34.127.32			1.21531E+11
+Animesh Sharma	3	1994-05-10	9002352340	9002352340	animesh.sharmanit@gmail.com	36	714	0	36		714	51734	"National Institute Of Technology, Tiruchirapalli"	1381238190	223.233.62.51			1.31531E+11
+Anushri Anand	3	1983-02-17	9686442609	8971186998	anu.bac@gmail.com	5	97	0	11		145	42261	Institute Of Rural Management Anand	1381238190	106.210.204.191			1.41531E+11
+Rahul Shekhar	3	1997-06-06	8601539661	8601539661	rshekhar3396@gmail.com	5	95	1	34		652	51810	"Indian Institute Of Technology, Kanpur"	1381238190	14.139.38.113			1.51531E+11
+Yash Mittal	3	1998-02-20	7987703648	7048235376	mittalyash401@gmail.com	19	319	1	11		143	5158	"Institute Of Law, Nirma University"	1381238190	47.247.243.34			1.61531E+11
+Santhosh	3	1991-06-27	7639790254	7639790254	santhoshsharma27@yahoo.com	31	557	1	31		557	29038	"Dhirajlal Gandhi College Of Technology, Salem"	1381238190	42.109.158.132			1.71531E+11
+Deenadhayalan P	3	1993-08-05	9842138257	9842138257	deena.p@icloud.com	31	565	0	31		541	27948	Psg College Of Technology	1381238190	42.111.131.146			1.81531E+11
+Lavpreet Singh Sahota	3	1999-09-05	8572017561	8572017561	lavpreetsinghsahota@gmail.com	12	186	1	34		652	51810	"Indian Institute Of Technology, Kanpur"	1381238190	14.139.38.105			1.91531E+11
+Mohan Kannan	3	1999-11-03	9791481937	9791481937	mohannov999@gmail.com	31	557	1	31		540	27637	Madras Medical College & Govt. General Hospital	1381238190	106.203.36.197			2.01531E+11
+Tripathi Shubham Nagendranath	3	1999-06-06	7229089243	7229089243	shubhamtripathi058@gmail.com	11	170	1	11		148	5709	"Government Engineering College, Bharuch"	1381238190	49.34.94.124			2.11531E+11
+Ishank Jain	3	2000-03-11	9782987001	9782987001	ishankjn26@gmail.com	29	515	1	29		518	26168	Swami Keshvanand Institute Of Pharmacy	1381238190	183.82.108.74			2.21531E+11
+Shardool Rastogi	3	1991-09-23	8095822210	7758837442	shardool.rastogi@gmail.com	34	664	0	20		377	20905	Symbiosis Centre For Management And Human Resource Development	1381238190	106.51.75.115			2.31531E+11
+Somya Martand	3	1993-05-26	9460944244	9460944244	somyamartand26@gmail.com	29	534	0	29		534	51674	"Sir Padampat Singhania University, Udaipur"	1381238190	183.82.108.74			2.41531E+11
+Riyaj Memon	3	1993-10-08	9673422144	9673422144	rmemon637@gmail.com	20	375	0	20		373	20190	"Sandip Foundations Sandip Institute Of Technology & Research Centre, P.O.Mahirawani, Dist.Nashik"	1381238190	42.106.229.207			2.51531E+11
+Aishwarya Singh Bhati	3	1993-07-16	8890287518	8890287518	aishwaryabhati1607@gmail.com	29	523	0	7		133	42075	"Indian Institute Of Management, Raipur"	1381238190	106.79.148.194			2.61531E+11
+Sohrab Khan	3	1995-12-13	7499973915	7499973915	sohrabk092@gmail.com	34	676	0	34		611	51770	"Aligarh Muslim University, Aligarh"	1381238190	47.8.212.11			2.71531E+11
+Apoorva Tiwari	3	1995-12-29	8982216988	8982216988	tiwariapoorva91@gmail.com	19	309	1	19		309	40945	Oriental Institute Of Science And Technology	1381238190	27.59.131.208			2.81531E+11
+Ashish Nirmal	3	1986-09-01	9873677241	9873677241	ashish.n15@fms.edu	19	322	1	25		435	0		1381238190	119.82.120.242			2.91531E+11
+Mrinmoyee Das	3	1991-09-10	7753011984	7753011984	mrinmoyee.das@iiml.org	36	719	0	34		658	50108	"Indian Institute Of Management, Lucknow"	1381238190	42.110.142.114			3.01531E+11
+Ravi Pathak	3	1989-01-11	9608848775	9608848775	ravipathak.aec@gmail.com	5	97	0	25		436	42881	Xavier Labour Relations Institute	1381238190	183.82.108.74			3.11531E+11
+Bhavik Jain	3	1998-08-04	7023906136	7023906136	jainbhavik3@gmail.com	29	534	1	34		684	51841	"Indian Institute Of Technology (BHU), Varanasi"	1381238190	183.82.108.74			3.21531E+11
+Richika Jain	3	1993-07-21	8871556162	8871556162	richika.jain93@gmail.com	19	309	0	19		322	15682	Prestige Institute Of Managment	1381238190	27.59.131.208			3.31531E+11
+Vivek Ranjan	3	1987-05-25	7903072930	7903072930	g17108@astra.xlri.ac.in	5	97	0	25		436	42881	Xavier Labour Relations Institute	1381238190	183.82.108.74			3.41531E+11
+Anand Kumar	3	1989-07-13	9051788866	9051788866	anand13kumar@gmail.com	36	716	0	12		181	42561	Management Development Institute	1381238190	42.110.136.195			3.51531E+11
+Kanchan	3	1999-07-02	7275992038	7275992038	kanchanc2799@gmail.com	29	531	1	34		652	51810	"Indian Institute Of Technology, Kanpur"	1381238190	14.139.38.11			3.61531E+11
+Sumit Jain	3	1993-07-18	8107287270	8107287270	jainsumit0018@gmail.com	29	518	1	16		257	51347	"National Law School Of India University, Bangalore"	1381238190	59.97.246.185			3.71531E+11
+Chanchala Naagar	3	1998-06-29	7752989811	7752989811	chanchalanaagar29@gmail.com	29	526	1	34		652	51810	"Indian Institute Of Technology, Kanpur"	1381238190	47.8.69.171			3.81531E+11
+Girija Poongodian	3	1999-02-24	8754628991	8754628991	girijap224@gmail.com	31	550	1	31		563	29510	Prime Nest College Of Architecture And Planning	1381238190	157.50.83.210			3.91531E+11
+Mohan Raj	3	1996-01-10	8220224500	8220224500	mohangtrichy@gmail.com	31	563	0	31		542	51700	"Annamalai University, Annamalainagar"	1381238190	137.59.76.43			4.01531E+11
+Ramkumar	3	1995-07-27	8012292100	8012292100	ramramkumar2795@gmail.com	31	563	0	31		563	48840	Seshasayee Institute Of Technology Ariyamangalam	1381238190	137.59.76.43			4.11531E+11
+Pratyush Kumar	3	1997-01-12	9773758685	9773758685	Pratyush.Kumar@writeme.com	5	95	0	25		442	4913	Ramanujan College	1381238190	223.225.81.160			4.21531E+11
+Aakarsh Gupta	3	1998-09-09	7318019906	7318019906	aakarshg9998@gmail.com	19	322	1	34		652	51810	"Indian Institute Of Technology, Kanpur"	1381238190	106.51.76.178			4.31531E+11
+Sumit Tripathi	3	1992-01-02	8291647914	8291647914	sumittripathi20192@gmail.com	34	612	0	20		369	51478	"Narsee Monjee Institute Of Management Studies, Mumbai"	1381238190	49.33.114.136			4.41531E+11
+Lokesh Deep	3	1992-10-13	9041333253	9041333253	lokeshdeep@yahoo.com	28	499	0	34		639	49913	Insititute Of Management Technology Ghaziabad	1381238190	123.201.155.181			4.51531E+11
+Srikanth	3	1996-02-15	8870095446	8870095446	srikyuvi12@gmail.com	31	550	0	31		562	29767	Infant Jesus College Of Engineering	1381238190	223.182.192.182			4.61531E+11
+Praveen	3	1995-09-24	8056079686	8056079686	Praveen24995ram@gmail.com	31	540	0	31		540	29346	Jaya Engineering College	1381238190	157.51.210.164			4.71531E+11
+Akshay Pandey	3	1991-11-05	7415492129	7415492129	akshaypandey511@gmail.com	19	322	1	31		540	51686	"Indian Institute Of Technology, Chennai"	1381238190	27.59.131.208			4.81531E+11
+Ajai Cherian Philip	3	1992-12-26	9633628623	9633628623	ajai.cherian.philip@gmail.com	17	287	1	7		133	42075	"Indian Institute Of Management, Raipur"	1381238190	14.139.235.161			4.91531E+11
+Rohit Sharma	3	1997-08-05	8697581888	8697581888	rohitsharma@nujs.edu	19	319	1	36		713	51906	"The West Bengal National University Of Juridicial Sciences, Kolkata"	1381238190	42.110.146.22			5.01531E+11
+Himanshu Choudhary	3	1997-09-26	8130913230	8130913230	himanshuchoudhary8130@gmail.com	25	438	1	25		438	4851	Shri Ram College Of Commerce	1381238190	106.223.29.8			5.11531E+11
+Ahana Ray	3	1997-01-18	9582321813	9582321813	ahanaray101@gmail.com	12	181	0	25		438	4848	Miranda House	1381238190	182.64.85.209			5.21531E+11
+Ridhi Soni	3	1996-09-21	9971260406	9971260406	ridhisoni29@gmail.com	25	442	1	25		438	0		1381238190	182.68.219.52			5.31531E+11
+Abhishek Behl	3	1997-09-20	9780805000	9780805000	abhishekbehl07@gmail.com	28	491	1	25		438	0		1381238190	42.111.31.1			5.41531E+11
+Vishal Gupta	3	1997-04-20	9652165423	9652165423	vishal.gupta97@gmail.com	32	573	0	32		573	31800	Sreenidi Institute Of Science &Technology	1381238190	27.59.210.91			5.51531E+11
+Rajshri Upadhyaya	3	1995-08-27	8179572620	8179572620	sonki.rocks95@gmail.com	32	573	0	32		573	0		1381238190	27.59.221.155			5.61531E+11
+Umang Katariya	3	1996-06-12	9810606706	9810606703	katariyaumang@gmail.com	25	442	1	25		442	34928	Amity Law School	1381238190	223.225.118.158			5.71531E+11
+Akshit Choudhary	3	1996-08-10	9643750938	9643750938	choudhary.akshit@yahoo.com	25	436	0	25		438	51141	Delhi Technological University	1381238190	59.177.11.196			5.81531E+11
+Giri Kannan	3	1998-05-27	9444804389	9444804389	giridaran1998@gmail.com	31	557	1	31		552	28821	K.S.Rangasamy College Of Technology	1381238190	117.246.151.232			5.91531E+11
+Shriya Rai	3	1998-09-17	9599339003	9599339003	rai.shriya98@gmail.com	34	684	1	25		442	0		1381238190	106.223.235.109			6.01531E+11
+Stuti Narula	3	1998-06-17	9711075620	9711075620	narulastutzy@gmail.com	25	435	1	25		435	4899	Gargi College	1381238190	49.32.69.48			6.11531E+11
+Sumit Mathur	3	1982-01-08	9810448930	9810448930	sumit.mathurs@gmail.com	25	438	0	12		181	0		1381238190	223.190.23.227			6.21531E+11
+Supriya Ranjan	3	1994-04-18	8969694826	8969694826	suprjn33@gmail.com	5	97	0	5		97	3680	"Bit Extension Center,Patna"	1381238190	106.67.7.198			6.31531E+11
+G Nithya Mohan	3	1986-03-03	8494940409	8494940409	gnithya.pgp17152@iimkashipur.ac	17	297	1	35		696	50561	"Indian Institute Of Management, Kashipur"	1381238190	27.97.202.178			6.41531E+11
+Suraj Yadav	3	1997-07-13	7054123127	7054123127	surajydv3@gmail.com	19	308	1	34		652	51810	"Indian Institute Of Technology, Kanpur"	1381238190	14.139.38.156			6.51531E+11
+Rishabh Aggarwal	3	1998-03-04	9868986493	9868986493	aggarwal.rishabh1998@gmail.com	25	441	0	20		377	20570	"Institute Of Management And Entrepreneurship Development, Pune"	1381238190	103.227.55.237			6.61531E+11
+Nikash Kumar	3	1992-12-15	9504624460	9504624460	nikashkumar78@gmail.com	5	97	1	5		97	0		1381238190	168.235.194.50			6.71531E+11
+Vivek Sharma	3	1997-06-20	9911582851	9911582851	viveksharma7321@gmail.com	25	435	1	12		177	47022	Institute Of Textile Technology	1381238190	47.30.141.206			6.81531E+11
+Priya Gupta	3	1996-02-28	8709736094	8709736094	priyapiya9155@gmail.com	5	97	1	5		97	51101	"Patna University, Patna"	1381238190	47.29.97.100			6.91531E+11
+Anahita Kaur	3	1999-09-01	9799586675	9799586675	kanahita19@gmail.com	34	638	1	34		638	34928	Amity Law School	1381238190	183.83.213.132			7.01531E+11
+Shubbam Kumar	3	1998-11-18	8650826189	8650826189	krshubham656@gmail.com	34	644	1	34		639	35058	"Ajay Kumar Garg Engineering College, Ghaziabad"	1381238190	42.108.1.24			7.11531E+11
+Gaurav Singhal	3	1994-12-30	8982169447	8982169447	gauravsinghal992@gmail.com	19	330	0	19		322	15920	"Ips Academy, Indore"	1381238190	27.59.131.208			7.21531E+11
+Tanishka Khatana	3	1996-03-12	9555944507	9555944507	tanishkakhatana96@gmail.com	12	181	0	25		442	4905	Lady Shri Ram College For Women	1381238190	47.30.244.209			7.31531E+11
+Nimisha Punani	3	1998-01-23	9717160686	9813550031	nimishapunani75@gmail.com	28	492	1	25		438	0		1381238190	106.202.137.23			7.41531E+11
+Rajiv Kumar Jha	3	1995-01-01	8789772097	9102845473	yarajivkumarjha1995@gmail.com	5	81	1	5		81	3333	C. M. Law College	1381238190	157.42.8.17			7.51531E+11
+Siddhant Singh	3	1996-02-06	7388782735	7388782735	singhsiddhuu@gmail.com	34	644	1	34		644	51801	Monad University	1381238190	139.167.161.81			7.61531E+11
+Ishita Bhardwaj	3	1998-10-17	7898136036	9111472187	ishitabhardwaj2014@gmail.com	19	309	1	19		309	14941	Institute For Excellence In Higher Education	1381238190	27.56.222.251			7.71531E+11
+Abhinav Kumar	3	1994-01-18	8294661195	8294661195	abhinav.kumar629@gmail.com	5	96	1	5		97	0		1381238190	157.42.60.148			7.81531E+11
+Natwar Kumar Jha	3	1999-12-10	7033214045	7033214045	Natwarkumar452@gmail.com	5	81	1	5		81	3331	"Bahera College, Bahera"	1381238190	47.29.48.15			7.91531E+11
+Aman Chauhan	3	2000-02-19	827-946-22	8279462232	chauhanaman387@gmail.com	34	626	1	34		639	35050	"Abes Institute Of Technology, Ghaziabad"	1381238190	139.167.110.133			8.01531E+11
+Gautam Kumar	3	2000-07-06	8405940003	8405940003	gs003953@gmail.com	5	97	1	5		97	41967	International School Of Management Patna	1381238190	47.29.51.167			8.11531E+11
+K Siddartha	3	1997-03-21	8334026043	8334026043	siddhu241@gmail.com	2	516	1	36		705	51895	"Indian Institute Of Engineering Science And Technology, Shibpur"	1381238190	47.15.183.163			8.21531E+11
+Ayush Singh	3	1999-12-30	9412722190	9412722190	ayush.52056@gmail.com	34	626	1	34		639	35111	"Ims Engineering College, Ghaziabad"	1381238190	139.167.128.190			8.31531E+11
+Mili Singh	3	1993-11-27	6203599840	6203599840	ravindra.kumar@indianpac.com	5	97	1	5		72	0		1381238190	168.235.194.200			8.41531E+11
+Ekta Yadav	3	1994-02-28	9821951353	9821951353	ekta670@gmail.co	25	435	1	12		181	0		1381238190	103.73.152.145			8.51531E+11
+Malavika B Pillai	3	1993-07-13	8281486841	8281486841	malavika.bp@gmail.com	17	291	0	12		196	51265	"O. P. Jindal Global University, Sonipat"	1381238190	117.230.139.71			8.61531E+11
+Piyush	3	1999-07-04	9304521641	9304521641	rajpiyush72@gmail.com	5	97	1	5		97	41967	International School Of Management Patna	1381238190	106.209.193.32			8.71531E+11
+Sandeep Kumar	3	1998-10-07	9068548439	9068548439	skchhimpa1014@gmail.com	12	195	1	12		183	51619	"Jagannath University, Jaipur"	1381238190	106.204.163.88			8.81531E+11
+Kaynat Tabassum	3	1996-02-11	8374992568	8374992568	kaynattabassum1@gmail.com	5	81	1	34		658	36997	Integral Institute Of Computer Learning Lucknow	1381238190	47.29.4.55			8.91531E+11
+Ritwij Riju	3	1986-03-27	9970966227	9970966227	ritwijriju@gmail.com	5	97	0	20		377	0		1381238190	183.83.213.75			9.01531E+11
+Harsh Kumar	3	1998-02-11	7389192430	7389192430	harshonline98@gmail.com	34	639	1	19		309	41093	Indian Institute Of Science Education And Research	1381238190	27.60.179.222			9.11531E+11
+Himanshu Khale	3	1993-02-05	9340126635	9340126635	himanshusanjaykhale@gmail.com	19	322	1	19		322	0		1381238190	107.167.98.194			9.21531E+11
+Shubham Lall	3	1997-09-30	9304194406	8863045547	shubhamlalxaviern@gmail.com	5	97	1	5		97	35111	"Ims Engineering College, Ghaziabad"	1381238190	157.35.229.109			9.31531E+11
+Shaurya	3	1996-02-19	8178209240	9717585205	shauryak1902@gmail.com	25	442	1	12		181	51242	"The Northcap University, Gurgaon"	1381238190	117.247.139.217			9.41531E+11
+Sumeet Wankhede	3	1992-03-08	8817981372	8817981372	sumi92w@gmail.com	19	309	1	19		309	51418	"Maulana Azad National Institute Of Technology, Bhopal"	1381238190	27.59.131.208			9.51531E+11
+Ashish Kumar	3	1999-06-20	8887409506	8 88874095	akumarrawat4u@gmail.com	34	623	1	34		623	33707	"Sagar Institute Of Technology And Management, Barabanki"	1381238190	47.8.59.216			9.61531E+11
+Sumant Kumar Singh	3	1995-06-28	9835766464	9835766464	sumantsingh7642@gmail.com	5	108	0	5		97	51312	"Birla Institute Of Technology, Ranchi"	1381238190	103.74.111.13			9.71531E+11
+Dheeraj Kumar	3	1991-01-05	8271133459	8271133459	dheeru927@gmail.com	5	97	1	5		97	0		1381238190	168.235.194.118			9.81531E+11
+Vishal Sharma	3	1994-07-06	9536108392	9536108392	vishalbharthana@gmail.com	34	633	1	34		633	34455	"M.D.B.L. Degree College, Baudh Vihar, Bharthana,"	1381238190	106.77.189.234			9.91531E+11
+Kuldeep Porwal	3	1995-09-24	9897036534	9897036534	kuldeepporwal8@gmail.com	34	633	0	34		633	50024	Kamal Institute Of Technology	1381238190	47.8.47.225			1.00153E+12

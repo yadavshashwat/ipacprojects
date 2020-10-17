@@ -1,0 +1,29 @@
+.example-full-width{
+    width:100%;
+}
+.margin-05{
+    margin: 1.5em 0 0 0;
+}
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+.padding-row{
+    padding: 0 0.8em;
+}
+.special-input{
+    border-bottom: 1px solid gray;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    width: 100%;
+}
+
+.fit-image{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.uploaded-image{
+    height:100px;
+    width:100px;
+}

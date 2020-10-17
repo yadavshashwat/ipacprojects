@@ -1,0 +1,7 @@
+button:active, button:hover{
+  outline:none;
+}
+
+.full-width{
+  width:100%;
+}

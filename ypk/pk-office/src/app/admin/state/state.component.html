@@ -1,0 +1,254 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-12 d-flex flex-row flex-wrap align-items-center justify-content-start">
+      <button mat-icon-button (click)="navigateBack()">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+      <div class="d-flex flex-wrap flex-row align-items-center justify-content-start">
+        <div class="ml-5">
+          <mat-form-field>
+            <mat-select placeholder="Team" [formControl]="teamCtrl">
+              <mat-option *ngFor="let team of teams" [value]="team">{{team}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="ml-5">
+          <mat-form-field>
+            <input matInput [matDatepicker]="st" placeholder="Start Date" [formControl]="sdCtrl">
+            <mat-datepicker-toggle matSuffix [for]="st"></mat-datepicker-toggle>
+            <mat-datepicker #st disabled="false"></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="ml-5">
+          <mat-form-field>
+            <input matInput [matDatepicker]="ed" placeholder="End Date" [formControl]="edCtrl">
+            <mat-datepicker-toggle matSuffix [for]="ed"></mat-datepicker-toggle>
+            <mat-datepicker #ed disabled="false"></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="ml-5">
+          <button mat-raised-button color="accent" (click)="resetData()">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div [ngSwitch]="stateDataSwitch">
+    <div *ngSwitchCase="'loading'">
+      <div class="row">
+        <div class="col-12">
+          <mat-progress-bar mode="query"></mat-progress-bar>
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'nointernet'">
+      <div class="row">
+        <div class="col-12">
+          No Internet
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'nodata'">
+      <div class="row">
+        <div class="col-12">
+          No Data
+        </div>
+      </div>
+    </div>
+    <div *ngSwitchCase="'active'" class="mt-5">
+      <div class="row">
+        <div class="col-sm-12 mb-3">
+          <h6>Age</h6>
+          <table mat-table [dataSource]="dataSourceAge" class="mat-elevation-z8 full-width">
+            <ng-container matColumnDef="age">
+              <th mat-header-cell *matHeaderCellDef> Age </th>
+              <td mat-cell *matCellDef="let element"> {{element.age}} </td>
+            </ng-container>
+            <ng-container matColumnDef="total_registrations">
+              <th mat-header-cell *matHeaderCellDef> Total </th>
+              <td mat-cell *matCellDef="let element"> {{element.total_registrations}} </td>
+            </ng-container>
+            <ng-container matColumnDef="Online">
+              <th mat-header-cell *matHeaderCellDef> Online </th>
+              <td mat-cell *matCellDef="let element"> {{element.Online}} </td>
+            </ng-container>
+            <ng-container matColumnDef="callcenter">
+              <th mat-header-cell *matHeaderCellDef> Inbound </th>
+              <td mat-cell *matCellDef="let element"> {{element.callcenter}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsAge"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsAge;"></tr>
+          </table>
+        </div>
+        <div class="col-sm-12 mb-3">
+          <h6>Gender</h6>
+          <table mat-table [dataSource]="dataSourceGender" class="mat-elevation-z8 full-width">
+            <ng-container matColumnDef="gender">
+              <th mat-header-cell *matHeaderCellDef> Gender </th>
+              <td mat-cell *matCellDef="let element"> {{element.gender}} </td>
+            </ng-container>
+            <ng-container matColumnDef="total_registrations">
+              <th mat-header-cell *matHeaderCellDef> Total </th>
+              <td mat-cell *matCellDef="let element"> {{element.total_registrations}} </td>
+            </ng-container>
+            <ng-container matColumnDef="web_form">
+              <th mat-header-cell *matHeaderCellDef> Online </th>
+              <td mat-cell *matCellDef="let element"> {{element.web_form}} </td>
+            </ng-container>
+            <ng-container matColumnDef="callcenter">
+              <th mat-header-cell *matHeaderCellDef> Inbound </th>
+              <td mat-cell *matCellDef="let element"> {{element.callcenter}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsGender"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsGender;"></tr>
+          </table>
+        </div>
+        <div class="col-sm-12 mb-3">
+          <h6>Location</h6>
+          <table mat-table [dataSource]="dataSourceLocation" class="mat-elevation-z8 full-width">
+            <ng-container matColumnDef="village_or_city">
+              <th mat-header-cell *matHeaderCellDef> Location </th>
+              <td mat-cell *matCellDef="let element"> {{element.village_or_city}} </td>
+            </ng-container>
+            <ng-container matColumnDef="total_registrations">
+              <th mat-header-cell *matHeaderCellDef> Total </th>
+              <td mat-cell *matCellDef="let element"> {{element.total_registrations}} </td>
+            </ng-container>
+            <ng-container matColumnDef="web_form">
+              <th mat-header-cell *matHeaderCellDef> Online </th>
+              <td mat-cell *matCellDef="let element"> {{element.web_form}} </td>
+            </ng-container>
+            <ng-container matColumnDef="callcenter">
+              <th mat-header-cell *matHeaderCellDef> Inbound </th>
+              <td mat-cell *matCellDef="let element"> {{element.callcenter}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsLocation"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsLocation;"></tr>
+          </table>
+        </div>
+        <div class="col-sm-12 mb-3">
+          <h6>Party</h6>
+          <table mat-table [dataSource]="dataSourceParty" class="mat-elevation-z8 full-width">
+            <ng-container matColumnDef="parties">
+              <th mat-header-cell *matHeaderCellDef> Parties </th>
+              <td mat-cell *matCellDef="let element"> {{element.parties}} </td>
+            </ng-container>
+            <ng-container matColumnDef="total_registrations">
+              <th mat-header-cell *matHeaderCellDef> Total </th>
+              <td mat-cell *matCellDef="let element"> {{element.total_registrations}} </td>
+            </ng-container>
+            <ng-container matColumnDef="web_form">
+              <th mat-header-cell *matHeaderCellDef> Online </th>
+              <td mat-cell *matCellDef="let element"> {{element.web_form}} </td>
+            </ng-container>
+            <ng-container matColumnDef="callcenter">
+              <th mat-header-cell *matHeaderCellDef> Inbound </th>
+              <td mat-cell *matCellDef="let element"> {{element.callcenter}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsParty"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsParty;"></tr>
+          </table>
+        </div>
+        <div class="col-sm-12 mb-3">
+          <h6>Party Worker</h6>
+          <table mat-table [dataSource]="dataSourcePartyWorker" class="mat-elevation-z8 full-width">
+            <ng-container matColumnDef="party_worker">
+              <th mat-header-cell *matHeaderCellDef> Party Worker </th>
+              <td mat-cell *matCellDef="let element"> {{element.party_worker}} </td>
+            </ng-container>
+            <ng-container matColumnDef="total_registrations">
+              <th mat-header-cell *matHeaderCellDef> Total </th>
+              <td mat-cell *matCellDef="let element"> {{element.total_registrations}} </td>
+            </ng-container>
+            <ng-container matColumnDef="web_form">
+              <th mat-header-cell *matHeaderCellDef> Online </th>
+              <td mat-cell *matCellDef="let element"> {{element.web_form}} </td>
+            </ng-container>
+            <ng-container matColumnDef="callcenter">
+              <th mat-header-cell *matHeaderCellDef> Inbound </th>
+              <td mat-cell *matCellDef="let element"> {{element.callcenter}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsPartyWorker"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsPartyWorker;"></tr>
+          </table>
+        </div>
+        <div class="col-sm-12 mb-3">
+          <h6>Profession</h6>
+          <table mat-table [dataSource]="dataSourceProfession" class="mat-elevation-z8 full-width">
+            <ng-container matColumnDef="profession">
+              <th mat-header-cell *matHeaderCellDef> Profession </th>
+              <td mat-cell *matCellDef="let element"> {{element.profession}} </td>
+            </ng-container>
+            <ng-container matColumnDef="total_registrations">
+              <th mat-header-cell *matHeaderCellDef> Total </th>
+              <td mat-cell *matCellDef="let element"> {{element.total_registrations}} </td>
+            </ng-container>
+            <ng-container matColumnDef="web_form">
+              <th mat-header-cell *matHeaderCellDef> Online </th>
+              <td mat-cell *matCellDef="let element"> {{element.web_form}} </td>
+            </ng-container>
+            <ng-container matColumnDef="callcenter">
+              <th mat-header-cell *matHeaderCellDef> Inbound </th>
+              <td mat-cell *matCellDef="let element"> {{element.callcenter}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsProfessions"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsProfessions;"></tr>
+          </table>
+        </div>
+        <div class="col-sm-12 mb-3">
+          <h6>Qualification</h6>
+          <table mat-table [dataSource]="dataSourceQualification" class="mat-elevation-z8 full-width">
+            <ng-container matColumnDef="qualification">
+              <th mat-header-cell *matHeaderCellDef> Qualification </th>
+              <td mat-cell *matCellDef="let element"> {{element.qualification}} </td>
+            </ng-container>
+            <ng-container matColumnDef="total_registrations">
+              <th mat-header-cell *matHeaderCellDef> Total </th>
+              <td mat-cell *matCellDef="let element"> {{element.total_registrations}} </td>
+            </ng-container>
+            <ng-container matColumnDef="web_form">
+              <th mat-header-cell *matHeaderCellDef> Online </th>
+              <td mat-cell *matCellDef="let element"> {{element.web_form}} </td>
+            </ng-container>
+            <ng-container matColumnDef="callcenter">
+              <th mat-header-cell *matHeaderCellDef> Inbound </th>
+              <td mat-cell *matCellDef="let element"> {{element.callcenter}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsQualification"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsQualification;"></tr>
+          </table>
+        </div>
+        <div class="col-sm-12 mb-3">
+          <h6>District</h6>
+          <table mat-table [dataSource]="dataSourceDistrict" class="mat-elevation-z8 full-width">
+            <ng-container matColumnDef="district">
+              <th mat-header-cell *matHeaderCellDef> District </th>
+              <td mat-cell *matCellDef="let element"> {{element.district}} </td>
+            </ng-container>
+            <ng-container matColumnDef="total_registrations">
+              <th mat-header-cell *matHeaderCellDef> Total </th>
+              <td mat-cell *matCellDef="let element"> {{element.total_registrations}} </td>
+            </ng-container>
+            <ng-container matColumnDef="web_form">
+              <th mat-header-cell *matHeaderCellDef> Online </th>
+              <td mat-cell *matCellDef="let element"> {{element.web_form}} </td>
+            </ng-container>
+            <ng-container matColumnDef="callcenter">
+              <th mat-header-cell *matHeaderCellDef> Inbound </th>
+              <td mat-cell *matCellDef="let element"> {{element.callcenter}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsDistrict"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsDistrict;"></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

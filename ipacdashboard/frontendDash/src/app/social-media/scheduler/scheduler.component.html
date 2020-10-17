@@ -1,0 +1,298 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <mat-toolbar-row>
+      <span class="d-flex pointer">
+        <i class="material-icons md-48" (click)="drawer.toggle()">menu</i>
+      </span>
+      <span style="font-family: 'Lato', sans-serif;padding-left:10px;" class="text-capitalize">digital media dashboard</span>
+      <span class="example-spacer"></span>
+      <i class="material-icons pointer" (click)="logout()">power_settings_new</i>
+    </mat-toolbar-row>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-drawer-container class="example-container bg-white full-page" autosize>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side" [opened]="true">
+    <mat-nav-list>
+      <app-social-media-links></app-social-media-links>
+    </mat-nav-list>
+  </mat-drawer>
+  <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
+    <div class="example-full-width d-flex flex-column align-items-center justify-content-center">
+      <mat-card class="example-full-width mt-5">
+        <!-- <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+          {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+        </button> -->
+        <h5 class="lato font-weight-bold">Scheduler</h5>
+        <mat-vertical-stepper [linear]="isLinear" #stepper>
+          <mat-step [completed]="selectionCompleted">
+            <ng-template matStepLabel class="lato">Select the pages</ng-template>
+            <!--<app-filter class="example-full-width space" (searchRecords)="searchRecords($event)" (selectState)="selectState($event)"-->
+            <!--(selectDistrict)="selectDistrict($event)" (clearFilter)="clearFilter($event)" [clearCriteria]="clearCriteria">-->
+            <!--</app-filter>-->
+            <!--<app-selected class="example-full-width" [selectedRecord]="selectedRecord" (emitToScheduler)="cameFromSelected($event)"-->
+            <!--(emitToForm)="emitToForm($event)" (emitRecordsToForm)="emitRecordsToForm($event)">-->
+            <!--</app-selected>-->
+            <app-records class="example-full-width" (page_selected)="pageSelected($event)">
+            </app-records>
+            <div>
+              <button mat-raised-button matStepperNext>Next</button>
+            </div>
+          </mat-step>
+          <mat-step [stepControl]="postFormGroup">
+            <form [formGroup]="postFormGroup">
+              <ng-template matStepLabel class="lato">Fill out post type &nbsp;
+                <small class="ml-5 text-body" *ngIf="postFormGroup.value.post_type !== ''">{{postFormGroup.value.post_type}}</small>
+              </ng-template>
+              <mat-form-field>
+                <!-- <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required> -->
+                <mat-select placeholder="Type of the post" formControlName="post_type" required (selectionChange)="chosePostType($event)">
+                  <mat-option *ngFor="let post_type of post_types" [value]="post_type.value">
+                    {{post_type.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <div>
+                <button mat-raised-button matStepperNext (click)="showParticularForm(postFormGroup.value)">Next</button>
+              </div>
+            </form>
+            <!-- <p><small>Value : {{postFormGroup.value | json}}</small></p> -->
+          </mat-step>
+          <mat-step [stepControl]="textFormGroup" *ngIf="textForm">
+            <form [formGroup]="textFormGroup">
+              <ng-template matStepLabel>Fill out message
+                <small class="ml-5 text-body" *ngIf="postFormGroup.value.post_type !== ''">{{(textFormGroup.value.message?.length
+                  > 10)? (textFormGroup.value.message | slice:0:10)+''+'...':(textFormGroup.value.message)}}</small>
+              </ng-template>
+              <mat-form-field class="example-full-width">
+                <textarea matInput placeholder="Message" formControlName="message" required>
+                </textarea>
+              </mat-form-field>
+              <!-- <small>Still under development you can proceed without emoji</small>
+              <emoji-mart title="Pick your emoji…" emoji="point_up"></emoji-mart> -->
+              <div class="mt-5">
+                <button mat-raised-button color="primary" class="mr-3" matStepperPrevious>Back</button>
+                <button mat-raised-button color="accent" matStepperNext>Next</button>
+              </div>
+            </form>
+            <!-- <p><small>Value : {{textFormGroup.value | json}}</small></p> -->
+          </mat-step>
+          <mat-step [stepControl]="imageFormGroup" *ngIf="imageForm">
+            <form [formGroup]="imageFormGroup">
+              <ng-template matStepLabel>Fill out images
+                <small class="ml-5 text-body" *ngIf="imageFormGroup.value.message !== ''">{{(imageFormGroup.value.message?.length
+                  > 10)? (imageFormGroup.value.message | slice:0:10)+''+'...':(imageFormGroup.value.message)}}</small>
+              </ng-template>
+              <div class="col-12 d-flex flex-row-reverse align-items-center justify-content-between pl-0">
+
+                <mat-card style="margin:10px 0; width:17em;">
+                  <p class="lato">Selected Pictures:</p>
+                  <div class="lato text-dark ellipsis" style="white-space: pre">{{fileSelectMultipleMsgImage}}</div>
+                </mat-card>
+
+                <td-file-upload #fileMultipleUploadImage (select)="selectMultipleEventImage($event)" (upload)="uploadMultipleEventImage($event)"
+                  (cancel)="cancelMultipleEventImage()" accept=".png,.jpg,.jpeg" defaultColor="accent" activeColor="warn"
+                  cancelColor="primary" multiple class="pl-0 mr-5">
+                  <mat-icon>file_upload</mat-icon>
+                  <span>
+                    {{ fileMultipleUploadImage.value?.name || fileMultipleUploadImage.value?.length }} <span *ngIf="fileMultipleUploadImage.value?.length">files
+                      selected</span>
+                  </span>
+                  <ng-template td-file-input-label>
+                    <mat-icon>add_photo_alternate</mat-icon>
+                    <span class="lato">
+                      Choose multiple .jpg files...
+                    </span>
+                  </ng-template>
+                </td-file-upload>
+              </div>
+              <div class="col-12 d-flex flex-row align-items-center justify-content-between pl-0">
+                <mat-form-field class="example-full-width">
+                  <textarea matInput placeholder="Message" formControlName="message"></textarea>
+                </mat-form-field>
+              </div>
+              <div class="col-12 d-flex flex-row pl-0 pr-0 mb-5 mt-5" *ngIf="uploadedImage">
+                <mat-card *ngFor="let foto of uploadedImage" class="uploaded-image mr-3">
+                  <img mat-card-image src="{{foto.url}}" class="fit-image">
+                </mat-card>
+              </div>
+              <div class="col-12 d-flex flex-column pl-0 pr-0 mb-5 mt-5" *ngIf="progress">
+                <p>Uploading fotos ...</p>
+                <mat-progress-bar mode="query" style="width:18em"></mat-progress-bar>
+              </div>
+              <div>
+                <button mat-raised-button color="primary" class="mr-3" matStepperPrevious>Back</button>
+                <button mat-raised-button color="accent" matStepperNext [disabled]="!uploadedImage">Next</button>
+              </div>
+            </form>
+            <!-- <p><small>message : {{imageFormGroup.value | json}}</small></p> -->
+            <!-- <p><small>images : {{uploaded | json}}</small></p> -->
+          </mat-step>
+          <mat-step [stepControl]="videoFormGroup" *ngIf="videoForm">
+            <form [formGroup]="videoFormGroup">
+              <ng-template matStepLabel>Fill out videos
+                <small class="ml-5 text-body" *ngIf="videoFormGroup.value.message !== ''">{{(videoFormGroup.value.message?.length
+                  > 10)? (videoFormGroup.value.message | slice:0:10)+''+'...':(videoFormGroup.value.message)}}</small>
+              </ng-template>
+              <div class="col-12 d-flex flex-row-reverse align-items-center justify-content-between pl-0">
+
+                <mat-card style="margin:10px 0; width:17em;">
+                  <p class="lato">Selected Videos:</p>
+                  <div class="lato text-dark ellipsis" style="white-space: pre">{{fileSelectMultipleMsgVideo}}</div>
+                </mat-card>
+
+                <td-file-upload #fileMultipleUploadVideo (select)="selectMultipleEventVideo($event)" (upload)="uploadMultipleEventVideo($event)"
+                  (cancel)="cancelMultipleEventVideo()" accept=".mkv,.mp4" defaultColor="accent" activeColor="warn"
+                  cancelColor="primary" multiple class="pl-0 mr-5">
+                  <mat-icon>file_upload</mat-icon>
+                  <span>
+                    {{ fileMultipleUploadVideo.value?.name || fileMultipleUploadVideo.value?.length }} <span *ngIf="fileMultipleUploadVideo.value?.length">files
+                      selected</span>
+                  </span>
+                  <ng-template td-file-input-label>
+                    <mat-icon>add</mat-icon>
+                    <span class="lato">
+                      Choose multiple .mkv | .mp4 files...
+                    </span>
+                  </ng-template>
+                </td-file-upload>
+              </div>
+              <div class="col-12 d-flex flex-row align-items-center justify-content-between pl-0">
+                <mat-form-field class="example-full-width">
+                  <textarea matInput placeholder="Message" formControlName="message"></textarea>
+                </mat-form-field>
+              </div>
+              <div class="col-12 d-flex flex-row pl-0 pr-0 mb-5 mt-5" *ngIf="uploadedVideo">
+                <div *ngFor="let video of uploadedVideo" class="uploaded-image mr-3">
+                  <video width="200" controls>
+                    <source src="{{video.url}}" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="col-12 d-flex flex-column pl-0 pr-0 mb-5 mt-5" *ngIf="progress">
+                <p>Uploading videos ...</p>
+                <mat-progress-bar mode="query" style="width:18em"></mat-progress-bar>
+              </div>
+              <div>
+                <button mat-raised-button color="primary" class="mr-3" matStepperPrevious>Back</button>
+                <button mat-raised-button color="accent" matStepperNext [disabled]="!uploadedVideo">Next</button>
+              </div>
+            </form>
+            <!-- <p><small>message : {{imageFormGroup.value | json}}</small></p> -->
+            <!-- <p><small>images : {{uploaded | json}}</small></p> -->
+          </mat-step>
+          <mat-step [stepControl]="linkFormGroup" *ngIf="linkForm">
+            <form [formGroup]="linkFormGroup">
+              <ng-template matStepLabel>Fill out link
+                <small class="ml-5 text-body" *ngIf="linkFormGroup.value.message !== ''">{{(linkFormGroup.value.message?.length
+                  > 10)? (linkFormGroup.value.message | slice:0:10)+''+'...':(linkFormGroup.value.message)}}</small>
+                <small class="ml-5 text-body" *ngIf="linkFormGroup.value.link !== ''">{{(linkFormGroup.value.link?.length
+                  > 10)? (linkFormGroup.value.link | slice:0:10)+''+'...':(linkFormGroup.value.link)}}</small>
+              </ng-template>
+              <div class="col-12 d-flex flex-column pl-0">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Link" formControlName="link" required>
+                </mat-form-field>
+              </div>
+              <div class="col-12 d-flex flex-column pl-0">
+                <mat-form-field class="example-full-width">
+                  <textarea matInput placeholder="Message" formControlName="message"></textarea>
+                </mat-form-field>
+              </div>
+              <button mat-raised-button color="primary" class="mr-3" matStepperPrevious>Back</button>
+              <button mat-raised-button color="accent" matStepperNext>Next</button>
+            </form>
+            <!-- <p><small>Value: {{linkFormGroup.value | json}}</small></p> -->
+          </mat-step>
+          <mat-step *ngIf="!linkForm && !imageForm && !textForm && !videoForm">
+            <ng-template matStepLabel>Fill out content</ng-template>
+          </mat-step>
+          <mat-step [stepControl]="scheduleFormGroup">
+            <form [formGroup]="scheduleFormGroup" style="width:14em;">
+              <ng-template matStepLabel>Fill out scheduling details
+                <small class="ml-5 text-body" *ngIf="scheduleFormGroup.value.time !== ''">{{(scheduleFormGroup.value.time?.length
+                  > 10)? (scheduleFormGroup.value.time | slice:0:10)+''+'...':(scheduleFormGroup.value.time)}}</small>
+                <small class="ml-5 text-body" *ngIf="scheduleFormGroup.value.date !== ''">{{(scheduleFormGroup.value.date?.length
+                  > 10)? (scheduleFormGroup.value.date | slice:0:10)+''+'...':(scheduleFormGroup.value.date)}}</small>
+              </ng-template>
+              <div class="d-flex flex-column pl-0">
+                <mat-form-field class="lato">
+                  <input matInput [min]="minDate" [matDatepicker]="dp3" placeholder="Choose Date" formControlName="date">
+                  <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+                  <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+                </mat-form-field>
+              </div>
+              <div class="d-flex flex-row align-items-center justify-content-start pl-0 mt-3 mb-3">
+                <input placeholder="Choose Time" class="special-input lato" [ngxTimepicker]="min" [format]="12"
+                  readonly formControlName="time">
+                <ngx-material-timepicker #min></ngx-material-timepicker>
+              </div>
+              <button mat-raised-button color="primary" class="mr-3" matStepperPrevious>Back</button>
+              <button mat-raised-button color="accent" matStepperNext>Next</button>
+            </form>
+            <!-- <p><small>Value: {{scheduleFormGroup.value | json}}</small></p> -->
+            <!-- <p><small>Value: {{scheduleFormGroup.status | json}}</small></p> -->
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Done</ng-template>
+            <small class="text-danger lato">{{!uploadedImage && imageForm ? 'Please upload images' : ''}}</small>
+            <small class="text-danger lato">{{!uploadedVideo && videoForm ? 'Please upload videos' : ''}}</small>
+            <div class="col-12 pl-0 mb-5" *ngIf="showCorrectTime">
+              <small style="color:red">Make sure there is 10 minutes buffer from current time before submitting the
+                form</small>
+            </div>
+            <div class="col-12 pl-0 mb-5" *ngIf="!selectionCompleted">
+              <small style="color:red">Please select pages to for scheduling the post</small>
+            </div>
+            <div>
+              <button mat-raised-button matStepperPrevious class="mr-3">Back</button>
+              <button mat-raised-button color="primary" (click)="stepper.reset()" class="mr-3">Reset</button>
+              <button mat-raised-button color="accent" (click)="onScheduleSubmit()" [disabled]="!(postFormGroup.valid && (textFormGroup.valid || uploadedImage || uploadedVideo || linkFormGroup.valid) && scheduleFormGroup.valid && selectionCompleted)">Submit</button>
+            </div>
+            <div class="col-12 d-flex flex-column pl-0 pr-0 mb-5 mt-5" *ngIf="finalForm">
+              <p>Scheduling Posts ...</p>
+              <mat-progress-bar mode="query" style="width:18em"></mat-progress-bar>
+            </div>
+          </mat-step>
+        </mat-vertical-stepper>
+      </mat-card>
+    </div>
+    <!-- <div [ngSwitch]="overviewSwitch" class="example-full-width">
+              <div *ngSwitchCase="'loading'" class="full-page-top-no d-flex flex-column align-items-center justify-content-center">
+                <p>Fetching media scan ...</p>
+                <mat-progress-bar mode="query" style="width:18em"></mat-progress-bar>
+              </div>
+              <div *ngSwitchCase="'active'">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-8 d-flex flex-row align-items-center justify-content-start">
+                      <span class="text-uppercase display-4">{{pd.page_name}}</span>
+                    </div>
+                    <div class="col-4">
+                      <div class="row">
+                        <div class="col-6 d-flex flex-row align-items-center display-4">{{pd.page_fans[0].value}}</div>
+                        <div class="col-6 d-flex flex-column align-items-start justify-content-center">
+                          <div class="d-flex flex-row align-items-center">
+                            <i class="material-icons" style="color:green">
+                              arrow_upward
+                            </i>
+                            <span class="">{{pd.page_fan_adds_unique_day[0].value}}</span>
+                          </div>
+                          <div class="d-flex flex-row align-items-center">
+                            <i class="material-icons" style="color:red">
+                              arrow_downward
+                            </i>
+                            <span class="">{{pd.page_fan_removes_unique_day[0].value}}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="'message'" class="full-page-top-no d-flex align-items-center justify-content-center">
+                NO DATA FOUND
+              </div>
+            </div> -->
+  </div>
+</mat-drawer-container>

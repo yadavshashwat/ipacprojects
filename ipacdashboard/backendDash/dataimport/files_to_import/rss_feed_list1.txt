@@ -1,0 +1,163 @@
+ABP Live	Sports	Feed 1	http://www.abplive.in/sports/?widgetName=rssfeed&widgetContentId=101313&getXmlFeed=true	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Asian Age	General	Feed 1	http://www.asianage.com/rss/38	title	author	summary	link	pubdate	strategy1	0	0	0	0
+BBC	General	Feed 1	http://feeds.bbci.co.uk/news/world/asia/india/rss.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+BBC	Health	Feed 2	http://feeds.bbci.co.uk/news/world/asia/rss.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Bollowood Hungama	Entertainment	Feed 1	http://www.bollywoodhungama.com/rss/news.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Bollywood	Entertainment	Feed 1	http://www.bollywood.com/rss.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Bollywood Life	Entertainment	Feed 1	http://www.bollywoodlife.com/feed/	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Bollywood News World	Entertainment	Feed 1	http://www.bollywoodnewsworld.com/feed	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Business Standard	General	Feed 1	http://www.business-standard.com/rss/current-affairs-news-11501.rss	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+Business Standard	General	Feed 2	http://www.business-standard.com/rss/home_page_top_stories.rss	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+Business Standard	Business	Feed 3	http://www.business-standard.com/rss/todays-paper.rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Business Standard	Business	Feed 4	http://www.business-standard.com/rss/home_page_top_stories.rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Business Standard	Science	Feed 5	http://www.business-standard.com/rss/technology-108.rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Business Week	Business	Feed 1	http://www.businessweek.com/feeds/most-popular.rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Caravan	General	Feed 1	http://www.caravanmagazine.in/feed	title	author	summary	link	pubdate	strategy1	-1	-0.5	-1	-0.5
+Computer World	Tech	Feed 1	http://www.computerworld.in/rss.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Cricbuzz	Sports	Feed 1	http://live-feeds.cricbuzz.com/CricbuzzFeed	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Cricinfo	Sports	Feed 1	http://www.espncricinfo.com/rss/content/story/feeds/6.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Deccan Chronicle	General	Feed 1	http://www.deccanchronicle.com/rss.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Deccan Herald	General	Feed 1	http://www.deccanherald.com/rss-internal/top-stories.rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+DNA	General	Feed 1	http://www.dnaindia.com/rss.xml	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+DNA	Science	Feed 2	http://www.dnaindia.com/feeds/scitech.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+DNA	Entertainment	Feed 3	http://www.dnaindia.com/feeds/entertainment.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+ET	General	Feed 1	http://economictimes.indiatimes.com/News/rssfeeds/1715249553.cms	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+ET	Business	Feed 2	http://economictimes.indiatimes.com/rssfeedsdefault.cms	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Femina	Health	Feed 1	http://www.femina.in/feeds/feeds-lifestyle.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Femina	Health	Feed 2	http://www.femina.in/feeds/feeds-fitness.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Filmi Beat	Entertainment	Feed 1	http://www.filmibeat.com/rss/filmibeat-fb.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Financial Express	General	Feed 1	http://syndication.financialexpress.com/rss/latest-news.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Financial Express	Tech	Feed 2	http://syndication.financialexpress.com/rss/377/tech.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Firstpost	Politics	Feed 1	http://www.firstpost.com/politics/feed	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+Forbes	Business	Feed 1	http://forbesindia.com/rssfeed/rss_all.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Forbes	Health	Feed 2	http://forbesindia.com/rssfeed/rss_life.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Frontline	Politics	Feed 1	http://www.frontline.in/politics/?service=rss	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	-0.5	-0.5
+FT	Politics	Feed 1	http://www.ft.com/rss/world/asiapacific/india	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+Gizmodo	Tech	Feed 1	http://www.gizmodo.in/rss_section_feeds/19124814.cms	title	author	summary	link	pubdate	strategy1	0	0	0	0
+HT	General	Feed 1	http://feeds.hindustantimes.com/HT-India	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+HT	Business	Feed 2	http://feeds.hindustantimes.com/HT-Business?format=xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+HT	Health	Feed 3	http://feeds.hindustantimes.com/HT-HomePage-TopStories	title	author	summary	link	pubdate	strategy1	0	0	0	0
+HT	Science	Feed 4	http://feeds.hindustantimes.com/HT-Reviews	title	author	summary	link	pubdate	strategy1	0	0	0	0
+HT	Sports	Feed 5	http://feeds.hindustantimes.com/HT-Sport	title	author	summary	link	pubdate	strategy1	0	0	0	0
+HT	Tech	Feed 6	http://feeds.hindustantimes.com/HT-Technology	title	author	summary	link	pubdate	strategy1	0	0	0	0
+HT	Entertainment	Feed 7	http://feeds.hindustantimes.com/HT-Entertainment	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Huffington Post	Business	Feed 1	http://www.huffingtonpost.com/feeds/verticals/business/news.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+IBN Live	General	Feed 1	http://ibnlive.in.com/ibnrss/top.xml	title	author	summary	link	pubdate	strategy1	0	-0.5	0	-0.5
+IBN Live	Politics	Feed 2	http://ibnlive.in.com/ibnrss/rss/politics/politics.xml	title	author	summary	link	pubdate	strategy1	0	-0.5	0	-0.5
+IBN Live	Politics	Feed 3	http://ibnlive.in.com/ibnrss/rss/politics/elections.xml	title	author	summary	link	pubdate	strategy1	0	-0.5	0	-0.5
+IBN Live	Politics	Feed 4	http://ibnlive.in.com/ibnrss/rss/shows/facethenation.xml	title	author	summary	link	pubdate	strategy1	0	-0.5	0	-0.5
+IBN Live	Politics	Feed 5	http://ibnlive.in.com/ibnrss/rss/elections/delhielections.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+IBN Live	Politics	Feed 6	http://ibnlive.in.com/ibnrss/rss/elections/chhattisgarhelections.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+IBN Live	Politics	Feed 7	http://ibnlive.in.com/ibnrss/rss/loksabhaelections/loksabhaelections.xml	title	author	summary	link	pubdate	strategy1	0	-0.5	0	-0.5
+IBN Live	Politics	Feed 8	http://ibnlive.in.com/ibnrss/rss/elections/madhyapradeshelections.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+IBN Live	Politics	Feed 9	http://ibnlive.in.com/ibnrss/rss/elections/rajasthanelections.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+IBN Live	Politics	Feed 10	http://ibnlive.in.com/ibnrss/rss/elections/mizoramelections.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+IBN Live	Politics	Feed 11	http://ibnlive.in.com/ibnrss/rss/elections/haryanaelections.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+IBN Live	Politics	Feed 12	http://ibnlive.in.com/ibnrss/rss/elections/maharashtraelections.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+IBN Live	Politics	Feed 13	http://ibnlive.in.com/ibnrss/rss/elections/odishaelections.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+IBN Live	Politics	Feed 14	http://ibnlive.in.com/ibnrss/rss/elections/andhrapradeshelections.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+IBN Live	Politics	Feed 15	http://ibnlive.in.com/ibnrss/rss/elections/sikkimelections.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+In	Entertainment	Feed 1	http://www.in.com/-sthash.XTJcCE91.dpuf	title	author	summary	link	pubdate	strategy1	0	0	0	0
+India Today	General	Feed 1	http://indiatoday.feedsportal.com/c/33614/f/589699/index.rss	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+India Today	General	Feed 2	http://indiatoday.feedsportal.com/c/33614/f/589699/index.rss	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+India Today	Health	Feed 3	http://indiatoday.intoday.in/rss/homepage-topstories.jsp	title	author	summary	link	pubdate	strategy1	0	0	0	0
+India Today	Sports	Feed 4	http://indiatoday.feedsportal.com/c/33614/f/589706/index.rss?	title	author	summary	link	pubdate	strategy1	0	0	0	0
+India Today	Sports	Feed 5	http://indiatoday.intoday.in/rss/article.jsp?sid=84	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Indian Express	General	Feed 1	http://indianexpress.com/section/india/feed/	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+Indian Express	Politics	Feed 2	http://indianexpress.com/section/india/politics/feed/	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+Indian Express	Science	Feed 3	http://indianexpress.com/technology/feed/	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Indian Express	Sports	Feed 4	http://syndication.indianexpress.com/rss/785/latest-news.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Indian Express	Tech	Feed 5	http://indianexpress.com/section/technology/feed/	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Indian Express	Entertainment	Feed 6	http://indianexpress.com/entertainment/feed/	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Indo Daily	Science	Feed 1	http://www.indodaily.com/indodaily.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Live Mint	General	Feed 1	http://www.livemint.com/rss/homepage	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+Live Mint	Politics	Feed 2	http://www.livemint.com/rss/economy_politics	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+Live Mint	Business	Feed 3	http://www.livemint.com/rss/homepage	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Live Mint	Business	Feed 4	http://www.livemint.com/rss/companies	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Live Mint	Business	Feed 5	http://www.livemint.com/rss/consumer	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Live Mint	Business	Feed 6	http://www.livemint.com/rss/money	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Live Mint	Business	Feed 7	http://www.livemint.com/rss/industry	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Live Mint	Entertainment	Feed 8	http://www.livemint.com/rss/lounge	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Mans World	Health	Feed 1	http://www.mansworldindia.com/feed/	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Men XP	Health	Feed 1	http://www.mensxp.com/feeds.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Mid-day	General	Feed 1	http://www.mid-day.com/Resources/midday/rss/news-national.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+MSN	Health	Feed 1	http://lifestyle.in.msn.com/rss/health.aspx	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Music maza	Entertainment	Feed 1	http://feeds2.feedburner.com/musicmaza/zNyY	title	author	summary	link	pubdate	strategy1	0	0	0	0
+NDTV	Business	Feed 1	http://feeds.feedburner.com/NDTV-Business?format=xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+NDTV	Science	Feed 2	http://feeds.feedburner.com/NDTV-Tech	title	author	summary	link	pubdate	strategy1	0	0	0	0
+NDTV	Sports	Feed 3	http://feeds.feedburner.com/NDTV-Sports	title	author	summary	link	pubdate	strategy1	0	0	0	0
+NDTV	Sports	Feed 4	http://feeds.feedburner.com/NDTV-Cricket	title	author	summary	link	pubdate	strategy1	0	0	0	0
+NVO News	General	Feed 1	http://nvonews.com/feed/	title	author	summary	link	pubdate	strategy1	0	0	0	0
+NY Times	Business	Feed 1	http://www.nytimes.com/services/xml/rss/nyt/InternationalBusiness.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+One India	General	Feed 1	http://www.oneindia.com/rss/news-india-fb.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+One india	Business	Feed 2	http://www.oneindia.com/rss/news-business-fb.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+One india	Sports	Feed 3	http://www.oneindia.com/rss/news-sports-fb.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Outlook	General	Feed 1	http://www.outlookindia.com/rss/main/website	title	author	summary	link	pubdate	strategy1	-0.5	0	0	0
+Outlook	General	Feed 2	http://www.outlookindia.com/rss/main/newswire	title	author	summary	link	pubdate	strategy1	-0.5	0	0	0
+Outlook	General	Feed 3	http://www.outlookindia.com/rss/section/19	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Outlook	Business	Feed 4	http://www.outlookindia.com/rss/section/18	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Outlook	Sports	Feed 5	http://www.outlookindia.com/rss/section/22	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Outlook	Entertainment	Feed 6	http://www.outlookindia.com/rss/section/23	title	author	summary	link	pubdate	strategy1	0	0	0	0
+PC Quest	Gaming	Feed 1	http://www.pcquest.com/rss-2-2/?cat_slug=games	title	author	summary	link	pubdate	strategy1	0	0	0	0
+PC Quest	Tech	Feed 2	http://www.pcquest.com/rss-2-2/?cat_slug=news-launches	title	author	summary	link	pubdate	strategy1	0	0	0	0
+PC Quest	Tech	Feed 3	http://www.pcquest.com/rss-2-2/?cat_slug=tech-&-trends	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Reuters	Business	Feed 1	http://feeds.reuters.com/reuters/INbusinessNews	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Reuters	Sports	Feed 2	http://feeds.reuters.com/reuters/worldOfSport	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Reuters	Entertainment	Feed 3	http://feeds.reuters.com/reuters/INentertainmentNews	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Rolling Stone	Entertainment	Feed 1	http://rollingstoneindia.com/feed/	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Sage Pub	Politics	Feed 1	http://inp.sagepub.com/rss/current.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Sify	General	Feed 1	http://sify.com/rss2/news/article/category/national	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Sify	Politics	Feed 2	http://sify.com/rss2/news/article/category/politics	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Sify	Business	Feed 3	http://sify.com/rss2/business/article/category/bank	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Sify	Business	Feed 4	http://sify.com/rss2/business/article/category/ipo	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Sify	Science	Feed 5	http://sify.com/rss2/news/article/category/science	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Sify	Sports	Feed 6	http://sify.com/rss2/sports/article/category/cricket	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Sify	Sports	Feed 7	http://sify.com/rss2/sports/article/category/football	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Sify	Sports	Feed 8	http://sify.com/rss2/sports/article/category/others	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Sify	Tech	Feed 9	http://sify.com/rss2/business/article/category/technology	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Sikh Siyasat	General	Feed 1	http://www.sikhsiyasat.com/feed/	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Tech Tree	Tech	Feed 1	http://www.techtree.com/rss.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Tehelka	General	Feed 1	http://www.tehelka.com/?feed=custom_feed	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+Tehelka	Business	Feed 2	http://www.tehelka.com/economy/?feed=custom_feed	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Tehelka	Entertainment	Feed 3	http://www.tehelka.com/cinema/?feed=custom_feed	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Telly Chakkar	Entertainment	Feed 1	http://www.tellychakkar.com/rss.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Economist	Politics	Feed 1	http://www.economist.com/topics/india/index.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Health Site	Health	Feed 1	http://www.thehealthsite.com/comments/feed/	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Hindu	General	Feed 1	http://www.thehindubusinessline.com/news/?service=rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Hindu	General	Feed 2	http://www.thehindubusinessline.com/news/international/?service=rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Hindu	General	Feed 3	http://www.thehindu.com/news/national/?service=rss	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+The Hindu	Politics	Feed 4	http://www.thehindu.com/news/national/?service=rss	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+The Hindu	Politics	Feed 5	http://www.thehindu.com/news/international/south-asia/?service=rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Hindu	Politics	Feed 6	http://www.thehindu.com/news/cities/?service=rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Hindu	Health	Feed 7	http://www.thehindu.com/sci-tech/health/?service=rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Hindu	Science	Feed 8	http://www.thehindu.com/sci-tech/science/?service=rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Hindu	Sports	Feed 9	http://www.thehindu.com/sport/?service=rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Hindu	Tech	Feed 10	http://www.thehindu.com/sci-tech/?service=rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Hindu	Tech	Feed 11	http://www.thehindu.com/sci-tech/technology/?service=rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Hindu	Entertainment	Feed 12	http://www.thehindu.com/entertainment/?service=rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Telegraph	General	Feed 1	http://www.telegraphindia.com/feeds/rss.jsp?id=3	title	author	summary	link	pubdate	strategy1	-1	-0.5	-0.5	-0.5
+The Telegraph	Politics	Feed 2	http://www.telegraphindia.com/feeds/rss.jsp?id=4	title	author	summary	link	pubdate	strategy1	-1	-0.5	-0.5	-0.5
+The Telegraph	Sports	Feed 3	http://www.telegraphindia.com/feeds/rss.jsp?id=7	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Telegraph	Entertainment	Feed 4	http://www.telegraphindia.com/feeds/rss.jsp?id=20	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Times	Business	Feed 1	http://www.thetimes.co.uk/tto/business/markets/india/rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+The Wire	General	Feed 1	http://thewire.in/feed/	title	author	summary	link	pubdate	strategy1	-1	-0.5	-0.5	-0.5
+TOI	General	Feed 1	http://timesofindia.feedsportal.com/c/33039/f/533916/index.rss	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+TOI	General	Feed 2	http://timesofindia.feedsportal.com/c/33039/f/533965/index.rss	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+TOI	Politics	Feed 3	http://timesofindia.feedsportal.com/c/33039/f/533916/index.rss	title	author	summary	link	pubdate	strategy1	-0.5	-0.5	0	-0.5
+TOI	Business	Feed 4	http://timesofindia.feedsportal.com/c/33039/f/534010/index.rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+TOI	Business	Feed 5	http://timesofindia.feedsportal.com/c/33039/f/533919/index.rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+TOI	Health	Feed 6	http://timesofindia.indiatimes.com/rssfeeds/2886714.cms	title	author	summary	link	pubdate	strategy1	0	0	0	0
+TOI	Science	Feed 7	http://timesofindia.indiatimes.com/rss.cms	title	author	summary	link	pubdate	strategy1	0	0	0	0
+TOI	Sports	Feed 8	http://timesofindia.feedsportal.com/c/33039/f/533921/index.rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+TOI	Tech	Feed 9	http://timesofindia.feedsportal.com/c/33039/f/533923/index.rss	title	author	summary	link	pubdate	strategy1	0	0	0	0
+TOI	Entertainment	Feed 10	http://timesofindia.indiatimes.com/rssfeeds/1081479906.cms	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Yahoo	Politics	Feed 1	https://in.news.yahoo.com/rss/politics	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Yahoo	Politics	Feed 2	https://in.news.yahoo.com/rss/national	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Yahoo	Business	Feed 3	https://in.news.yahoo.com/rss//india	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Yahoo	Sports	Feed 4	https://in.news.yahoo.com/rss/sports	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Zee	General	Feed 1	http://zeenews.india.com/rss/world-news.xml	title	author	summary	link	pubdate	strategy1	-0.5	-1	0	-1
+Zee	Business	Feed 2	http://zeenews.india.com/rss/business.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Zee	Science	Feed 3	http://zeenews.india.com/rss/science-technology-news.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Zee	Sports	Feed 4	http://zeenews.india.com/rss/sports-news.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Zee	Tech	Feed 5	http://zeenews.india.com/rss/science-technology-news.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0
+Zee	Entertainment	Feed 6	http://zeenews.india.com/rss/india-national-news.xml	title	author	summary	link	pubdate	strategy1	0	0	0	0

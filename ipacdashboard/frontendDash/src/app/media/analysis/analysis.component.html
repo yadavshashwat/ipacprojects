@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <mat-toolbar-row>
+            <span class="d-flex pointer">
+                <i class="material-icons md-48" (click)="drawer.toggle()">menu</i>
+            </span>
+            <span style="font-family: 'Lato', sans-serif;padding-left:10px;" class="text-uppercase">Media</span>
+            <span class="example-spacer"></span>
+            <i class="material-icons pointer" (click)="logout()">power_settings_new</i>
+        </mat-toolbar-row>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-drawer-container class="example-container full-page bg-white" autosize>
+    <mat-drawer #drawer class="example-sidenav side-bar" mode="side" [opened]="false">
+        <mat-nav-list>
+            <app-media-links class="text-capitalize"></app-media-links>
+        </mat-nav-list>
+    </mat-drawer>
+
+    <!-- <div class="example-sidenav-content">
+        <button type="button" mat-button (click)="drawer.toggle()">
+            <i class="material-icons md-48">menu</i>
+        </button>
+        <button mat-button raised color="accent" (click)="logout()">Logout</button>
+    </div> -->
+
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+        <h4 class="text-capitalize font-weight-bold text-center pt-3">Analysis</h4>
+        <img src="https://cdn.dribbble.com/users/433429/screenshots/3512879/underconstruction.gif" />
+    </div>
+
+</mat-drawer-container>

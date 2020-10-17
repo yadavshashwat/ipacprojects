@@ -1,0 +1,1 @@
+allreviews = doc1.xpath("//div[contains(@class,'d15Mdf')]")

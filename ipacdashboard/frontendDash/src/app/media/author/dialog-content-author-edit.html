@@ -1,0 +1,139 @@
+<mat-dialog-content class="mat-typography">
+    <h2 mat-dialog-title class="font-weight-light padding-1-em">Edit Author</h2>
+    <form [formGroup]="editAuthorForm" (ngSubmit)="onEditAuthorSubmit()">
+        <div class="row padding-1-em">
+            <div class="col-xl-12">
+                <mat-form-field class="full-length">
+                    <input matInput type="text" placeholder="Author Name" formControlName="author_name" required>
+                    <mat-error *ngIf="editAuthorFormErrors.author_name">
+                        {{ editAuthorFormErrors.author_name }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row padding-1-em">
+            <div class="col-xl-12">
+                <mat-form-field class="full-length">
+                    <input matInput type="text" placeholder="Caste" formControlName="author_caste">
+                </mat-form-field>
+            </div>
+        </div>
+        <!-- ADD PARTY-->
+        <div class="row padding-1-em">
+            <div class="col-xl-12">
+                
+                    <!-- <button mat-fab><i class="material-icons">control_point_duplicate</i></button> -->
+                    <!-- The repeated party template -->
+                    <!-- Columns are always 50% wide, on mobile and desktop -->
+                    <mat-form-field class="example-chip-list full-length">
+                        <mat-chip-list #chipList>
+                            <mat-chip *ngFor="let mediaName of mediaNames" [selectable]="selectable" [removable]="removable" (removed)="remove(mediaName)">
+                                {{mediaName}}
+                                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                            </mat-chip>
+                            <input placeholder="Media Name" #mediaNameInput formControlName="media_name" [matAutocomplete]="auto" [matChipInputFor]="chipList"
+                                [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)">
+                        </mat-chip-list>
+                        <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                            <mat-option *ngFor="let mediaName of filteredMediaNames | async" [value]="mediaName">
+                                {{mediaName}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+            </div>
+        </div>
+        <!-- ADD PARTY-->
+        <div class="row padding-1-em">
+            <div class="col-xl-12">
+                <div class="full-length" formArrayName="parties">
+                    <!-- <button mat-fab><i class="material-icons">control_point_duplicate</i></button> -->
+                    <!-- The repeated party template -->
+                    <!-- Columns are always 50% wide, on mobile and desktop -->
+                    <div *ngFor="let party of parties.controls; let i=index">
+                        <div class="row padding-top-em" [formGroupName]="i">
+                            <div class="col-5">
+                                <mat-form-field class="full-length">
+                                    <mat-select class="lato" placeholder="Party" formControlName="party">
+                                        <ngx-mat-select-search [formControl]="partyFilterCtrl" [placeholderLabel]="'Search Party...'"
+                                        [noEntriesFoundLabel]="'No matching party found'"></ngx-mat-select-search>
+                                        <mat-option *ngFor="let partyOpt of filteredParties | async" [value]="partyOpt.party">
+                                            {{partyOpt.party}} ({{partyOpt.party_abbr}})
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-5">
+                                <mat-form-field class="full-length">
+                                    <mat-select placeholder="Sentiment" formControlName="sentiment">
+                                        <mat-option *ngFor="let sentiment of sentimentScale" [value]="sentiment.value">
+                                            {{sentiment.viewValue}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-2">
+                                <a mat-icon-button color="primary">
+                                    <mat-icon aria-label="Example icon-button with a close icon" (click)="removePartyGroup(i)">close</mat-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a mat-mini-fab (click)="addParty()" color="primary"><i class="material-icons">add</i></a><span class="font-weight-light padding-left-point-5">Add
+                        Party</span>
+                </div>
+            </div>
+        </div>
+        <!-- ADD Leader-->
+        <div class="row padding-1-em">
+            <div class="col-xl-12">
+                <div class="full-length" formArrayName="leaders">
+                    <!-- The repeated leader template -->
+                    <!-- Columns are always 50% wide, on mobile and desktop -->
+                    <div *ngFor="let leader of leaders.controls; let i=index">
+                        <div class="row padding-top-em" [formGroupName]="i">
+                            <div class="col-5">
+                                <mat-form-field class="full-length">
+                                    <mat-select class="lato" placeholder="Leader" formControlName="leader">
+                                        <ngx-mat-select-search [formControl]="leaderFilterCtrl" [placeholderLabel]="'Search Leader...'"
+                                        [noEntriesFoundLabel]="'No matching leader found'"></ngx-mat-select-search>
+                                        <mat-option *ngFor="let leaderOpt of filteredLeaders | async" [value]="leaderOpt.leader_name">
+                                        {{leaderOpt.leader_name}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-5">
+                                <mat-form-field class="full-length">
+                                    <mat-select placeholder="Sentiment" formControlName="sentiment">
+                                        <mat-option *ngFor="let sentiment of sentimentScale" [value]="sentiment.value">
+                                            {{sentiment.viewValue}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-2">
+                                <a mat-icon-button color="primary">
+                                    <mat-icon aria-label="Example icon-button with a close icon" (click)="removeLeaderGroup(i)">close</mat-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a mat-mini-fab (click)="addLeader()" color="primary"><i class="material-icons">add</i></a><span class="font-weight-light padding-left-point-5">Add
+                        Leader</span>
+                </div>
+            </div>
+        </div>
+        <div class="row padding-1-em">
+            <div class="col-xl-12">
+                <button mat-raised-button color="accent" type="submit" [disabled]="!editAuthorForm.valid">Update</button>
+            </div>
+        </div>
+    </form>
+    <!-- <p>Value: {{addAuthorForm.value | json}}</p>
+        <p>Form status: {{addAuthorForm.status | json}}</p> -->
+
+</mat-dialog-content>
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+        Use of this source code is governed by an MIT-style license that
+        can be found in the LICENSE file at http://angular.io/license -->

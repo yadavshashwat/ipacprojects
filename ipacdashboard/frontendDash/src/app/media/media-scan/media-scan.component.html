@@ -1,0 +1,215 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <mat-toolbar-row>
+            <span class="d-flex pointer">
+                <i class="material-icons md-48" (click)="drawer.toggle()">menu</i>
+            </span>
+            <span style="font-family: 'Lato', sans-serif;padding-left:10px;" class="text-uppercase">Media</span>
+            <span class="example-spacer"></span>
+            <i class="material-icons pointer" (click)="logout()">power_settings_new</i>
+        </mat-toolbar-row>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-drawer-container class="example-container full-page bg-white" autosize>
+    <mat-drawer #drawer class="example-sidenav side-bar" mode="side" [opened]="false">
+        <mat-nav-list>
+            <app-media-links class="text-capitalize"></app-media-links>
+        </mat-nav-list>
+    </mat-drawer>
+
+    <!-- <div class="example-sidenav-content">
+        <button type="button" mat-button (click)="drawer.toggle()">
+            <i class="material-icons md-48">menu</i>
+        </button>
+        <button mat-button raised color="accent" (click)="logout()">Logout</button>
+    </div> -->
+
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+        <h4 class="text-capitalize font-weight-bold text-center pt-3">media scan</h4>
+        <section class="example-full-width">
+            <h6 class="font-weight-bold mt-5">Filters</h6>
+            <mat-form-field class="ml-3">
+                <mat-select placeholder="Language" [formControl]="mediaLangMasterCtrl">
+                    <ngx-mat-select-search [formControl]="filterMediaLangCtrl" [placeholderLabel]="'Search Language...'"
+                    [noEntriesFoundLabel]="'no matching language found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let lang of filteredMediaLang | async" [value]="lang">{{lang}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="ml-3">
+                <mat-select placeholder="Keyword" [formControl]="mediaKeyMasterCtrl">
+                    <ngx-mat-select-search [formControl]="filterMediaKeyCtrl" [placeholderLabel]="'Search Keyword...'"
+                    [noEntriesFoundLabel]="'no matching keyword found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let key of filteredMediaKey | async" [value]="key.id">{{key.keyword}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="ml-3">
+                <mat-select placeholder="Channel" [formControl]="mediaChannelMasterCtrl">
+                    <ngx-mat-select-search [formControl]="filterMediaChannelCtrl" [placeholderLabel]="'Search Channel...'"
+                    [noEntriesFoundLabel]="'no matching channel found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let channel of filteredMediaChannel | async" [value]="channel.id">{{channel.media_name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="ml-3">
+                <mat-select placeholder="Author" [formControl]="mediaAuthorMasterCtrl">
+                    <ngx-mat-select-search [formControl]="filterMediaAuthorCtrl" [placeholderLabel]="'Search Author...'"
+                    [noEntriesFoundLabel]="'no matching author found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let author of filteredMediaAuthor | async" [value]="author.id">{{author.author_name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="ml-3">
+                <mat-select placeholder="Category" [formControl]="mediaCatMasterCtrl">
+                    <ngx-mat-select-search [formControl]="filterMediaCatCtrl" [placeholderLabel]="'Search Category...'"
+                    [noEntriesFoundLabel]="'no matching category found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let cat of filteredMediaCat | async" [value]="cat.category">{{cat.category}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="ml-3">
+                <input matInput placeholder="Search Article" [formControl]="mediaArtMasterCtrl">
+            </mat-form-field>
+
+
+            <mat-form-field class="ml-3">
+                <mat-select placeholder="Segmentation" [formControl]="mediaSegMasterCtrl">
+                    <ngx-mat-select-search [formControl]="filterMediaSegCtrl" [placeholderLabel]="'Search Segment...'"
+                    [noEntriesFoundLabel]="'no matching segment found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let seg of filteredMediaSeg | async" [value]="seg.segmentation_id">{{seg.segment_name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="ml-3">
+                <input matInput [matDatepicker]="start_date" placeholder="Start date" [formControl]="mediaStMasterCtrl">
+                <mat-datepicker-toggle matSuffix [for]="start_date"></mat-datepicker-toggle>
+                <mat-datepicker #start_date disabled="false"></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field class="ml-3">
+                <input matInput [matDatepicker]="end_date" placeholder="End date" disabled [formControl]="mediaEtMasterCtrl">
+                <mat-datepicker-toggle matSuffix [for]="end_date"></mat-datepicker-toggle>
+                <mat-datepicker #end_date disabled="false" ></mat-datepicker>
+            </mat-form-field>
+
+            <button mat-raised-button (click)="resetMedia()" class="ml-3">Clear</button>
+            <button mat-raised-button color="accent" (click)="get_csv()" class="ml-3">Download</button>
+        </section>
+        <div [ngSwitch]="mediaScanSwitch" class="example-full-width">
+            <div *ngSwitchCase="'loading'" class="container message-switch">
+                <p>Fetching media scan ...</p>
+                <mat-progress-bar mode="query"></mat-progress-bar>
+            </div>
+            <div *ngSwitchCase="'active'" class="example-full-width">
+                <mat-paginator *ngIf="mediaScanList.length > 0" [hidePageSize]="true" [length]="totalRecords"
+                    [pageSize]="pageSize" (page)="pageEvent($event)">
+                </mat-paginator>
+                <div [ngSwitch]="mediaAccordionSwitch">
+                    <div *ngSwitchCase="'loading'" class="message-switch">
+                        <p>Fetching media scan ...</p>
+                        <mat-progress-bar mode="query"></mat-progress-bar>
+                    </div>
+                    <div *ngSwitchCase="'active'" class="example-full-width">
+                        <mat-accordion>
+                            <mat-expansion-panel *ngFor="let media of mediaScanList;let i=index" (opened)="panelOpenState = true"
+                                (closed)="panelOpenState = false">
+                                <mat-expansion-panel-header [collapsedHeight]="'120px'" [expandedHeight]="'120px'">
+                                    <mat-panel-title>
+                                        <div class="row example-full-width" style="font-family: 'Lato', sans-serif;">
+                                            <div class="col-xl-3 align-items-center">
+                                                <mat-chip-list>
+                                                    <mat-chip *ngFor="let keyword of media.user_sentiment_pair_keyword | slice:0:2" [ngStyle]="{'background-color': keyword.sentiment < -0.5 ? '#EF3333' : keyword.sentiment > -0.5 && keyword.sentiment <= -0.1 ? '#FE6763' : keyword.sentiment > -0.1 && keyword.sentiment <= 0.1 ? '#e0ce47' : keyword.sentiment >= 0.1 && keyword.sentiment < 0.5 ? '#88AC76' : keyword.sentiment >= 0.5 ? '#308446' : ''}">
+                                                        {{keyword.name}}
+                                                    </mat-chip>
+                                                </mat-chip-list>
+                                                <button mat-button class="mt-1" *ngIf="media.user_sentiment_pair_keyword.length > 2" (click)="openkeyDialog(media.user_sentiment_pair_keyword)">More</button>
+                                            </div>
+                                            <div class="col-xl-2 d-flex align-items-center mat-title">{{media.created_at | date:'mediumDate'}}</div>
+                                            <div class="col-xl-6 d-flex align-items-center mat-title"><a href="{{media.link}}"
+                                                    target="_blank">
+                                                    {{media.headline}}</a></div>
+                                            <!-- <div class="col-xl-6 d-flex align-items-center">
+                                                {{(media.summary.length > 200)? (media.summary |
+                                                slice:0:200)+''+'...':(media.summary)}}
+                                            </div> -->
+                                            <div class="col-xl-1 d-flex align-items-center mat-title">{{media.channel_name}}</div>
+                                        </div>
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <div class="row">
+                                    <div class="col-xl-10 d-flex">
+                                        <!-- <span class="full-length d-flex align-items-center">Keywords :
+                                            <mat-chip-list>
+                                                <mat-chip *ngFor="let keyword of media.keyword_list_dict" selected
+                                                    color="primary">
+                                                    {{keyword.keyword}}
+                                                </mat-chip>
+                                            </mat-chip-list>
+                                        </span> -->
+                                    </div>
+                                    <div class="col-xl-2 d-flex align-items-center justify-content-center">
+                                        <button mat-mini-fab color="accent" class="float-right fab-button-margin"
+                                            (click)="takeToEdit(media)" [disabled]="!user.is_admin || !user.is_media_admin">
+                                            <i class="material-icons">
+                                                edit
+                                            </i>
+                                        </button>
+                                        <button mat-mini-fab color="accent" class="float-right fab-button-margin"
+                                        [disabled]="!user.is_admin || !user.is_media_admin" (click)="delete(media)">
+                                            <i class="material-icons">
+                                                delete
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <span><small>HEADLINE</small></span>
+                                <p class="font-weight-normal mat-headline">
+                                    {{media.headline}}
+                                </p>
+                                <span><small>SUMMARY</small></span>
+                                <p class="font-weight-normal mat-title" *ngFor="let summary of media?.summary">
+                                    {{summary}}
+                                </p>
+                                <span><small>CONTENT</small></span>
+                                <p class="font-weight-normal mat-title" *ngFor="let content of media?.content">
+                                    {{content}}
+                                </p>
+                                <span *ngIf="media.language !== 'English'"><small>TRANSLATION</small></span>
+                                <mat-divider *ngIf="media.language !== 'English'"></mat-divider>
+                                <p class="font-weight-normal text-capitalize mat-headline" *ngIf="media.language !== 'English'">
+                                    {{media.content_en_headline}}
+                                </p>
+                                <div *ngIf="media.language !== 'English'">
+                                    <p class="font-weight-normal mat-title" *ngFor="let summary of media?.content_en_summary">
+                                        {{summary}}
+                                    </p>
+                                </div>
+                                <div *ngIf="media.language !== 'English'">
+                                    <p class="font-weight-normal mat-title" *ngFor="let content of media.content_en_content">
+                                        {{content}}
+                                    </p>
+                                </div>
+                                <!-- <p class="full-length d-flex align-items-center">User :
+                                    <mat-chip-list>
+                                        <mat-chip *ngFor="let keyword of media.user_sentiment_pair_keyword" [ngStyle]="{'background-color': keyword.sentiment < -0.5 ? '#EF3333' : keyword.sentiment > -0.5 && keyword.sentiment <= -0.1 ? '#FE6763' : keyword.sentiment > -0.1 && keyword.sentiment <= 0.1 ? '#e0ce47' : keyword.sentiment >= 0.1 && keyword.sentiment < 0.5 ? '#88AC76' : keyword.sentiment >= 0.5 ? '#308446' : ''}">
+                                            {{keyword.name}}
+                                        </mat-chip>
+                                    </mat-chip-list>
+                                </p> -->
+
+                                <!-- <p class="full-length d-flex align-items-center">API :
+                                    <mat-chip-list>
+                                        <mat-chip *ngFor="let keyword of media.api_sentiment_pair_keywords" [ngStyle]="{'background-color': keyword.sentiment < -0.5 ? '#EF3333' : keyword.sentiment > -0.5 && keyword.sentiment <= -0.1 ? '#FE6763' : keyword.sentiment > -0.1 && keyword.sentiment <= 0.1 ? '#e0ce47' : keyword.sentiment >= 0.1 && keyword.sentiment < 0.5 ? '#88AC76' : keyword.sentiment >= 0.5 ? '#308446' : ''}">
+                                            {{keyword.name}}
+                                        </mat-chip>
+                                    </mat-chip-list>
+                                </p> -->
+                            </mat-expansion-panel>
+                        </mat-accordion>
+                    </div>
+                    <div *ngIf="mediaScanList.length === 0">
+                        No Data Found
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</mat-drawer-container>

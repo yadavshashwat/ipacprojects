@@ -1,0 +1,2 @@
+Indian Express	News	hidasjhdoi	http://syndication.indianexpress.com/rss/latest-news.xml	title	author	summary	link	published_parsed	strategy1	strategy1	0	0	0	0
+Indian Express	Editorials	doashuih	http://syndication.indianexpress.com/rss/33/front-page.xml	title	author	summary	link	published_parsed	strategy1	strategy1	-0.5	-0.5	-0.5	-0.5

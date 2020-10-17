@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>List of pages</h1>
+<div mat-dialog-content>
+  <div [ngSwitch]="pagesSwitch">
+    <div *ngSwitchCase="'loading'">
+      Please wait while fetching the pages ...
+    </div>
+    <div *ngSwitchCase="'active'">
+      <mat-list role="list">
+        <mat-list-item role="listitem" *ngFor="let page of pages">{{page}}</mat-list-item>
+      </mat-list>
+    </div>
+  </div>
+</div>

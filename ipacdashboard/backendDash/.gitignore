@@ -1,0 +1,16 @@
+.DS_Store
+.idea/*
+nohup.out
+/dataimport/.DS_Store
+*.pyc
+social/deploy_post.py
+social/deploy_page.py
+scripts
+Lib
+tcl
+include
+social/__init__.pyc
+social/models.pyc
+social/views.pyc
+**/static/*
+.vscode/

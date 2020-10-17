@@ -1,0 +1,136 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <mat-toolbar-row>
+      <span class="d-flex pointer">
+        <i class="material-icons md-48" (click)="drawer.toggle()">menu</i>
+      </span>
+      <span style="font-family: 'Lato', sans-serif;padding-left:10px;" class="text-capitalize">digital media dashboard</span>
+      <span class="example-spacer"></span>
+      <i class="material-icons pointer" (click)="logout()">power_settings_new</i>
+    </mat-toolbar-row>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-drawer-container class="example-container bg-white full-page" autosize>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side" [opened]="true">
+    <mat-nav-list>
+      <app-social-media-links></app-social-media-links>
+    </mat-nav-list>
+  </mat-drawer>
+
+
+  <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
+    <div class="row padding-top-em example-full-width">
+      <div class="col-5 d-flex flex-row align-items-center justify-content-start">
+        <h3 class="text-capitalize" style="padding-left:10px">District mapping to posts</h3>
+      </div>
+      <!-- <div class="col-2 d-flex flex-row align-items-start justify-content-start">
+          <mat-form-field class="example-full-width">
+            <mat-select [(value)]="selected" (selectionChange)="invokePaginator($event)">
+              <mat-option value="thisyear">This Year</mat-option>
+              <mat-option value="yesterday">Yesterday</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-2 d-flex flex-row align-items-start justify-content-start">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Select State" (selectionChange)="mapDistricts($event)" [(value)]="selectedState">
+              <mat-option *ngFor="let state of states" value="{{state.state}}">{{state.state}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-2 d-flex flex-row align-items-start justify-content-start">
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Select District" (selectionChange)="filterData($event)" [(value)]="selectedDistrict">
+              <mat-option *ngFor="let district of districts" value="{{district}}">{{district}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-1 d-flex flex-row align-items-center justify-content-end">
+          <button mat-raised-button color="accent" (click)="clearFilters()">Clear</button>
+        </div> -->
+    </div>
+    <div class="row padding-top-em example-full-width">
+      <div class="col-12 d-flex flex-row align-items-start justify-content-start" style="padding-left: 25px;">
+        <div [ngSwitch]="districtMappingSwitch" class="example-full-width">
+          <div *ngSwitchCase="'loading'" class="d-flex flex-column align-items-center justify-content-center" style="height: 25em;">
+            <p>Fetching list ...</p>
+            <mat-progress-bar mode="query" style="width:18em"></mat-progress-bar>
+          </div>
+          <div *ngSwitchCase="'active'" style="padding-bottom:50px">
+            <div class="mat-elevation-z8">
+              <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8 example-full-width">
+
+                <!--- Note that these columns can be defined in any order.
+                                          The actual rendered columns are set as a property on the row definition" -->
+
+                <!-- Position Column -->
+                <ng-container matColumnDef="page_name">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Page Name</th>
+                  <td mat-cell *matCellDef="let element"> {{element.page_name}} </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="page_state">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> State </th>
+                  <td mat-cell *matCellDef="let element">
+                    {{element.page_state}}
+                  </td>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="page_district">
+                  <th mat-header-cell *matHeaderCellDef> District
+                  <td mat-cell *matCellDef="let element">
+                    {{element.page_district}}
+                  </td>
+                </ng-container>
+
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="page_category">
+                  <th mat-header-cell *matHeaderCellDef> Category
+                  </th>
+                  <td mat-cell *matCellDef="let element">
+                    {{element.page_category}}
+                  </td>
+                </ng-container>
+
+                <ng-container matColumnDef="action">
+                  <th mat-header-cell *matHeaderCellDef> Action
+                  </th>
+                  <td mat-cell *matCellDef="let row; element" (click)="openDialog(row)">
+                    <button mat-mini-fab color="primary">
+                      <i class="material-icons">
+                        edit
+                      </i>
+                    </button>
+                  </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="pointer"></tr>
+              </table>
+              <mat-paginator #paginator [pageSizeOptions]="[10, 20, 30]" showFirstLastButtons></mat-paginator>
+              <div class="row d-flex mb-5 flex-row align-items-center justify-content-end p-3 mr-3">
+                <!-- <span class="font-weight-bold"></span> -->
+                <button mat-raised-button color="accent" (click)="exportAsXLSX()" [disabled]="dataSourceReal.length < 1">
+                  <mat-icon>save_alt</mat-icon> Download
+                </button>
+              </div>
+            </div>
+          </div>
+          <div *ngSwitchCase="'message'" class="d-flex flex-column align-items-center justify-content-center">
+            <span>API failed</span>
+            <img src="https://cdn.dribbble.com/users/1121009/screenshots/5270889/dribbble_23.jpg" />
+          </div>
+          <div *ngSwitchCase="'filter'" class="d-flex flex-column align-items-center justify-content-center">
+            <p>Filtering the data</p>
+            <mat-progress-bar mode="query" style="width:18em"></mat-progress-bar>
+          </div>
+          <div *ngSwitchCase="'nodata'" class="d-flex flex-column align-items-center justify-content-center">
+            <p>No Data Found</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-drawer-container>

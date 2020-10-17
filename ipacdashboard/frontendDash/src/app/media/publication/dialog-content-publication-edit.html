@@ -1,0 +1,235 @@
+<mat-dialog-content class="mat-typography">
+    <h2 mat-dialog-title class="font-weight-light padding-1-em">Edit Publication</h2>
+    <form [formGroup]="editPublicationForm" (ngSubmit)="onEditPublicationSubmit()">
+        <div class="row padding-1-em">
+            <div class="col-xl-12">
+                <mat-form-field class="example-full-width">
+                    <input matInput type="text" placeholder="Media Name" formControlName="media_name" required>
+                    <mat-error *ngIf="editPublicationFormErrors.media_name">
+                        {{ editPublicationFormErrors.media_name }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row padding-1-em">
+            <div class="col-xl-12">
+                <mat-form-field class="example-full-width">
+                    <input matInput type="text" placeholder="Article Type" formControlName="article_type" required>
+                    <mat-error *ngIf="editPublicationFormErrors.article_type">
+                        {{ editPublicationFormErrors.article_type }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row padding-1-em" *ngIf="user.is_admin">
+            <div class="col-xl-12">
+                <mat-form-field class="example-full-width">
+                    <input matInput type="text" placeholder="Title" formControlName="title_str_name" required>
+                    <mat-error *ngIf="editPublicationFormErrors.title_str_name">
+                        {{ editPublicationFormErrors.title_str_name }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row padding-1-em" *ngIf="user.is_admin">
+            <div class="col-xl-12">
+                <mat-form-field class="example-full-width">
+                    <input matInput type="text" placeholder="Author Name" formControlName="author_str_name" required>
+                    <mat-error *ngIf="editPublicationFormErrors.author_str_name">
+                        {{ editPublicationFormErrors.author_str_name }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row padding-1-em" *ngIf="user.is_admin">
+            <div class="col-xl-12">
+                <mat-form-field class="example-full-width">
+                    <input matInput type="text" placeholder="Summary" formControlName="summary_str_name" required>
+                    <mat-error *ngIf="editPublicationFormErrors.summary_str_name">
+                        {{ editPublicationFormErrors.summary_str_name }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row padding-1-em" *ngIf="user.is_admin">
+            <div class="col-xl-12">
+                <mat-form-field class="example-full-width">
+                    <input matInput type="text" placeholder="Link Name" formControlName="link_str_name" required>
+                    <mat-error *ngIf="editPublicationFormErrors.link_str_name">
+                        {{ editPublicationFormErrors.link_str_name }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row padding-1-em" *ngIf="user.is_admin">
+            <div class="col-xl-12">
+                <mat-form-field class="example-full-width">
+                    <input matInput type="text" placeholder="Page Content" formControlName="page_content_str" required>
+                    <mat-error *ngIf="editPublicationFormErrors.page_content_str">
+                        {{ editPublicationFormErrors.page_content_str }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row padding-1-em" *ngIf="user.is_admin">
+            <div class="col-xl-12">
+                <mat-slide-toggle formControlName="is_active">Active Status</mat-slide-toggle>
+                <mat-error *ngIf="editPublicationFormErrors.is_active">
+                    {{ editPublicationFormErrors.is_active }}
+                </mat-error>
+            </div>
+        </div>
+        <div class="row padding-1-em" *ngIf="user.is_admin">
+            <div class="col-xl-12">
+                <mat-form-field class="example-full-width">
+                    <input matInput type="text" placeholder="Publication Name" formControlName="pubdate_str_name" required>
+                    <mat-error *ngIf="editPublicationFormErrors.pubdate_str_name">
+                        {{ editPublicationFormErrors.pubdate_str_name }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row padding-1-em">
+            <div class="col-xl-12">
+                <mat-form-field class="example-full-width">
+                    <mat-select placeholder="Language" formControlName="lang" required>
+                        <mat-option *ngFor="let lang of languages" [value]="lang">
+                            {{lang}}
+                        </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="editPublicationFormErrors.lang">
+                        {{ editPublicationFormErrors.lang }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row padding-1-em" *ngIf="user.is_admin">
+            <div class="col-xl-12">
+                <mat-form-field class="example-full-width">
+                    <input matInput type="text" placeholder="Author Content" formControlName="author_content_str" required>
+                    <mat-error *ngIf="editPublicationFormErrors.author_content_str">
+                        {{ editPublicationFormErrors.author_content_str }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <!-- ADD PARTY-->
+        <div class="row padding-1-em">
+            <div class="example-full-width" formArrayName="parties">
+                <!-- The repeated party template -->
+                <!-- Columns are always 50% wide, on mobile and desktop -->
+                <div *ngFor="let party of parties.controls; let i=index">
+                    <div class="row padding-top-em" [formGroupName]="i">
+                        <div class="col-5">
+                            <mat-form-field class="example-full-width">
+                                <mat-select placeholder="Party" formControlName="party">
+                                    <mat-option *ngFor="let party of partyValues" [value]="party.party">
+                                        {{party.party}} ({{party.party_abbr}})
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-5">
+                            <mat-form-field class="example-full-width">
+                                <mat-select placeholder="Sentiment" formControlName="sentiment">
+                                    <mat-option *ngFor="let sentiment of sentimentScale" [value]="sentiment.value">
+                                        {{sentiment.viewValue}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-2">
+                            <a mat-icon-button color="primary">
+                                <mat-icon aria-label="Example icon-button with a close icon" (click)="removePartyGroup(i)">close</mat-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a mat-mini-fab (click)="addParty()" color="primary"><i class="material-icons">add</i></a>
+                <span class="font-weight-light padding-left-point-5">Add Party</span>
+            </div>
+        </div>
+
+        <!-- ADD Leader-->
+        <div class="row padding-1-em">
+            <div class="example-full-width" formArrayName="leaders">
+                <!-- The repeated leader template -->
+                <!-- Columns are always 50% wide, on mobile and desktop -->
+                <div *ngFor="let leader of leaders.controls; let i=index">
+                    <div class="row padding-top-em" [formGroupName]="i">
+                        <div class="col-5">
+                            <mat-form-field class="example-full-width">
+                                <mat-select placeholder="Leader" formControlName="leader">
+                                    <mat-option *ngFor="let leader of leaderValues" [value]="leader.leader_name">
+                                        {{leader.leader_name}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-5">
+                            <mat-form-field class="example-full-width">
+                                <mat-select placeholder="Sentiment" formControlName="sentiment">
+                                    <mat-option *ngFor="let sentiment of sentimentScale" [value]="sentiment.value">
+                                        {{sentiment.viewValue}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-2">
+                            <a mat-icon-button color="primary">
+                                <mat-icon aria-label="Example icon-button with a close icon" (click)="removeLeaderGroup(i)">close</mat-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a mat-mini-fab (click)="addLeader()" color="primary"><i class="material-icons">add</i></a>
+                <span class="font-weight-light padding-left-point-5">Add Leader</span>
+            </div>
+        </div>
+        <!-- ADD RSS FEED-->
+        <div class="row padding-1-em" *ngIf="user.is_admin">
+            <div class="example-full-width" formArrayName="rss_feed">
+                <!-- <button mat-fab><i class="material-icons">control_point_duplicate</i></button> -->
+                <!-- The repeated party template -->
+                <!-- Columns are always 50% wide, on mobile and desktop -->
+                <div *ngFor="let feed of rss_feed.controls; let i=index">
+                    <div class="row padding-top-em" [formGroupName]="i">
+                        <div class="col-5">
+                            <mat-form-field class="example-full-width">
+                                <input matInput type="text" placeholder="Feed Link" formControlName="feedlink" required>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-3">
+                            <mat-form-field class="example-full-width">
+                                <input matInput type="text" placeholder="Feed Category" formControlName="feedcat" required>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-3 d-flex align-items-center justify-content-center">
+                            <mat-slide-toggle formControlName="active">Active Status</mat-slide-toggle>
+                        </div>
+                        <div class="col-1">
+                            <a mat-icon-button color="primary">
+                                <mat-icon aria-label="Example icon-button with a close icon" (click)="removeFeedGroup(i)">close</mat-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a mat-mini-fab (click)="addFeed()" color="primary"><i class="material-icons">add</i></a>
+                <span class="font-weight-light padding-left-point-5">Add RSS feed</span>
+            </div>
+        </div>
+        <!-- SUBMIT BUTTON-->
+        <div class="row padding-1-em">
+            <div class="col-xl-12">
+                <button mat-raised-button color="accent" type="submit" [disabled]="!editPublicationForm.valid">Update</button>
+            </div>
+        </div>
+    </form>
+    <!-- <p>Value: {{editPublicationForm.value | json}}</p>
+    <p>Form status: {{editPublicationForm.status | json}}</p> -->
+</mat-dialog-content>
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

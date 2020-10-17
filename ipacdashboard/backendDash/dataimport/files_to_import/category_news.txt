@@ -1,0 +1,19 @@
+General	description
+Electoral	description
+Castes	description
+Class	description
+Welfare	description
+Schemes	description
+Defence	description
+Economy	description
+Diplomacy	description
+Governance	description
+Law & Order	description
+Employment	description
+Political	description
+Dynamics	description
+Communal	description
+Polarization	description
+Campaign & Events	description
+Leader	description
+Party	description

@@ -1,0 +1,92 @@
+<div class="container-fluid" style="padding:0">
+  <div class="row no-gutters">
+    <div class="col-12">
+      <mat-card class="example-full-width margin-05">
+        <form [formGroup]="scheduleForm" (ngSubmit)="onScheduleSubmit()">
+          <div class="col-12">
+            <h4 class="text-capitalize lato text-right">Scheduler form</h4>
+          </div>
+          <div class="col-12 text-right" *ngIf="showCorrectTime">
+            <small style="color:red">Make sure there is 10 minutes buffer from current time before submitting the form</small>
+          </div>
+          <div class="row padding-row">
+            <div class="col-6">
+              <mat-form-field class="example-full-width lato">
+                <input matInput [min]="minDate" [matDatepicker]="dp3" placeholder="Choose Date" formControlName="date">
+                <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+                <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+                <mat-error *ngIf="scheduleFormErrors.date">
+                  {{ scheduleFormErrors.date }}
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <div class="col-6 d-flex flex-row align-items-center justify-content-start">
+              <input placeholder="Choose Time" class="special-input lato" [ngxTimepicker]="min" [format]="12" readonly
+                formControlName="time">
+              <ngx-material-timepicker #min></ngx-material-timepicker>
+              <div *ngIf="scheduleFormErrors.time">
+                {{ scheduleFormErrors.time }}
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <mat-form-field class="example-full-width lato">
+              <textarea matInput placeholder="Message" formControlName="text"></textarea>
+              <mat-error *ngIf="scheduleFormErrors.text">
+                {{ scheduleFormErrors.text }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12 d-flex flex-row-reverse align-items-center justify-content-between">
+
+            <mat-card style="margin:10px 0; width:20em;">
+              <p class="lato">Selected Pictures:</p>
+              <div class="lato text-dark" style="white-space: pre">{{fileSelectMultipleMsg}}</div>
+            </mat-card>
+
+            <td-file-upload #fileMultipleUpload (select)="selectMultipleEvent($event)" (upload)="uploadMultipleEvent($event)"
+              (cancel)="cancelMultipleEvent()" accept=".png,.jpg,.jpeg" defaultColor="accent" activeColor="warn"
+              cancelColor="primary" multiple [disabled]="fileDisable">
+              <mat-icon>file_upload</mat-icon>
+              <span>
+                {{ fileMultipleUpload.value?.name || fileMultipleUpload.value?.length }} <span *ngIf="fileMultipleUpload.value?.length">files
+                  selected</span>
+              </span>
+              <ng-template td-file-input-label >
+                <mat-icon>add_photo_alternate</mat-icon>
+                <span class="lato">
+                  Choose multiple .jpg files...
+                </span>
+              </ng-template>
+            </td-file-upload>
+          </div>
+          <div class="col-12 d-flex flex-row" *ngIf="uploaded.length > 0">
+            <mat-card *ngFor="let foto of uploaded" class="uploaded-image" style="margin-right:5px;">
+              <img mat-card-image src="{{foto.url}}" class="fit-image">
+            </mat-card>
+          </div>
+          <div class="col-12" style="padding-top:10px;">
+            <mat-form-field class="example-full-width lato">
+              <input matInput #inputEl placeholder="Link" type="url" formControlName="link">
+              <mat-error *ngIf="scheduleFormErrors.link">
+                {{ scheduleFormErrors.link }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <!-- <small>{{scheduleForm.value | json}}</small><br>
+          <small>Selected Records ? {{form}}</small><br>
+          <small>Schedule Form Valid ? {{scheduleForm.valid}}</small><br>
+          <small>Selected Records ? {{selected | json}}</small> -->
+
+          <div class="col-12 d-flex flex-row align-items-center justify-content-end">
+            <button mat-fab color="accent" [disabled]="!(scheduleForm.valid && form)">
+              <i class="material-icons">
+                send
+              </i>
+            </button>
+          </div>
+        </form>
+      </mat-card>
+    </div>
+  </div>
+</div>

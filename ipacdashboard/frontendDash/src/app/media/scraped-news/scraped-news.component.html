@@ -1,0 +1,194 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <mat-toolbar-row>
+            <span class="d-flex pointer">
+                <i class="material-icons md-48" (click)="drawer.toggle()">menu</i>
+            </span>
+            <span style="font-family: 'Lato', sans-serif;padding-left:10px;" class="text-uppercase">Media</span>
+            <span class="example-spacer"></span>
+            <i class="material-icons pointer" (click)="logout()">power_settings_new</i>
+        </mat-toolbar-row>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-drawer-container class="example-container full-page bg-white" autosize>
+    <mat-drawer #drawer class="example-sidenav side-bar" mode="side" [opened]="false">
+        <mat-nav-list>
+            <app-media-links class="text-capitalize"></app-media-links>
+        </mat-nav-list>
+    </mat-drawer>
+
+    <!-- <div class="example-sidenav-content">
+        <button type="button" mat-button (click)="drawer.toggle()">
+            <i class="material-icons md-48">menu</i>
+        </button>
+        <button mat-button raised color="accent" (click)="logout()">Logout</button>
+    </div> -->
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+        <h4 class="text-capitalize font-weight-bold text-center pt-3">scraped news</h4>
+        <section class="example-full-width">
+            <h6 class="font-weight-bold mt-5">Filters</h6>
+            <mat-form-field class="ml-3">
+                <mat-select placeholder="Language" [formControl]="mediaLangMasterCtrl">
+                    <ngx-mat-select-search [formControl]="filterMediaLangCtrl" [placeholderLabel]="'Search Language...'"
+                        [noEntriesFoundLabel]="'no matching language found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let lang of filteredMediaLang | async" [value]="lang">{{lang}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="ml-3">
+                <mat-select placeholder="Keyword" [formControl]="mediaKeyMasterCtrl">
+                    <ngx-mat-select-search [formControl]="filterMediaKeyCtrl" [placeholderLabel]="'Search Keyword...'"
+                        [noEntriesFoundLabel]="'no matching keyword found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let key of filteredMediaKey | async" [value]="key.id">{{key.keyword}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="ml-3">
+                <mat-select placeholder="Channel" [formControl]="mediaChannelMasterCtrl">
+                    <ngx-mat-select-search [formControl]="filterMediaChannelCtrl" [placeholderLabel]="'Search Channel...'"
+                        [noEntriesFoundLabel]="'no matching channel found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let channel of filteredMediaChannel | async" [value]="channel.id">{{channel.media_name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="ml-3">
+                <mat-select placeholder="Author" [formControl]="mediaAuthorMasterCtrl">
+                    <ngx-mat-select-search [formControl]="filterMediaAuthorCtrl" [placeholderLabel]="'Search Author...'"
+                        [noEntriesFoundLabel]="'no matching author found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let author of filteredMediaAuthor | async" [value]="author.id">{{author.author_name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!-- <mat-form-field class="ml-3">
+                <mat-select placeholder="Category" [formControl]="mediaCatMasterCtrl">
+                    <ngx-mat-select-search [formControl]="filterMediaCatCtrl" [placeholderLabel]="'Search Category...'"
+                        [noEntriesFoundLabel]="'no matching category found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let cat of filteredMediaCat | async" [value]="cat.category">{{cat.category}}</mat-option>
+                </mat-select>
+            </mat-form-field> -->
+
+            <mat-form-field class="ml-3">
+                <input matInput placeholder="Search Article" [formControl]="mediaArtMasterCtrl">
+            </mat-form-field>
+
+
+            <mat-form-field class="ml-3">
+                <mat-select placeholder="Segmentation" [formControl]="mediaSegMasterCtrl">
+                    <ngx-mat-select-search [formControl]="filterMediaSegCtrl" [placeholderLabel]="'Search Segment...'"
+                        [noEntriesFoundLabel]="'no matching segment found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let seg of filteredMediaSeg | async" [value]="seg.segmentation_id">{{seg.segment_name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="ml-3">
+                <input matInput [matDatepicker]="start_date" placeholder="Start date" [formControl]="mediaStMasterCtrl">
+                <mat-datepicker-toggle matSuffix [for]="start_date"></mat-datepicker-toggle>
+                <mat-datepicker #start_date disabled="false"></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field class="ml-3">
+                <input matInput [matDatepicker]="end_date" placeholder="End date" disabled [formControl]="mediaEtMasterCtrl">
+                <mat-datepicker-toggle matSuffix [for]="end_date"></mat-datepicker-toggle>
+                <mat-datepicker #end_date disabled="false"></mat-datepicker>
+            </mat-form-field>
+
+            <button mat-raised-button (click)="resetMedia()" class="ml-3">Clear</button>
+        </section>
+        <div [ngSwitch]="scrapedNewsSwitch">
+            <div *ngSwitchCase="'loading'" class="container message-switch lato" style="width:30em">
+                <p>Fetching scraped news ...</p>
+                <mat-progress-bar mode="query"></mat-progress-bar>
+            </div>
+            <div *ngSwitchCase="'active'">
+                <mat-paginator *ngIf="scrapedNewsList.length > 0" [hidePageSize]="true" [length]="totalRecords"
+                    [pageSize]="pageSize" (page)="pageEvent($event)">
+                </mat-paginator>
+                <div [ngSwitch]="scrapedAccordionSwitch">
+                    <div *ngSwitchCase="'loading'" class="message-switch lato">
+                        <p>Fetching scraped news ...</p>
+                        <mat-progress-bar mode="query"></mat-progress-bar>
+                    </div>
+                    <div *ngSwitchCase="'active'">
+                        <mat-accordion *ngIf="scrapedNewsList.length > 0">
+                            <mat-expansion-panel *ngFor="let scrapedNews of scrapedNewsList;let i=index" (opened)="panelOpenState = true"
+                                (closed)="panelOpenState = false">
+                                <mat-expansion-panel-header [collapsedHeight]="'100px'" [expandedHeight]="'100px'">
+                                    <mat-panel-title>
+                                        <div class="row example-full-width">
+                                            <div class="col-xl-3 d-flex align-items-center">
+                                                <mat-chip-list>
+                                                    <mat-chip class="lato" *ngFor="let keyword of scrapedNews.keyword_dict_list | slice:0:3"
+                                                        color="primary" selected>
+                                                        {{keyword.keyword }}
+                                                    </mat-chip>
+                                                </mat-chip-list>
+                                            </div>
+                                            <div class="col-xl-2 d-flex align-items-center lato mat-title">
+                                                {{scrapedNews.created_at | date:'mediumDate'}}</div>
+                                            <div class="col-xl-6 d-flex align-items-center lato mat-title"><a href="{{scrapedNews.link}}"
+                                                    target="_blank">{{scrapedNews.headline}}</a></div>
+                                            <!-- <div class="col-xl-6 d-flex align-items-center lato">
+                                                {{(scrapedNews.summary.length > 200)? (scrapedNews.summary |
+                                                slice:0:200)+''+'...':(scrapedNews.summary)}}
+                                            </div> -->
+                                            <div class="col-xl-1 d-flex align-items-center lato mat-title">{{scrapedNews.channel_name}}</div>
+                                        </div>
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <div class="row no-gutters">
+                                    <div class="col-xl-9">
+                                        <!-- <mat-card>
+                                                <p>Keywords</p>
+                                                <mat-chip-list>
+                                                    <mat-chip *ngFor="let keyword of media.keyword_list_dict" color="primary" selected>
+                                                        {{keyword.keyword}}
+                                                    </mat-chip>
+                                                </mat-chip-list>
+                                            </mat-card> -->
+                                    </div>
+                                    <div class="col-xl-3 d-flex justify-content-end">
+                                        <!-- {{scrapedNews.marked_important}} -->
+                                        <button mat-raised-button color="accent" (click)="takeToEdit(scrapedNews)"
+                                            [disabled]="scrapedNews.marked_important" class="lato">
+                                            {{ scrapedNews.marked_important ? 'ADDED TO MEDIA SCAN': 'ADD TO MEDIA
+                                            SCAN'}}
+                                        </button>
+                                    </div>
+                                </div>
+                                <span><small class="lato">HEADLINE</small></span>
+                                <p class="font-weight-normal lato mat-headline" style="padding: 1em 0;">
+                                    {{scrapedNews.headline}}
+                                </p>
+                                <span><small class="lato">SUMMARY</small></span>
+                                <p class="font-weight-normal lato mat-title" *ngFor="let summary of scrapedNews.summary_mine">
+                                    {{summary}}
+                                </p>
+                                <span><small class="lato">CONTENT</small></span>
+                                <p class="font-weight-normal lato mat-title" *ngFor="let content of scrapedNews.content_mine">
+                                    {{content}}
+                                </p>
+                                <!-- <mat-card>
+                                        <p>User</p>
+                                        <mat-chip-list>
+                                            <mat-chip *ngFor="let keyword of media.user_sentiment_pair_keyword">
+                                                {{keyword.name}}
+                                            </mat-chip>
+                                        </mat-chip-list>
+                                    </mat-card>
+                                    <mat-card>
+                                        <p>API</p>
+                                        <mat-chip-list>
+                                            <mat-chip *ngFor="let keyword of media.api_sentiment_pair_keywords">
+                                                {{keyword.name}}
+                                            </mat-chip>
+                                        </mat-chip-list>
+                                    </mat-card> -->
+                            </mat-expansion-panel>
+                        </mat-accordion>
+                    </div>
+                </div>
+                <p *ngIf="scrapedNewsList.length===0 ">No Data Found</p>
+            </div>
+            <div *ngSwitchCase="'message'" class="message-switch">
+                <p>Marking important ...</p>
+                <mat-progress-bar mode="query"></mat-progress-bar>
+            </div>
+        </div>
+    </div>
+</mat-drawer-container>

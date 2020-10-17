@@ -1,0 +1,194 @@
+/** BASIC LAYOUT AND COMMON CLASSES BY SHASHWAT*/
+.campaign-gallery{
+    background-image: url("../images/gallery_news/collage.jpg");
+    color: #eaeaea;
+    text-align: center;
+    font-family: 'Roboto';
+    padding:0;
+}
+.campaign-gallery::before, .campaign-gallery::after{
+    display: table;
+}
+
+.campaign-gallery .gallery-section{
+    background: transparent;
+    width: 100%;
+}
+.campaign-gallery .row{
+    width: 100%;
+    margin:0;
+}
+
+.campaign-gallery .gallery-internal-row{
+    padding: 0 !important;
+    margin: 13px;
+}
+.campaign-gallery .overlay-black{
+    background: rgba(107,107,107,0.9);
+    padding: 2em 7em 2em 7em;
+
+}
+
+.campaign-gallery .gallery-internal-row .naf-diary-header{
+    margin-left: auto;
+    margin-right: auto;
+}
+.campaign-gallery .gallery-internal-row .naf-diary-desc{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .campaign-gallery .galler */
+
+.campaign-gallery h1{
+    font-size: 40.398px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #f9f9f9;
+}
+
+.campaign-gallery p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    color: #f9f9f9;
+}
+
+.campaign-gallery .nGY2 .nGY2GThumbnailLabel{
+    background: rgba(253,253,253,.75) !important;
+    color:black !important;
+    text-shadow: none !important; 
+    height: 39px;
+}
+
+.campaign-gallery .nGY2 .nGY2GThumbnailAlbumTitle,.campaign-gallery  .nGY2 .nGY2GThumbnailImageTitle{
+    color:black !important;
+    text-shadow: none !important; 
+}
+
+.campaign-gallery .nGY2 .nGY2GThumbnail{
+    border-radius: 3px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.news-section-new{
+    background-color:#2a2a2a;
+}
+
+
+.news-section-new h1{
+    font-size: 40.398px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #f9f9f9;    
+}
+
+.news-section-new p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    color: #f9f9f9;
+}
+
+.news-section-new .news-header, .news-section-new .news-sub-header{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-section-new .first-row-news{
+    padding: 2em 7em 2em 7em;
+}
+
+.news-section-new .news-row-internal{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.news-section-new .individual-news-card{
+    border-radius: 3px;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    height: 90px;
+    margin: 5px 0px;
+
+    /* z-index: 452; */
+  }
+  
+
+  .news-section-new .image-container{
+    /* display: table-cell;
+    vertical-align: middle; */
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .news-section-new img{
+    margin-top: 5px;
+    height: 80px;
+    width: 80px;
+  }
+
+
+  .col-xs-8r,
+  .col-sm-8r,
+  .col-md-8r,
+  .col-lg-8r {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+  }
+  
+  .col-xs-8r {
+    -ms-flex: 0 0 12.5%;
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+    /* width: 12.5%; */
+      float: left;
+  }
+  
+  @media (min-width: 768px) {
+      .col-sm-8r {
+        -ms-flex: 0 0 12.5%;
+        flex: 0 0 12.5%;
+        max-width: 12.5%;
+              float: left;
+      }
+  }
+  
+  @media (min-width: 992px) {
+      .col-md-8r {
+        -ms-flex: 0 0 12.5%;
+        flex: 0 0 12.5%;
+        max-width: 12.5%;
+              float: left;
+      }
+  }
+  
+  @media (min-width: 1200px) {
+      .col-lg-8r {
+        -ms-flex: 0 0 12.5%;
+        flex: 0 0 12.5%;
+        max-width: 12.5%;
+              float: left;
+      }
+  }
+
+  @media (max-width:768px){
+    .news-section-new > .row{
+        padding:2em 1em;
+    }
+    .news-section-new > .news-row-header{
+        width: 100%;
+    }
+    
+    .campaign-gallery .overlay-black{
+        padding:2em 1em;
+    }
+
+    .campaign-gallery .gallery-internal-row {
+        padding: 0 !important;
+        margin: 0px;
+    }
+}

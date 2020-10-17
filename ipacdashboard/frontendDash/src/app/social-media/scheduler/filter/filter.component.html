@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 d-flex flex-row align-items-center justify-content-start">
+      <small class="space-margin">Filters</small><i class="material-icons">tune</i></div>
+  </div>
+  <div class="row">
+    <div class="col-7">
+      <mat-form-field class="example-full-width lato">
+        <input matInput #query placeholder="Search by page name" type="search" (keyup)="onKey(query.value)">
+      </mat-form-field>
+    </div>
+    <div class="col-2">
+      <mat-form-field class="lato">
+        <mat-select placeholder="Select State" (selectionChange)="mapDistricts($event);query.value = '';" [(value)]="selectedStateModel">
+          <mat-option *ngFor="let state of states" [value]="state.state">
+            {{state.state}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-2">
+      <mat-form-field class="lato">
+        <mat-select placeholder="Select District" (selectionChange)="filterData($event);query.value = '';" [(value)]="selectedDistrictModel">
+          <mat-option *ngFor="let district of districts" [value]="district">
+            {{district}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-1 d-flex flex-row align-items-center justify-content-end">
+        <button mat-mini-fab color="accent" (click)="clearFilters();query.value = '';"><i class="material-icons">clear</i></button>
+    </div>
+  </div>
+</div>

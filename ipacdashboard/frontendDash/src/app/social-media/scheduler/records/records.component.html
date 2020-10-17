@@ -1,0 +1,100 @@
+<div>
+  <button mat-button *ngIf="selection.selected.length > 0" class="mb-5" (click)="openDialog(selection.selected)">
+    {{selection.selected.length}} page{{ selection.selected?.length > 1 ? 's' : ''}} selected
+  </button>
+</div>
+
+<mat-form-field class="lato mr-5">
+  <input matInput [formControl]="nameFilter" placeholder="Search Page Name">
+</mat-form-field>
+
+<mat-form-field class="lato mr-5">
+  <mat-select placeholder="Select State" (selectionChange)="mapDistricts($event);" [formControl]="stateFilter" multiple>
+    <ngx-mat-select-search [formControl]="stateFilterControl" [placeholderLabel]="'Search State...'"
+      [noEntriesFoundLabel]="'no matching state found'"></ngx-mat-select-search>
+    <mat-option *ngFor="let state of filteredStates | async" [value]="state.state">
+        {{state.state}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field class="lato mr-5">
+  <mat-select placeholder="Select District" [formControl]="districtFilter">
+    <ngx-mat-select-search [formControl]="districtFilterControl" [placeholderLabel]="'Search District...'"
+    [noEntriesFoundLabel]="'no matching district found'"></ngx-mat-select-search>
+    <mat-option *ngFor="let district of filteredDistricts | async" [value]="district">
+      {{district}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<button mat-mini-fab color="accent" class="mb-5" (click)="resetData()">
+  <mat-icon>clear</mat-icon>
+</button>
+<div [ngSwitch]="recordSwitch" class="example-full-width">
+  <div *ngSwitchCase="'loading'" class="d-flex flex-column align-items-center justify-content-center lato" style="height: 35em;">
+    <p>Fetching records ...</p>
+    <mat-progress-bar color="accent" mode="query" style="width:18em"></mat-progress-bar>
+  </div>
+  <div *ngSwitchCase="'serverinternet'" class="d-flex flex-column align-items-center justify-content-center lato" style="height: 5em;">
+    <p>Either server or internet is down. Please reload the page or consult <b>SysAd</b> (System Administrator)</p>
+  </div>
+  <div *ngSwitchCase="'norecords'" class="d-flex flex-column align-items-center justify-content-center lato" style="height: 5em;">
+    <p>No records found</p>
+  </div>
+  <div *ngSwitchCase="'active'">
+    <div class="row">
+      <div class="col-12" style="padding-bottom:10px;">
+        <div [ngSwitch]="pageTableSwitch">
+          <div *ngSwitchCase="'active'">
+            <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8 example-full-width">
+              <!-- Checkbox Column -->
+              <ng-container matColumnDef="select">
+                <th mat-header-cell *matHeaderCellDef>
+                  <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()"
+                    [indeterminate]="selection.hasValue() && !isAllSelected()">
+                  </mat-checkbox>
+                </th>
+                <td mat-cell *matCellDef="let row">
+                  <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
+                    [checked]="selection.isSelected(row)">
+                  </mat-checkbox>
+                </td>
+              </ng-container>
+
+              <!-- Position Column -->
+              <ng-container matColumnDef="page_name">
+                <th mat-header-cell *matHeaderCellDef style="font-family: 'Lato', sans-serif;"> Page Name </th>
+                <td mat-cell *matCellDef="let element" style="font-family: 'Lato', sans-serif;"> {{element.page_name}}
+                </td>
+              </ng-container>
+
+              <!-- Weight Column -->
+              <ng-container matColumnDef="page_state">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header style="font-family: 'Lato', sans-serif;"> State
+                </th>
+                <td mat-cell *matCellDef="let element" style="font-family: 'Lato', sans-serif;">
+                  {{element.page_state}} </td>
+              </ng-container>
+
+              <!-- Symbol Column -->
+              <ng-container matColumnDef="page_district">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header style="font-family: 'Lato', sans-serif;">
+                  District
+                </th>
+                <td mat-cell *matCellDef="let element" style="font-family: 'Lato', sans-serif;">
+                  {{element.page_district}} </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns;sticky: true"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)"></tr>
+            </table>
+            <mat-paginator #paginator [pageSizeOptions]="[10, 20, 30]" showFirstLastButtons></mat-paginator>
+          </div>
+          <div *ngSwitchCase="'norecords'">
+            <p>No records found!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

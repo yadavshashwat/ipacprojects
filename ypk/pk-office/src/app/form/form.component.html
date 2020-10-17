@@ -1,0 +1,256 @@
+<div class="container-fluid d-flex align-items-center justify-content-center bg-color custom-padding">
+  <mat-card class="matclass">
+    <div class="row">
+      <div class="col-12 text-capitalize">
+        <h5 class="lato text-left logo">जुड़ने के लिए नीचे दिया गया फ़ॉर्म भरें |</h5>
+        <!--<p class="font-weight-bold text-center">Team PK से जुड़कर आप भी बिहार के विकास में अपनी भागीदारी को सुनिश्चित करें</p>-->
+      </div>
+      <form [formGroup]="surveyForm" (ngSubmit)="onsurveyFormSubmit()" class="full-width surveyform">
+        <div class="col-12">
+          <label>पूरा नाम (Full Name) *</label>
+          <mat-form-field class="full-width custom_fields" appearance="outline">
+
+            <input matInput formControlName="fullname" placeholder="Enter your full name" required>
+            <mat-error *ngIf="surveyFormErrors.fullname">
+              {{ surveyFormErrors.fullname }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-12">
+          <label>मोबाइल नंबर (Phone Number) *</label>
+          <mat-form-field class="full-width" appearance="outline">
+
+            <input matInput #phoneid knifeOnlyNumbers maxlength="10" (blur)="phoneexists(phoneid.value)" formControlName="phone" minlength="10" placeholder="Enter your phone number"
+              required>
+            <mat-error *ngIf="surveyFormErrors.phone">
+              {{ surveyFormErrors.phone }}
+            </mat-error>
+          </mat-form-field>
+
+        </div>
+        <div class="col-12">
+          <label>व्हाट्स ऐप नंबर (WhatsApp Number) *</label><br>
+          <mat-checkbox (change)="checkWhatsapp($event)" [disabled]="!(surveyForm.value.phone !== '' && surveyForm.value.phone.length === 10)"><small>मोबाइल नंबर के समान</small></mat-checkbox>
+          <mat-form-field class="full-width" appearance="outline">
+
+            <input matInput #inputEl knifeOnlyNumbers maxlength="10" formControlName="whatsapp" minlength="10"
+              placeholder="Enter your whatsapp number" required>
+            <mat-error *ngIf="surveyFormErrors.whatsapp">
+              {{ surveyFormErrors.whatsapp }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-12">
+          <label>ईमेल (Email)</label>
+          <mat-form-field class="full-width" appearance="outline">
+
+            <input matInput type="email" formControlName="email" placeholder="Enter your email ID">
+            <mat-error *ngIf="surveyFormErrors.email">
+              {{ surveyFormErrors.email }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-12">
+          <div class="example-selected-value">लिंग (Gender)? *</div>
+          <mat-radio-group class="example-radio-group" formControlName="gender">
+            <mat-radio-button class="example-radio-button" *ngFor="let gender of genders" [value]="gender.value">
+              {{gender.viewValue}}
+            </mat-radio-button>
+          </mat-radio-group>
+          <mat-error *ngIf="surveyFormErrors.gender">
+            {{ surveyFormErrors.gender }}
+          </mat-error>
+        </div>
+        <!--<div class="col-12">
+          <mat-form-field class="full-width">
+		  <label>आपकी उम्र क्या हैं (Age)? *</label>
+            <input matInput knifeOnlyNumbers maxlength="2" required formControlName="age">
+            <mat-error *ngIf="surveyFormErrors.age">
+              {{ surveyFormErrors.age }}
+            </mat-error>
+          </mat-form-field>
+        </div>-->
+        <div class="col-12">
+          <label style="margin-top: 15px;">उम्र (Age) *</label>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-select formControlName="ages" placeholder="Age">
+              <mat-option *ngFor="let age of ages" [value]="age">
+                {{age}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="surveyFormErrors.ages">
+              {{ surveyFormErrors.ages }}
+            </mat-error>
+          </mat-form-field>
+
+        </div>
+        <div class="col-12">
+          <label style="margin-top:15px;">शिक्षा स्तर (Educational Qualification) *</label>
+          <mat-form-field class="full-width" appearance="outline">
+
+            <mat-select formControlName="studies" placeholder="Select your qualification">
+              <mat-option *ngFor="let study of studies" [value]="study.value">
+                {{study.viewValue}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="surveyFormErrors.studies">
+              {{ surveyFormErrors.studies }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="col-12">
+          <label>व्यवसाय (Occupation) *</label>
+          <mat-form-field class="full-width" appearance="outline">
+
+            <mat-select formControlName="profession" placeholder="Select your occupation">
+              <mat-option *ngFor="let profession of professions" [value]="profession.occupation_values">
+                {{profession.occupation}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="surveyFormErrors.profession">
+              {{ surveyFormErrors.profession }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-12" *ngIf="show1">
+          <label>कॉलेज (College) *</label>
+          <mat-form-field class="full-width" appearance="outline">
+
+            <input matInput formControlName="college" placeholder="Enter your college name">
+            <mat-error *ngIf="surveyFormErrors.college">
+              {{ surveyFormErrors.college }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <h5> वर्तमान निवास जानकारी</h5>
+        <div class="custom_bg">
+          <div class="col-12">
+            <label>राज्य (State) *</label>
+            <mat-form-field class="full-width" appearance="outline">
+
+              <mat-select formControlName="state" (selectionChange)="fetchdistricts($event)" placeholder="Select state">
+                <mat-option *ngFor="let state of states" [value]="state.state">
+                  {{state.state}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="surveyFormErrors.state">
+                {{ surveyFormErrors.state }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12">
+            <label>जिला (District) *</label>
+            <mat-form-field class="full-width" appearance="outline">
+
+              <mat-select formControlName="district" (selectionChange)="fetchblocks($event)" placeholder="Select district">
+                <mat-option *ngFor="let district of districts" [value]="district.district">
+                  {{district.district}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="surveyFormErrors.district">
+                {{ surveyFormErrors.district }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-12">
+            <label>विधानसभा क्षेत्र (Assembly Constituency) </label>
+            <mat-form-field class="full-width" appearance="outline">
+
+              <mat-select formControlName="university" placeholder="Select AC">
+                <mat-option *ngFor="let ac of acs" [value]="ac.acname">
+                  {{ac.acname}}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="surveyFormErrors.university">
+                {{ surveyFormErrors.university }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div class="col-12">
+            <div class="example-selected-value">आप गाँव में रहते हैं या शहर में? *</div>
+            <mat-radio-group class="example-radio-group" formControlName="living">
+              <mat-radio-button class="example-radio-button" *ngFor="let place of places" [value]="place.value">
+                {{place.viewValue}}
+              </mat-radio-button>
+              <mat-error *ngIf="surveyFormErrors.living">
+                {{ surveyFormErrors.living }}
+              </mat-error>
+            </mat-radio-group>
+          </div>
+        </div>
+        <!--<div class="col-12">
+          <mat-form-field class="full-width">
+            <label>फेसबुक में दोस्तों की संख्या (Number of Facebook Friends)?</label>
+            <input matInput knifeOnlyNumbers maxlength="10" formControlName="fbfriends">
+          </mat-form-field>
+        </div>-->
+        <div class="col-12">
+          <div class="example-selected-value">क्या आप किसी पार्टी के कार्यकर्ता हैं? *</div>
+          <mat-radio-group class="example-radio-group" formControlName="partyworkers">
+            <mat-radio-button class="example-radio-button" *ngFor="let partyworker of partyworkers" [value]="partyworker.value">
+              {{partyworker.viewValue}}
+            </mat-radio-button>
+          </mat-radio-group>
+          <mat-error *ngIf="surveyFormErrors.partyworkers">
+            {{ surveyFormErrors.partyworkers }}
+          </mat-error>
+        </div>
+        <div class="col-12" *ngIf="partyDisable">
+          <mat-form-field class="full-width" appearance="outline">
+            <label>पार्टी का नाम (Party Name) *</label>
+            <mat-select formControlName="parties">
+              <mat-option *ngFor="let party of parties" [value]="party">
+                {{party}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="surveyFormErrors.parties">
+              {{ surveyFormErrors.parties }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-12" *ngIf="positioninpartyDisable">
+          <mat-form-field class="full-width" appearance="outline">
+            <label>आप अभी पार्टी में किस पद पर हैं ? *</label>
+            <mat-select formControlName="positioninparties">
+              <mat-option *ngFor="let positioninparty of positioninparties" [value]="positioninparty.value">
+                {{positioninparty.viewValue}}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="surveyFormErrors.positioninparties">
+              {{ surveyFormErrors.positioninparties }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-12">
+          <label>क्या आप प्रशांत किशोर जी तक अपना कोई सन्देश पहुचाना चाहते हैं?</label>
+          <mat-form-field class="full-width" appearance="outline">
+
+            <textarea matInput mdTextareaAutosize minRows="10" formControlName="message" placeholder="Write your message"></textarea>
+          </mat-form-field>
+        </div>
+        <div class="col-12">
+          <section class="example-section checkbox d-flex flex-row align-items-center justify-content-start">
+            <mat-checkbox class="example-margin custom-checkbox" formControlName="terms" [required]="true" class="pt-2">
+            </mat-checkbox>
+            <span class="chkbx-label pl-3">I agree to the
+              <a style="cursor: pointer; text-decoration: underline" (click)="openDialog()" appClickStopPropagation
+                class="popup-link ml-0">terms and conditions</a>.
+            </span>
+          </section>
+        </div>
+        <div class="col-12">
+          <button mat-raised-button color="primary" type="submit" [disabled]="!surveyForm.valid">Submit</button>
+          <!--<a
+            mat-button (click)="openDialog()" class="popup-link">About Team PK</a>-->
+        </div>
+        <!--<p>{{surveyForm.value | json}}</p>-->
+      </form>
+    </div>
+  </mat-card>
+</div>
+<p style="background-color: #f3f3f3; text-align:center;margin-bottom: 0px;padding-bottom: 10px;">© 2018
+  YouthInPolitics. All
+  Rights Reserved.</p>

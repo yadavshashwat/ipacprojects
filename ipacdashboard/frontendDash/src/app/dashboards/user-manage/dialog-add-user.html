@@ -1,0 +1,33 @@
+<h1 mat-dialog-title class="lato">Create User</h1>
+<div mat-dialog-content class="lato">
+    <form [formGroup]="addUserForm" (ngSubmit)="onUserFormSubmit()">
+        <div class="example-container">
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Enter your name" formControlName="name">
+                <mat-error *ngIf="addUserFormErrors.name">{{addUserFormErrors.name}}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="example-container">
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Enter your email" formControlName="email">
+                <mat-error *ngIf="addUserFormErrors.email">{{addUserFormErrors.email}}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="example-container mt-3">
+            <mat-checkbox formControlName="is_admin">IPAC Admin</mat-checkbox>
+        </div>
+        <div class="example-container mt-3">
+            <mat-checkbox formControlName="is_media_admin">Media Admin</mat-checkbox>
+        </div>
+        <div class="example-container mt-3">
+            <mat-checkbox formControlName="is_digital_admin">Digital Admin</mat-checkbox>
+        </div>
+        <div class="example-container mt-3 mb-3">
+            <button mat-raised-button color="accent" cdkFocusInitial class="lato" type="submit"
+            [disabled]="!addUserForm.valid">Create</button>
+        </div>
+    </form>
+    <div *ngIf="message">
+        <p class="lato">Please wait while creating the user ...</p>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+  <div class="row no-gutters">
+    <div class="col-xl-12">
+      <mat-form-field class="example-full-width">
+        <input matInput type="email" placeholder="Email" formControlName="email" required>
+        <mat-error *ngIf="loginFormErrors.email">
+          {{ loginFormErrors.email }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-xl-12">
+      <mat-form-field class="example-full-width">
+        <input matInput type="password" placeholder="Password" formControlName="password" required>
+        <mat-error *ngIf="loginFormErrors.password">
+          {{ loginFormErrors.password }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-12 d-flex flex-row align-content-center justify-content-start">
+      <button mat-raised-button color="accent" type="submit" [disabled]="!loginForm.valid">Login</button>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-xl-12 d-flex flex-row align-items-center justify-content-end">
+      <button mat-button routerLink="password/forgot">Forgot Password</button>
+    </div>
+  </div>
+</form>
+<!-- <p>
+    Form Value: {{ loginForm.value | json }}
+  </p>
+  <p>
+    Form Status: {{ loginForm.status }}
+  </p> -->

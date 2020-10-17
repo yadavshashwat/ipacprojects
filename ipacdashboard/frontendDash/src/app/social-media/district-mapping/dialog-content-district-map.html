@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            {{pageData.page_name}}
+        </div>
+        <div class="col-12">
+            <mat-form-field class="example-full-width">
+                <mat-select placeholder="Select State" [(value)]="selectedState" (selectionChange)="mapDistricts($event)">
+                    <ngx-mat-select-search [formControl]="stateFilterControl" [placeholderLabel]="'Search State...'"
+                    [noEntriesFoundLabel]="'no matching state found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let state of filteredStates | async" value="{{state.state}}">{{state.state}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-12">
+            <mat-form-field class="example-full-width">
+                <mat-select placeholder="Select District" [(value)]="selectedDistrict">
+                    <ngx-mat-select-search [formControl]="districtFilterControl" [placeholderLabel]="'Search District...'"
+                    [noEntriesFoundLabel]="'no matching district found'"></ngx-mat-select-search>
+                    <mat-option *ngFor="let district of filteredDistricts | async" value="{{district}}">{{district}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-12">
+            <mat-form-field class="example-full-width">
+                <mat-select placeholder="Select Category" [(value)]="selectedCategory">
+                    <mat-option *ngFor="let category of categories" value="{{category.id}}">{{category.name}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-12 d-flex flex-row align-items-center justify-content-end">
+            <button mat-fab color="primary" (click)="onNoClick()" style="margin:10px">
+                <i class="material-icons">
+                    cancel
+                </i>
+            </button>
+            <button mat-fab color="accent" (click)="mapData()">
+                <i class="material-icons">
+                    send
+                </i>
+            </button>
+        </div>
+        <!-- <div class="col-12">
+            selectedState: {{ selectedState | json}}
+            selectedDistrict: {{ selectedDistrict | json}}
+            selectedCategory: {{ selectedCategory | json}}
+        </div> -->
+    </div>
+</div>

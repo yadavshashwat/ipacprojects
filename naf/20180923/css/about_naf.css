@@ -1,0 +1,668 @@
+/** BASIC LAYOUT AND COMMON CLASSES BY VICTOR*/
+.campaign-about-naf{
+    background-image: url('../images/icons/charkha-gif-work-complete.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    background-color: #f7f7f7;
+}
+
+.campaign-dis-persona{
+    background-image: none;
+}
+
+.campaign-dis-orgi{
+    background-color: #ffffff;
+    background-image: none;
+}
+
+.campaign-about-naf > .row {
+    padding:0em 7em;
+}
+.campaign-about-naf > .row > .about-naf-column a .btn{
+	padding: 0px;
+}
+.campaign-about-naf > .row > .about-naf-column {
+    padding:7em 0em;
+}
+
+.campaign-about-naf > .row > .about-naf-column > h1 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: rgb(1, 1, 1);
+}
+
+.campaign-about-naf > .row > .about-naf-column > p {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(1, 1, 1);
+    line-height: 25px;
+    text-align: justify;
+    width: 490px;
+    height: 160px;
+}
+
+.campaign-about-naf.campaign-dis-persona > .row > .about-naf-column > p,
+.campaign-about-naf.campaign-dis-orgi > .row > .about-naf-column > p{
+    width: 395px;
+    height: 125px;
+}
+
+.campaign-read-share{
+    border-radius: 3px;
+    background-image: -moz-linear-gradient( 0deg, #148814 0%, #4CAF50 50%, #148814 100%);
+    background-image: -webkit-linear-gradient( 0deg, #148814 0%, #4CAF50 50%, #148814 100%);
+    background-image: -ms-linear-gradient( 0deg, #148814 0%, #4CAF50 50%, #148814 100%);
+    box-shadow: 0px 10px 15px 0px #4caf5073;
+    width: 250px;
+    height: 55px;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(249, 249, 249);
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 0px 1px 0.99px rgba(0, 0, 0, 0.5);
+    font-weight: 100;
+    cursor: pointer;
+	
+}
+
+.campaign-for-india-button{
+	font-size: 25px !important;
+}
+
+.campaign-read-share-vote{
+    border-radius: 3px;
+    background-image: -moz-linear-gradient( 0deg, #148814 0%, #4CAF50 50%, #148814 100%);
+    background-image: -webkit-linear-gradient( 0deg, #148814 0%, #4CAF50 50%, #148814 100%);
+    background-image: -ms-linear-gradient( 0deg, #148814 0%, #4CAF50 50%, #148814 100%);
+    box-shadow: 0px 10px 15px 0px #4caf5073;
+    width: 140px;
+    height: 55px;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(249, 249, 249);
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 0px 1px 0.99px rgba(0, 0, 0, 0.5);
+    font-weight: 100;
+    cursor: pointer;
+	
+}
+
+.campaign-read-share-2{
+    width: 470px !important;;	
+}
+
+.campaign-read-share:hover{
+	box-shadow:none;
+	transition: all 1s;
+    background-image: -moz-linear-gradient( 0deg, #148814 0%, #148814 50%, #148814 100%);
+    background-image: -webkit-linear-gradient( 0deg, #148814 0%, #148814 50%, #148814 100%);
+    background-image: -ms-linear-gradient( 0deg, #148814 0%, #148814 50%, #148814 100%);
+	color:#f9f9f9;
+}
+
+.campaign-read-share-vote:hover{
+	box-shadow:none;
+	transition: all 1s;
+    background-image: -moz-linear-gradient( 0deg, #148814 0%, #148814 50%, #148814 100%);
+    background-image: -webkit-linear-gradient( 0deg, #148814 0%, #148814 50%, #148814 100%);
+    background-image: -ms-linear-gradient( 0deg, #148814 0%, #148814 50%, #148814 100%);
+	color:#f9f9f9;
+}
+.banner_button a{text-decoration:none;}
+.about-naf-column a:hover{
+	text-decoration:none;
+}
+.line-height-fix{
+    line-height: 52px;
+}
+
+.campaign-about-naf > .row > .video-column{
+    padding-right:0;
+}
+
+.padding-right-fix{
+    padding-right: 0;
+}
+
+.padding-left-fix{
+    padding-left: 0;
+}
+
+.campaign-about-naf > .row > .video-column > .video-image-overlay{
+    position:relative;
+    width:100%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.campaign-about-naf > .row > .video-column > .video-image-overlay > iframe{
+    width:100%;
+}
+
+/** Testimonial fotos design by victor*/
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-3px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.testimonial-foto{
+    border-radius: 3px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    width: 102px;
+    height: 102px;
+    margin: 15px 15px 0 0;
+    position:relative;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+.testimonial-foto .testimonial-info-box{
+    opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	/*-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;*/
+}
+
+.testimonial-foto:hover .testimonial-info-box,
+.testimonial-foto.active .testimonial-info-box {
+	opacity: 1;
+}
+
+.testimonial-foto .testimonial-info-text {
+	text-align: center;
+	font-size: 14px;
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	left: 8%;
+	-moz-transform: translate(-5%, -50%);
+	-webkit-transform: translate(-5%, -50%);
+	-ms-transform: translate(-5%, -50%);
+    transform: translate(-5%, -50%);
+    font-family:'Roboto', sans-serif;
+	line-height: 1.2;
+}
+
+#random-testimonials{
+    opacity: 0;
+}
+
+.mobile{
+    display:none !important;
+}
+/** LEADER AGENDA*/
+.leader-agenda-leader, .leader-agenda-agenda{
+    border-width: 1px;
+    border-color: rgb(215, 215, 215);
+    border-style: solid;
+    border-radius: 3px;
+    background-color: rgb(246, 248, 249);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    width: 170px;
+    height: 60px;
+    font-size: 33.618px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(53, 53, 53);
+    line-height: 60px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.leader-agenda-leader{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right-width: 0px;
+    background-color: #ffffff;
+    
+}
+.leader-agenda-agenda{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+#leader-agenda-ground{
+    padding: 5em 0;
+}
+#popularity-progress{
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    margin: 3em 0;
+    padding: 1em 2em;
+}
+#select-state-box{
+    border-radius: 3px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 60px;
+}
+
+.custom-select {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    z-index: 10;
+    background-image: none;
+    border-radius: 3px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+    height: 45px;
+    border:none;
+    padding: 0;
+  }
+  .custom-select select {
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 12px 55px 15px 15px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(118, 118, 118);
+    text-align: center;
+    font-weight: 100;
+  }
+  .custom-select:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 61px;
+    height: 100%;
+    line-height: 46px;
+    content: "\f107";
+    font-family: 'fontawesome';
+    background: #354447;
+    border-left: 1px solid #354447;
+    z-index: -1;
+    color: #f9f9f9;
+    padding: 0em 0.9em;
+    font-size: 1.5em;
+  }
+  .agenda-points{
+    border-radius: 3px;
+    background-color: #ebebeb;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    width: 145px;
+    height: 55px;
+    margin: 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(1, 1, 1);
+    text-align: center;
+    font-size: 12px;
+  }
+  .agenda-points.active{
+    border-radius: 3px;
+    background-color: rgb(211, 246, 247);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    width: 145px;
+    height: 55px;
+    margin: 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(1, 1, 1);
+    text-align: center;
+  }
+  #agenda-points-wrapper{
+      padding:2em 0 0 0;
+  }
+
+  .agenda-points-section{
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.302);
+    border-right-style: solid;
+    padding-right: 3em;
+    margin-bottom: 2em;
+  }
+
+  #popularity-leaders{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0 1em;
+  }
+  #leader-progress-wrapper{
+    padding: 0 2em;
+  }
+  .leader-name{
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(53, 53, 53);
+    text-align: right; 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;-ms-flex: 0 0 22%;flex: 0 0 22%;
+    -webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;
+  }
+  .leader-percentage{
+    border-radius: 3px;
+    height: 60px;
+    font-size: 20.52px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(249, 249, 249);
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack:end;
+    -ms-flex-pack:end;
+            justify-content:flex-end;
+  }
+  #campaign-india-wants{
+    /* background-image: url(../images/pattern.png); */
+    background-size: auto;
+    /* background-repeat: repeat; */
+    background-color: #f7f7f7;
+  }
+  .india-wants-div{
+    border-radius: 3px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    height: 120px;
+    margin: 20px 0 0 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:125px;
+    position:relative;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+  }
+  .india-wants-div .indian-wants-box{
+    opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+/*	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;*/
+}
+
+.india-wants-div:hover .indian-wants-box,
+.india-wants-div.active .indian-wants-box {
+	opacity: 1;
+}
+
+.india-wants-div .indian-wants-text {
+	text-align: center;
+	font-size: 14px;
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family:'Roboto', sans-serif;
+	line-height: 1.2;
+}
+  .india-wants-div:nth-child(1){
+    background-image: url(../images/india-wants/amir_khan-min.jpg);
+  }
+  .india-wants-div:nth-child(2){
+    background-image: url(../images/india-wants/akshay_kumar-min.png);
+}
+.india-wants-div:nth-child(3){
+    background-image: url(../images/india-wants/anna_hazare-min.png);
+}
+.india-wants-div:nth-child(4){
+    background-image: url(../images/india-wants/baba_ramdev-min.jpg);
+}
+.india-wants-div:nth-child(5){
+    background-image: url(../images/india-wants/kailash_satyarthi-min.jpg);
+}
+.india-wants-div:nth-child(6){
+    background-image: url(../images/india-wants/dhoni-min.png);
+}
+.india-wants-div:nth-child(7){
+    background-image: url(../images/india-wants/raghuram-min.jpg);
+}
+.india-wants-div:nth-child(8){
+    background-image: url(../images/india-wants/ratan_tata-min.png);
+}
+.india-wants-div:nth-child(9){
+    background-image: url(../images/india-wants/ravish-min.jpg);
+}
+.india-wants-div:nth-child(10){
+    background-image: url(../images/india-wants/saurav-min.jpg);
+}
+  #random-india-wants{
+    -webkit-box-align:center;-ms-flex-align:center;align-items:center;
+  }
+ 
+@media (max-width:1024px){
+    .campaign-about-naf > .row > .about-naf-column > h1{
+        text-align:left;
+        font-size: 28px;
+    }
+    .campaign-about-naf > .row > .about-naf-column > p {
+        line-height: 30px;
+        letter-spacing: 0.5px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 16px;
+    }
+
+}
+@media (max-width:768px){
+    .campaign-about-naf > .row{
+        padding:0;
+    }
+    .campaign-about-naf > .row > .about-naf-column > h1{
+        text-align:left;
+        font-size: 28px;
+    }
+    .desktop{
+        display:none !important;
+    }
+    .mobile{
+        display:block !important;
+    }
+
+    .campaign-about-naf > .row > .about-naf-column > p {
+        line-height: 30px;
+        letter-spacing: 0.5px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 16px;
+    }
+    .shareBtnOut {
+        text-align: center;
+    }
+    .btn.transition.shrBtn.campaign-read-share {
+        font-size: 20px;
+        /* line-height: 2em; */
+        line-height: 48px;
+    }
+
+    .campaign-read-share-2{
+        font-size: 13px !important;;
+        line-height: 3em !important;;	
+    }
+    
+    .campaign-about-naf > .row > .about-naf-column {
+        padding: 3em 1em;
+        text-align: center;
+    }
+
+    .campaign-about-naf > .row > .about-naf-column-2 {
+        padding: 1em 1em !important;
+        text-align: center;
+    }
+
+    .campaign-about-naf > .row > .video-column {
+        padding: 0;
+    }
+    #popularity-progress{
+        margin: 0em 0;
+        padding: 0em 0em;
+        box-shadow: none;
+    }
+    #agenda-points-section {
+        border-right-style: none;
+        padding-right: 0em;
+        padding-left: 0em;
+        margin-top: 2em;
+    }
+    #agenda-points.active,#agenda-points {
+        width: 135px;
+    }
+    #popularity-leaders {
+        padding: 0 0em;
+    }
+    .leader-name {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 35%;
+        flex: 0 0 35%;
+    }
+    #leader-agenda-ground {
+        padding: 5em 1em 0 1em;
+    }
+    #leader-progress-wrapper{
+        padding: 0 0em;
+    }
+    .campaign-about-naf.campaign-dis-persona > .row > .about-naf-column > p, 
+    .campaign-about-naf.campaign-dis-orgi > .row > .about-naf-column > p {
+        height: auto;
+        width:auto;
+    }
+    .testimonial-foto {
+        width: 45%;
+        height: 9em;
+        margin: 1em 0.9em 0 0;
+    }
+    .campaign-read-share {
+        width: 200px;
+        margin:0 auto;
+    }
+
+    .campaign-read-share-vote {
+        width: 140px;
+        margin:0 auto;
+    }
+
+    .campaign-read-share-2{
+        width: 310px !important;
+    }
+
+    .custom-select {
+        margin: 15px auto;
+    }
+    #popularity-leaders-column{
+        padding:0;
+    }
+    .india-wants-div{
+        margin: 1em 1em 0em 0em;
+        width: 44%;
+        height: 9em;
+    }
+    #random-india-wants{
+        padding-bottom: 2em;
+    }
+    
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    /** Tablet influ image height and width */
+
+    .testimonial-foto {
+        width: 42%; 
+        height: 10em;
+        margin: 1em 0.9em 0 0;
+    }
+    .campaign-about-naf > .row {
+        padding: 0 3em;
+    }
+    .india-wants-div {
+        width: 16%;
+        height: 5em;
+    }
+    .campaign-about-naf.campaign-dis-persona > .row > .about-naf-column > p, 
+    .campaign-about-naf.campaign-dis-orgi > .row > .about-naf-column > p {
+        height: 160px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    
+}
+@media screen and (min-width: 1900px) {
+    .testimonial-foto{
+        width: 135px;
+        height: 135px;
+        margin: 15px 15px 0 0;
+    }
+    .india-wants-div{
+        height: 175px;
+        width:175px;
+    }
+}

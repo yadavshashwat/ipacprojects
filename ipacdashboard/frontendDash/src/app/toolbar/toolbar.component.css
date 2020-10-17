@@ -1,0 +1,26 @@
+button:focus{
+    outline:none
+}
+
+.side-bar{
+    background: #ffd740;
+    box-shadow: 1px 1px 5px #eaeaea;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+
+mat-toolbar.mat-toolbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+}
+
+.lato{
+  font-family: 'Lato', sans-serif !important;
+}

@@ -1,0 +1,406 @@
+.ipac_edit_body .breadcrums {
+	height: 30px;
+}
+.ipac_edit_body .topInfo {
+	margin-bottom: 20px;
+	padding-left: 5px;
+}
+.ipac_edit_body .topInfo .register_heading {
+	font-size: 20px;
+}
+.ipac_edit_body .topInfo p {
+	font-size: 14px;
+}
+.ipac_edit_body .Proceed {
+	width: 325px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.ipac_edit_body #textarea_feedback{
+	text-align: right;
+	padding-right: 15px;
+}
+
+.ipac_edit_body .leaderImg img {
+	    height: auto;
+    width: 100%;
+	max-width:315px;
+}
+.ipac_edit_body .register_blur {
+	background-color: #00000024;
+}
+.ipac_edit_body .register_blur:before {
+	right: -26px;
+	border-left: 26px solid #00000024;
+}
+.ipac_edit_body .formField input, .formField select, .formField .indiaCode {
+	background-color: #ddd0;
+	border-radius: 5px;
+}
+.ipac_edit_body .mobileNo .formField .indiaCode, .whatsappNo .formField .indiaCode {
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+.ipac_edit_body .mobileNo .formField input, .whatsappNo .formField input {
+	width: calc(80% - 40px);
+	vertical-align: top;
+	border-bottom-left-radius: 0 !important;
+	border-top-left-radius: 0 !important;
+	border-left: none;
+}
+.ipac_edit_body .nationalPerson .formField {
+	width: 85.9%;
+}
+.ipac_edit_body .fileInput span {
+	border-top-right-radius: 5px !important;
+	border-bottom-right-radius: 5px !important;
+}
+.ipac_edit_body .fileInput {
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid #8E8E8E;
+}
+.ipac_edit_body .popupData p {
+	 padding-left: 0px;
+}
+.ipac_edit_body .registerForm .btn {
+	font-size: 20px;
+}
+.ipac_edit_body partAssociate {
+	margin:25px 0 0 0;
+}
+.ipac_edit_body .copyCode {
+	width: 100%;
+	position: relative;
+}
+.ipac_edit_body .copyCode input {
+	padding: 0 0 0 15px;
+}
+.ipac_edit_body .copyCode .btn {
+	width: 100px;
+}
+.ipac_edit_body .copyCode input {
+	width: calc(100% - 100px);
+}
+.ipac_edit_body .resultInfo {
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+.ipac_edit_body .nomiResults table th, .resultPopup table th {
+	padding: 20px 20px 20px 10px;
+}
+.ipac_edit_body .voteScore {
+	margin-top: 15px;
+	font-size: 12px;
+}
+.ipac_edit_body .nationalPerson p{
+	font-size:16px;
+}
+.ipac_edit_body .register_topInfo {
+	margin-top:55px;
+	margin-bottom:0;
+}
+
+.ipac_edit_body .register_heading{
+	font-weight:700;font-size:20px
+}
+.ipac_edit_body .tick_marks{
+	font-size: 14px;
+}
+.ipac_edit_body .submitAgenda {
+	top: -17px;
+}
+.ipac_edit_body .g-recaptchaOut input {
+	position: relative;
+	top: -18px;
+}
+.ipac_edit_body .g-recaptchaOut p img {
+	position: relative;
+	top: -10px;
+}
+.ipac_edit_body .registerForm .btn {
+	background-color: #278747;
+}
+/*.ipac_edit_body .selectedOpt {background-color: #018C4A !important;}*/
+.ipac_edit_body .selectedOpt .checkmark{border: solid 1px #fff !important; }
+/*.ipac_edit_body .selectedOpt .agendaImg{ border-left: dashed 1px #fff !important;}*/
+.ipac_edit_body .selectedOpt .container .checkmark:after{border: solid #fff; border-width: 0 1px 1px 0;}
+.ipac_edit_body .selectedOpt .agendaImg img{filter: invert(100%) !important; -webkit-filter: invert(100%) !important; -moz-filter: invert(100%) !important;}
+.ipac_edit_body .selectedOpt label {color: #fff;}
+@media (min-width:900px) and (max-width:1024px){
+	.ipac_edit_body .mobileNo .formField input, .whatsappNo .formField input {
+		width: calc(80% - 40px);
+	}
+	.ipac_edit_body .fileInput {
+		width: 80%;
+	}
+}
+@media (min-width:768px) and (max-width:1024px){
+	.ipac_edit_body .mobileNo .formField input, .whatsappNo .formField input {
+		width: calc(100% - 40px);
+	}
+	.ipac_edit_body .sameMobile p {
+		font-size: 12px;
+	}
+	.ipac_edit_body .nationalPerson .formField {
+		width: 90%;
+	}
+	.ipac_edit_body .fileInput {
+		width: 100%;
+	}
+}
+@media (min-width:480px) and (max-width:768px){
+	.ipac_edit_body .breadcrums li {
+		font-size: 10px;
+		padding: 10px 3px 10px 29px;
+	}
+	.ipac_edit_body .breadcrums .breadcrumsActive:before {
+		border-left: 22px solid #278747;
+	}
+	.ipac_edit_body .breadcrums li:before {
+		left: auto;
+		right: -21px;
+		border-left: 22px solid #dcdcdc;
+		
+	}
+	.ipac_edit_body .breadcrums li:after, .breadcrums li:before {
+		border-top: 21px solid transparent;
+		border-bottom: 23px solid transparent;
+		border-left: 23px solid #fff;
+	}
+	.ipac_edit_body .breadcrums li:hover {
+		background-color: #f6f6f6;
+	}
+	.ipac_edit_body .breadcrums li:hover:before {
+		border-left: 22px solid #f6f6f6;
+	}
+	.ipac_edit_body .agentOut p{
+		color:#000;
+	}
+	.ipac_edit_body .agentOut .selectedOpt p{
+		color:#fff;
+	}
+
+	.ipac_edit_body .agentOut .checkmark {
+		border: solid 1px #018C4A;
+	}
+	.ipac_edit_body .agentOut .selectedOpt .checkmark {
+		border: solid 1px #fff;
+	}
+
+	.ipac_edit_body .agentOut .selectedOpt img{
+		filter: invert(100%)
+	}
+
+	.ipac_edit_body .agentOut .agendaImg{
+		border-left: dashed 1px #018C4A;
+	}
+
+	.ipac_edit_body .agentOut .selectedOpt .agendaImg{
+		border-left: dashed 1px #fff;
+	}
+	.ipac_edit_body .register_blur {
+		background-color: #00000024;
+	}
+	.ipac_edit_body .register_blur:before {
+		right: -26px !important;
+		border-left: 26px solid #00000024 !important;
+	}
+	.ipac_edit_body .topInfo .register_heading{
+		font-size: 20px;
+	}
+	.ipac_edit_body .mobileNo .formField input, .whatsappNo .formField input {
+		width: calc(100% - 40px);
+	}
+	.ipac_edit_body .sameMobile p {
+		font-size: 12px;
+	}
+	.ipac_edit_body .fileInput span {
+		width: 60px;
+	}
+	.ipac_edit_body .nationalPerson .formField {
+		width: 100%;
+	}
+	.ipac_edit_body .g-recaptchaOut input {
+		top: -9px;
+	}
+}
+@media (min-width:320px) and (max-width:480px){
+	.ipac_edit_body .breadcrums li {
+		padding: 5px 5px 8px 20px;
+		margin-right: 10px;
+		width:80px;
+		font-size: 11px;
+	}
+	.ipac_edit_body .breadcrums .breadcrumsActive:before {
+		border-left: 12px solid #278747;
+	}
+	.ipac_edit_body .breadcrums li:before {
+		left: auto;
+		right: -12px;
+		border-left: 12px solid #dcdcdc;
+	}
+	.ipac_edit_body .breadcrums li:after, .breadcrums li:before {
+		border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-left: 15px solid #fff;
+	}
+	.ipac_edit_body .breadcrums span {
+		display: none;
+	}
+	.ipac_edit_body .breadcrums {
+		height: auto;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.ipac_edit_body .topInfo {
+        margin-bottom: 25px;
+        margin-top: 0px;
+	}
+	.ipac_edit_body .topInfo .register_heading{
+		font-size: 18px;
+	}
+	.ipac_edit_body .breadcrums li:hover:before {
+		border-left: 12px solid #f6f6f6;
+	}
+	.ipac_edit_body .Proceed {
+		width: 300px;
+		font-size: 14px;
+	}
+	.ipac_edit_body .leaderImg img {
+		height: auto;
+	}
+	.ipac_edit_body .register_blur {
+		background-color: #00000024;
+	}
+	.ipac_edit_body .register_blur:before {
+		right: -12px !important;
+		border-left: 12px solid #00000024 !important;
+	}
+	.ipac_edit_body .mobileNo .formField input, .whatsappNo .formField input {
+		width: calc(100% - 40px);
+	}
+	.ipac_edit_body .sameMobile p {
+		font-size: 12px;
+	}
+	.ipac_edit_body .fileInput span {
+		width: 60px;
+	}
+	.ipac_edit_body .nationalPerson .formField {
+		width: 100%;
+	}
+	.ipac_edit_body .tick_marks {
+		font-size: 14px !important;
+	}
+	.ipac_edit_body .g-recaptchaOut input {
+		top: -10px;
+	}
+
+}
+
+@media (min-width:240px) and (max-width:320px){
+	.ipac_edit_body .breadcrums li {
+		padding: 5px 5px 8px 12px;
+		margin-right: 10px;
+		width: 63px;
+		font-size: 9px;
+	}
+	.ipac_edit_body .breadcrums .breadcrumsActive:before {
+		border-left: 12px solid #278747;
+	}
+	.ipac_edit_body .breadcrums li:before {
+		left: auto;
+		right: -12px;
+		border-left: 12px solid #dcdcdc;
+	}
+	.ipac_edit_body .breadcrums li:after, .breadcrums li:before {
+		border-top: 16px solid transparent;
+		border-bottom: 16px solid transparent;
+		border-left: 15px solid #fff;
+	}
+	.ipac_edit_body .breadcrums span {
+		display: none;
+	}
+	.ipac_edit_body .breadcrums {
+		height: auto;
+		margin-top: 20px;
+	}
+	.ipac_edit_body .topInfo {
+		margin-bottom: 25px;
+	}
+	.ipac_edit_body .breadcrums li:hover:before {
+		border-left: 12px solid #f6f6f6;
+	}
+	.ipac_edit_body .topInfo p {
+		font-size: 12px;
+	}
+	.ipac_edit_body .breadcrums {
+		margin-bottom: 20px;
+	}
+	.ipac_edit_body .topInfo {
+		margin-bottom: 15px;
+	}
+	.ipac_edit_body .container label {
+		padding-left: 5px;
+		font-size: 10px;
+		padding-right: 5px;
+	}
+	.ipac_edit_body .Proceed {
+		width: 225px;
+		font-size: 10px;
+	}
+	.ipac_edit_body .copyright .copyright-ipac {
+		font-size: 7px;
+	}
+	.ipac_edit_body .leaderImg img {
+		height: auto;
+	}
+	.ipac_edit_body .register_blur {
+		background-color: #00000024;
+	}
+	.ipac_edit_body .register_blur:before {
+		right: -13px !important;
+		border-left: 13px solid #00000024 !important;
+	}
+	.ipac_edit_body .DOBForm select {
+		background-size: auto 5px;
+	}
+	.ipac_edit_body .mobileNo .formField input, .whatsappNo .formField input {
+		width: calc(100% - 40px);
+	}
+	.ipac_edit_body .sameMobile p {
+		font-size: 12px;
+	}
+	.ipac_edit_body .fileInput span {
+		width: 60px;
+	}
+	.ipac_edit_body .nationalPerson .formField {
+		width: 100%;
+	}
+	.ipac_edit_body .formTitle, .formField, .formIn {
+		font-size: 12px;
+	}
+	.ipac_edit_body .nationalPerson p {
+		font-size: 12px;
+	}
+	.ipac_edit_body .register_topInfo {
+		margin-top:25px;
+		margin-bottom:0;
+	}
+	.ipac_edit_body .register_heading{
+		font-size:15px;
+	}
+	.ipac_edit_body .tick_marks{
+		font-size: 10px !important;
+		line-height: 16px !important;
+	}
+	.ipac_edit_body .registerForm .terms {
+		font-size: 12px;
+	}
+	.ipac_edit_body .register_topInfo {
+		margin-top: 40px;
+		margin-bottom: 7px;
+	}
+
+}
+

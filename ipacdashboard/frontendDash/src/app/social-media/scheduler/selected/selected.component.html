@@ -1,0 +1,26 @@
+<div [ngSwitch]="selectedSwitch" class="example-full-width">
+  <div *ngSwitchCase="'initial'" class="d-flex flex-column align-items-center justify-content-center" style="height: 5em;">
+    <div class="row example-full-width no-gutters">
+      <div class="col-12">
+        <mat-card class="example-full-width">
+          <p style="font-family: 'Lato', sans-serif;"> <small>You haven't selected any page for scheduling the post. Selected pages will appear here</small></p>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'active'">
+    <div class="row example-full-width no-gutters">
+      <div class="col-12">
+        <mat-card class="example-full-width" style="margin:5px 0px">
+          <div class="lato margin-bottom"><small>You have selected the following pages for scheduling the post:</small></div>
+          <mat-chip-list [ariaOrientation]="'horizontal'">
+            <mat-chip *ngFor="let record of selectedrecords" color="primary" selected [selectable]="selectable" [removable]="removable" (removed)="removeSelectedRecord(record)">
+                {{record.page_name}}
+              <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+            </mat-chip>
+          </mat-chip-list>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
